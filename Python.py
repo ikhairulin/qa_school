@@ -5,9 +5,10 @@ from math import factorial
 # <param name="primeX"> Число Х (Integer / Целочисленный) </param>
 # <returns> Сумма (Integer / Целочисленный) </returns>
 def SumFactorialsOfPrimes(primeX : int):
-    natural_nums = list(filter(lambda x: all(x % y != 0 for y in range(2, x)),
-                               range(2, primeX + 1)))
-    fact_nums = [factorial(i) for i in natural_nums]
+    natural_nums: list[int] = list(
+        filter(lambda x: all(x % y != 0 for y in range(2, x)),
+               range(2, primeX + 1)))
+    fact_nums: list[int] = [factorial(i) for i in natural_nums]
 
     return sum(fact_nums)
 
@@ -38,14 +39,14 @@ def Lenses(dioptries : list):
         return 0
 
     dioptries.sort()
-    lens_pairs = 0
-    index = 0
+    lens_pairs: int = 0
+    index: int = 0
     while index < len(dioptries):
         if index == len(dioptries) - 1:
             lens_pairs += 1
             break
-        first = dioptries[index]
-        second = dioptries[index + 1]
+        first: int = dioptries[index]
+        second: int = dioptries[index + 1]
         if abs(first - second) <= 2:
             index += 2
         else:
