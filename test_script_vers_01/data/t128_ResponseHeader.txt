@@ -1,0 +1,9 @@
+HTTP/1.1 200 OK
+Content-Length: 57
+Content-Type: application/octet-stream
+ETag: "638301387784447596"
+Server: Microsoft-HTTPAPI/2.0
+X-SmartScreen-Flight-Vector: EnableNsHumorMatch,enableProxyLeniency,IsArsFmsIntegrationEnabled,IsCurfId0LoggingEnabled,isCurfTstEnabled,isNpPIOverrideBlockEnabled,ListApiE5V2Enabled,npSettings2004,SendGeoMapInSettingsToNewAnaheimClient,SrcEOPEnabled,topTrafficV2Enabled,UpdateOnMissingEtagEnabled,UsePostDataEndpointsForNewAnaheimClient,WDSListApiE5V2Enabled
+Date: Tue, 12 Sep 2023 18:20:19 GMT
+Connection: close
+

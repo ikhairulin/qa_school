@@ -1,0 +1,16 @@
+GET https://mail.ru/res/117521a101e5055530708050c541a0c4208665c09505d570701020c5c09050552 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; mrhc=asEtHe+GEceJ6XNA0lsB8SisDU3WEag2eObFZtE6HcY=
+Host: mail.ru
+

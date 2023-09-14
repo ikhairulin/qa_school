@@ -1,0 +1,13 @@
+[t22]
+FileName1=t22_NaviData.json
+URL1=https://portal.mail.ru/NaviData?mac=1&Socials=1&ldata=1&target=1&_=1695362207359
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_22.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+FileName2=t22_MailSansVariative.html
+URL2=https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSans/WOFF2/MailSansVariative.woff2
+[ProtocolInfo]
+ProtocolId=QTWeb

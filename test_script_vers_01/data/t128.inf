@@ -1,0 +1,13 @@
+[t128]
+FileName1=t128.html
+URL1=https://data-edge.smartscreen.microsoft.com/api/browser/edge/data/bloomfilter/x/3
+Total=2
+RequestHeaderFile=t128_RequestHeader.txt
+RequestBodyFile=t128_RequestBody.txt
+ResponseHeaderFile=t128_ResponseHeader.txt
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_128.xml
+FileName2=t128_bar.html
+URL2=https://bar.love.mail.ru/jsonp/bar?&_=1695475213800
+[ProtocolInfo]
+ProtocolId=QTWeb

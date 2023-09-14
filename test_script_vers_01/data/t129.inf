@@ -1,0 +1,11 @@
+[t129]
+FileName1=t129_widgets_pxt.html
+URL1=https://likemore-go.imgsmail.ru/widgets_pxt?p=widget_render&widget=cloud
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_129.xml
+RequestHeaderFile=t129_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t129_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

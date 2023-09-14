@@ -1,0 +1,15 @@
+GET https://api.msn.com/auth/cookie/appanon?scn=app_anon&ocid=authconstants-peregrine&apikey=1hYoJsIRvPEnSkk0hlnJF2092mHqiz7xFenIFKa9uc&activityId=492A9C2115DA4B4EB1D3C9C0EE4FD273 HTTP/1.1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+DNT: 1
+Accept: */*
+Origin: https://ntp.msn.com
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://ntp.msn.com/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+Cookie: APP_ANON=A=2A75C0F207F193E58AD22C12FFFFFFFF; aace=%7b%22child%22%3a0%7d; USRLOC=; MUID=0A616DD13B88642637C37FB23AA06552; els=%7b%22account_type%22%3a%22MSA%22%7d; MUIDB=0A616DD13B88642637C37FB23AA06552; lt=t=EwBQA6AEAAAURnNPDOP4v1G28DRF5A6y6RDoGigAAdx3Ph/YyN4szCxBAJuvMnLEMuEUB8OA2k0AeUQz+WjU2eGiZ4XazGso68Jdr3MJxMlstIqhXA/QUF3YcIbbCIz8jQoKqjVnb0d6cbHHqEYY9n9esQPYnWSQE20Er2WkwEgehEyMXiuOVx2mRI+ha4hFH/EcwavO8M5/k+T6FEcmYdN4CMCILRoje1jgcy8Pcrj8i2LDnKUdXTZBlpgh/tJodR0AOrHmDocDJ8MwPOlGPSgPTPak+8fjJMkfXvriVSl2NYE5sYHtY+EbniwInq6GsT8dMGmB9oJgTuIxY8grbmMjFtEcVj3bcCpgajdIOqO1RvfRzuvIeno4vzdSDTwDZgAACNXGbTs//rwXIAJx29ccbpMqdfv5X8xeqEvzmOaDwOipXTNquVG/HTM9DIk7ObrPswPCXBxQY25sdPGTeQwhCEt+lpEb5eRZ+odzNJOsg6Wg6hfOEaDpeyqrxtlBgIm5lCPtGkb6usmu7ok6IFf64mK2VdYk+scsoEnbQrVG+ypKdPFz+4zC666SgOv3VCbeijVYcs31y5tPm2zRPNnfF8tdRN2REFDLbIu2H2jaa16nvdrYU23NQqGwPeuamu7t7o7SIPVtCLICDWzmaVpQ67nOjNPAZMlXaCBJmVZ9VG1KJUTqpk53tZ2Ulnb/xQG6xTQzeGbSnY5+cr2S1BGLRaCGmBAFdN2pGNJ895EMMojh56HK9vzz7wQr68ehn0VJATWlcEk5JMmODe6qCr//duIB21OPzXxRAYKM6v9FEM3LbwEfzfEu2FD/w8RRpOWKUFFuc6q4yixdXyGK9W1MzOcUOz7LH6f2+s81WmEwdze+iD+I/Qlz1+cxkBleA2anc+k0PJuhXMoC3My77OsGO0HRZMeuKEB9DKk7MiyyttgxFLjfhGDf5zcTLZuoQB943CfYmqWqJxwEMvbRZtGeEnI5AyiqlR2C3L8UFa3moZzsWm4E+2WVOpcvkoANDyhmkEAGh9G78gC2SjJOcRIR/Mn7bpuAZRnRH8No8D8Vw7JcfGm+1XDDk7gpUJNf1msBL7YtC4vAJNLsG8O7iszAgkyFqKSzIy45Ba+6TgI=&p=; _C_ETH=1; _EDGE_S=SID=189809D5E8F66BCF09481A5FE9F86AFB
+Host: api.msn.com
+Connection: Keep-Alive
+

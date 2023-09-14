@@ -1,0 +1,11 @@
+[t163]
+FileName1=t163_requests.json
+URL1=https://e.mail.ru/api/v1/messages/search/requests?query=&limit=5&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542873454
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_163.xml
+RequestHeaderFile=t163_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t163_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

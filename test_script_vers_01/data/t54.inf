@@ -1,0 +1,11 @@
+[t54]
+FileName1=t54.html
+URL1=https://r3.mail.ru/fp/?id=4890b7e46119182455d0e5342ecbc862
+Total=1
+RequestHeaderFile=t54_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t54_ResponseHeader.txt
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_54.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

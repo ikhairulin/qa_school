@@ -1,0 +1,11 @@
+[t48]
+FileName1=t48.json
+URL1=https://account.mail.ru/api/v1/auth/qr/polling?token=AG_hHBriVe3USzKcJ92XNnZ5&sign=8jUJbJjvpbfqKqedzicGrjJn1tXFxVEB8zq84Tmhvewzg6Iy-Jq1LVRsx_dvyNPNo1oVc34-yBtNj36Vsxsx8lg=
+Total=1
+RequestHeaderFile=t48_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t48_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_48.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

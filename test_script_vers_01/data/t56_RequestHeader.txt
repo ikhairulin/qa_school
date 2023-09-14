@@ -1,0 +1,18 @@
+POST https://r3.mail.ru/fp/?id=4890b7e46119182455d0e5342ecbc862 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+sec-ch-ua-platform: "Windows"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Content-Type: application/json
+Accept: */*
+Origin: https://e.mail.ru
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Host: r3.mail.ru
+Content-Length: 499
+

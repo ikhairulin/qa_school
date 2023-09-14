@@ -1,0 +1,18 @@
+POST https://account.mail.ru/api/v1/auth/qr/init?login=petya.nikolayev.989@mail.ru&page=https%3A%2F%2Fmail.ru%2F&redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1&source=polling HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Origin: https://account.mail.ru
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://account.mail.ru/login/?mode=simple&v=2.10.0&account_host=account.mail.ru&type=login&allow_external=1&app_id_mytracker=58519&success_redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fback%3D1&project=home&source=mailbox&from=navi&parent_url=https%3A%2F%2Fmail.ru%2F&responsive=compact
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=e9f3e265019548f9a8408cd6f4516322; oid=7GxAwvq4tsGfiJvy5AjT5; mrcu=9CFD6500A70C3E97B1BAFFFFFFFF; p=wPAAAHz30ioA; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694541586080; mtrc=%7B%22mytrackerid%22%3A58519%7D; tmr_lvid=553445e0b86f410a9c140a2f163f9e39; tmr_lvidTS=1694541598481; i=AQATpwBlAgBdBgUCAQC9BwgEAYIVAQ==; s=ww=1422|wh=822|fver=0; b=m0wDAKBx54QCHwEcDTmMfgoBAAAI; c=UKcAZQAAkHHnhAIRAAgAAQA5jH72AAgAACAA; mrhc=C3RBRRA+2Q5kT+9sumi6/WBLIwAya0WkPqK7kcqaors=; VID=1bD-480U7b2K00000v1oT42K:::0-0-0-a1affe1:CAASEEUnCc1ezAFqk78nBkvnLjsaYKxaVEblzs8NMhkcDJn6hxhMupMtsLkuNVxnPop8iCINSZqSzd4Gxg8qxD-OUYHATMGCzQQQG9pbQmzpyVaRXjNi-ImnX6f2mcFRe5Kadq7SnD6uN-fI-mMyySatNFeQWg
+Host: account.mail.ru
+Content-Length: 0
+

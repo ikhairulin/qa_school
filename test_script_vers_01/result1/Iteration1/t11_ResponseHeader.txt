@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 14 Sep 2023 05:17:58 GMT
+Content-Type: application/octet-stream
+Transfer-Encoding: chunked
+Connection: keep-alive
+Expires: Thu, 14 Sep 2023 07:17:58 GMT
+Cache-Control: max-age=7200
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSAo PSDo OUR BUS UNI NAV STA INT"
+Access-Control-Allow-Credentials: true
+Timing-Allow-Origin: *
+

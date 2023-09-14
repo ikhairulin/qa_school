@@ -1,0 +1,17 @@
+GET https://www.bing.com/fd/auth/signin?&action=header&provider=windows_live_id&save_token=0 HTTP/1.1
+X-Search-RPSToken: t=EwDQAgALBAAUWkziSC7RbDJKS1VkhugDegv7L0eAAOkIvJFu9kDIgUhZkzB0Kt+lhjzQrDqbUbxNvIdiRZml27iAVU8swew2AHY2vbJsEuFVfnFWC8bmq6W9F58huc/CNv1o5Lee9P9p/43DdSd34QhBxjFHmyPuhZN7rjgtV5n0csVobohfEZ1i5uINpRYOukl1Zm+uSoqKr/eWJshtA2YAAAgOVpenPrdP5yACNO+/Wugud1kRjL537+nFtWiqv5zwMFaMeNTHGVmCmXGazygRXq/QSdnrH7TfvLrd0nVXRbSeoUf323h4zsg6BJIgEohUiG+IL+IrRkybUejihVyOBgqEl6/WA3GS6WAcfv4gqGsSahaYhU1eg+MTu5Ni4GlUJ2/5iZp2hXmTrJMb/V+gH3mnibcQMAsj8Zo3+AMTcjCBSDNmlwMmAXdEmkjqfWExE0MmAsxCgpu+Pu+wkNOQXtBTJHjFKBHLC79BM2YPGd64bBaEUba0ckvHk58raG2Re/cHF2emXyTsRuwKOJR0f8XntSwaVRPD3JmK+y+o0lZopDjcjLPnQKCMYYeAT8gaQ+gDH+VC/GfYwaadu0A4k8br8UMtMFm2mx3pTnOY99cOx6SKR2hpDti1qXUhEB5sTbttHs+Xs+2/6iE0SV5cPg2B4xryZpikf0dJHd20yrB9CJ77AngrI6oOKs0Ml0l9JwLeiDQbUoQ32ZFQLMb7Z9kCWTPok3H4CoeOSHsvr+PLdt6RdF0YY6rnY08ttdqQ4WONVs1T0sREN4uiSUC/7zcy5dhDKxbmOwGJ8agKi8INaoJE+qZR2BemIalonRq3laNUH7W7G8uddsF7DZy8jN/jv8ztw+2LE4d/yIvnxSxXSfXDFzrFnQaHgPBxVfnefAkh8eYcNvNN4houZTYJDgQOqsTfwoJNEn9KGuIdnvXPrthohiN1mnhBo04C&p=
+Sec-Mesh-Client-Edge-Version: 116.0.1938.76
+Sec-Mesh-Client-Edge-Channel: stable
+Sec-Mesh-Client-OS: Windows
+Sec-Mesh-Client-OS-Version: 10.0.19045
+Sec-Mesh-Client-Arch: x86_64
+Sec-Mesh-Client-WebView: 0
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate, zsdch
+Accept-Language: ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+Cookie: SRCHD=AF=S00028; SRCHUID=V=2&GUID=DAF6BF5EE80149AFB17B3FF5F6CE1996&dmnchg=1; USRLOC=HS=1; ABDEF=V=13&ABDV=11&MRNB=1659292613050&MRB=0; MUID=0A616DD13B88642637C37FB23AA06552; MUIDB=0A616DD13B88642637C37FB23AA06552; _EDGE_V=1; ANON=A=2A75C0F207F193E58AD22C12FFFFFFFF&E=1bc0&W=1; _UR=QS=0&TQS=0; _HPVN=CS=eyJQbiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiUCJ9LCJTYyI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiSCJ9LCJReiI6eyJDbiI6MSwiU3QiOjAsIlFzIjowLCJQcm9kIjoiVCJ9LCJBcCI6dHJ1ZSwiTXV0ZSI6dHJ1ZSwiTGFkIjoiMjAyMy0wMy0wMlQwMDowMDowMFoiLCJJb3RkIjowLCJHd2IiOjAsIkRmdCI6bnVsbCwiTXZzIjowLCJGbHQiOjAsIkltcCI6Mn0=; SRCHUSR=DOB=20200128&T=1691437967000; _RwBf=ilt=0&ihpd=0&ispd=0&rc=0&rb=0&gb=0&rg=0&pc=0&mtu=0&rbb=0&g=0&cid=&clo=0&v=0&l=0001-01-01T00:00:00.0000000&lft=0001-01-01T00:00:00.0000000&aof=0&o=2&p=&c=&t=0&s=0001-01-01T00:00:00.0000000+00:00&ts=2023-09-11T18:24:39.1969739+00:00&rwred=0&wls=0&lka=0&lkt=0&TH=&dci=0&r=0&wlb=0; SUID=A; SRCHHPGUSR=SRCHLANG=ru&IG=1E36D71B60524D9EB91E39CEB0D731A9&DM=0&PV=10.0.0; _U=1s1AwjVN353sNRbxHXpDYZ60gWTHj5ykDCEIk8VlDgdkCYkaylAAbfAEWdQmVLeAnuWwm70A8wA0fZrmAnb40OPnNNh0_opZwKlNo9gkkQlkiiy6sMwj0XHQL3jbKRNkqxPMYNoJlqpa46J1Vr3j47e8vjiTARR-W5gGydjOq4_X5wNeQxECsAGLamxmnnrSsHc0236RiYZe5-O48vrgqACqF9u0GI7ncZcbarEK1JzEkVQo3SpSc250j1YF26Q3O
+Host: www.bing.com
+

@@ -1,0 +1,26 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; odata.metadata=minimal; odata.streaming=true; charset=utf-8
+Server: Microsoft-HTTPAPI/2.0
+X-NanoProxy: 1,1
+Request-Id: d9d39422-5670-dedc-c55a-fecca0646c4c
+X-CalculatedBETarget: SI2PR01MB4202.apcprd01.prod.exchangelabs.com,SI2PR01MB4202.apcprd01.prod.exchangelabs.com
+OData-Version: 4.0
+Alt-Svc: h3=":443",h3-29=":443"
+MS-CV: IpTT2XBW3N7FWv7MoGRsTA.1.1
+X-BackEndHttpStatus: 200,200
+X-BEPartition: CLAPCPRD01SIN05
+X-BEServer: SI2PR01MB3962
+X-BeSku: Unknown
+X-Content-Type-Options: nosniff
+X-End2EndLatencyMs: 120
+X-FEEFZInfo: SIN
+X-FEProxyInfo: SI2PR01CA0021
+X-FEServer: FR0P281CA0099
+X-MicroserviceVersion: 3.0.177.1
+x-ms-appId: 000000004835BC29
+X-Proxy-BackendServerStatus: 200
+X-Proxy-RoutingCorrectness: 1
+X-FirstHopCafeEFZ: HHN
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+Date: Tue, 12 Sep 2023 17:59:16 GMT
+

@@ -1,0 +1,11 @@
+[t192]
+FileName1=t192.json
+URL1=https://ad.mail.ru/adp/?_SITEZONE=10&_SITEID=105&start_time=1694542979635&version=octavius&exp_id=492&h=3800&w=240&DT_isDarkTheme=false&DT_siteBgColor=ffffff&DT_urlColor=999999&DT_hoverColor=000000&DT_bg=ffffff&DT_bgHover=ffffff&DT_borderColor=ffffff&DT_textColor=000000&DT_titleColor=005bd1&DT_titleHoverColor=333333&DT_listBg=f0f5ff&DT_listBgHover=f0f5ff&DT_listBorderColor=ffffff&DT_listTitleColor=005BD1&DT_listTitleHoverColor=333333&DT_listTextColor=93969B&DT_listButtonBgColor=ffffff&DT_listButtonTextColor=333333&DT_listButtonBorderColor=e2e2e1&DT_listButtonBorderHoverColor=005BD1&DT_listButtonTextHoverColor=005BD1&DT_listButtonBgHoverColor=ffffff&DT_sentMsgOkBg=ffffff&DT_sentMsgOkBgHover=ffffff&DT_sentMsgOkBorderColor=ffffff&DT_sentMsgOkTextColor=000000&DT_sentMsgOkTitleColor=005bd1&DT_sentMsgOkTitleHoverColor=333333&ponymode=0&in3paneMetathread=0&userid=petya.nikolayev.989%40mail.ru&rounded=1&fid=4890b7e46119182455d0e5342ecbc862&directLoadErrorCallback=directijockoipdze&isDarkTheme=0&min_cpm=1&q[]=231758
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_192.xml
+RequestHeaderFile=t192_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t192_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,1198 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[5033],{42418:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div qa:id="themes-widget-cloudy-remake" qa:state="{attrs.size == 'default' ? 'full' : 'short'}">
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+					href="https://r.mail.ru/n344210302"
+					target="_blank"
+					remit:click.stop="click-button"
+			>
+				<div bem:elem="button">
+					{i18n(\'128 ГБ\')}
+				</div>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<div bem:elem="container">
+				<div bem:elem="labels-container">
+					<div bem:elem="label">{i18n(\'128 ГБ на 2 месяца\')}</div>
+					<div bem:elem="label">{i18n(\'в Облаке бесплатно!\')}</div>
+				</div>
+				<a
+						bem:elem="button"
+						href="https://r.mail.ru/n344210302"
+						target="_blank"
+						remit:click.stop="click-button"
+				>
+					<div bem:elem="button__text">{i18n(\'Получить\')}</div>
+				</a>
+			</div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-cloudy-remake/themes-widget-cloudy-remake.html")}.apply(t,n))||(e.exports=i)},66206:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div qa:id="themes-widget-cloudy" qa:state="{attrs.size == 'default' ? 'full' : 'short'}">
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+            <a
+                href="https://r.mail.ru/n321244190"
+                target="_blank"
+                remit:click.stop="click-button"
+            >
+                <div bem:elem="button"></div>
+            </a>
+		</fn:when>
+
+		<fn:otherwise>
+            <div bem:elem="container">
+                <div bem:elem="label">{i18n(\'64 ГБ в Облаке\')}</div>
+                <div bem:elem="label">{i18n(\'бесплатно\')}</div>
+                <div bem:elem="underline"></div>
+                <a
+                    bem:elem="button"
+                    href="https://r.mail.ru/n321244190"
+                    target="_blank"
+                    remit:click.stop="click-button"
+                >
+                    <div bem:elem="button__text">{i18n(\'Получить\')}</div>
+                </a>
+                <div bem:elem="duration">{i18n(\'на 2 месяца\')}</div>
+            </div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-cloudy/themes-widget-cloudy.html")}.apply(t,n))||(e.exports=i)},35113:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n316353045"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="logo"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n316353045"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="header">
+					<fn:value output="raw">_this.getHeaderMessage()</fn:value>
+				</div>
+				<div bem:elem="logo"/>
+				<div bem:elem="more">{i18n(\'Подробнее\')}</div>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-epicenter/themes-widget-epicenter.html")}.apply(t,n))||(e.exports=i)},82711:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+  <fn:var name="tiny" value="{attrs.size == 'tiny'}"/>
+  <fn:var name="full" value="{!tiny}"/>
+  <fn:var name="faded" value="{attrs.faded}"/>
+  <fn:var name="data" value="{_this.data}"/>
+  <fn:var name="date" value="{_this.getDate(data.now_datetime)}"/>
+  <fn:var name="score" value="{_this.getScore()}"/>
+  <fn:var name="title" value="{data.title}"/>
+  <fn:var name="match" value="{data.matches[attrs['match-index']]}"/>
+
+  <!-- Команда -->
+  <fn:match name="team" args="team">
+    <a bem:block="themes-widget-euro-2020-team" key="{team.name}" href="{team.url}" target="_blank">
+      <bem:mod name="tiny" test="tiny"/>
+
+      <div bem:elem="logo">
+        <bem:mod name="full" test="full"/>
+
+        <img alt="{team.name}"
+             src="{team.logo}"/>
+      </div>
+
+      <div bem:elem="name" fn:if="full">
+        {team.name}
+      </div>
+
+      <div bem:elem="score" fn:if="full">
+        {team.score}
+      </div>
+    </a>
+  </fn:match>
+
+  <!-- Табличка -->
+  <fn:match name="table">
+    <div bem:elem="header" title="{match.title}">
+      <bem:mod name="tiny" test="tiny"/>
+
+      <div bem:elem="title" fn:if="full">
+        <bem:mod name="faded" test="faded"/>
+        {match.title}
+      </div>
+      <div bem:elem="expand">
+        <b:ico name="arrow-back"/>
+      </div>
+    </div>
+
+	<div bem:elem="score" fn:if="tiny">
+		<fn:value>score</fn:value>
+	</div>
+
+    <div bem:elem="teams">
+      <bem:mod name="tiny" test="tiny"/>
+      <bem:mod name="faded" test="faded"/>
+
+      <fn:for data="match.teams" as="team">
+        <fn:apply-match name="team" args="team" key="{team.name}"/>
+      </fn:for>
+    </div>
+  </fn:match>
+
+  <!-- Виджет -->
+  <a bem:elem="wrap" href="{match.url}" target="_blank" fn:if="data">
+    <bem:mod name="tiny" test="tiny"/>
+    <bem:mod name="full" test="full"/>
+
+    <fn:apply-match name="table"/>
+  </a>
+</div>
+`,"./app/ui-block/themes-widget-euro-2020/themes-widget-euro-2020.html")}.apply(t,n))||(e.exports=i)},21244:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+	<fn:var name="full" value="{!short}"/>
+	<fn:var name="faded" value="{attrs.faded}"/>
+	<fn:var name="data" value="{_this.data}"/>
+	<fn:var name="match" value="{data.matches[attrs['match-index']]}"/>
+
+	<!-- Команда -->
+	<fn:match name="team" args="team">
+		<a bem:block="themes-widget-football-team" key="{team.name}" href="{team.url}" target="_blank">
+			<bem:mod name="short" test="short"/>
+
+			<div bem:elem="logo">
+				<bem:mod name="full" test="full"/>
+
+				<img alt="{team.name}"
+					 src="{team.logo}"/>
+			</div>
+
+			<div bem:elem="name" fn:if="full">
+				{team.name}
+			</div>
+
+			<div bem:elem="score" fn:if="full">
+				{team.score}
+			</div>
+		</a>
+	</fn:match>
+
+	<!-- Табличка -->
+	<fn:match name="table">
+		<div bem:elem="header" title="{match.title}">
+			<bem:mod name="short" test="short"/>
+
+			<div bem:elem="title" fn:if="full">
+				<bem:mod name="faded" test="faded"/>
+				{match.title}
+			</div>
+			<div bem:elem="expand">
+				<b:ico name="arrow-back"/>
+			</div>
+		</div>
+
+		<div bem:elem="teams">
+			<bem:mod name="short" test="short"/>
+			<bem:mod name="faded" test="faded"/>
+
+			<fn:for data="match.teams" as="team">
+				<fn:apply-match name="team" args="team" key="{team.name}"/>
+			</fn:for>
+		</div>
+	</fn:match>
+
+	<!-- Виджет -->
+	<a bem:elem="wrap" href="{match.url}" target="_blank" fn:if="data">
+		<bem:mod name="short" test="short"/>
+		<bem:mod name="full" test="full"/>
+
+		<fn:apply-match name="table"/>
+	</a>
+</div>
+`,"./app/ui-block/themes-widget-football/themes-widget-football.html")}.apply(t,n))||(e.exports=i)},73005:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+	<fn:var name="full" value="{!short}"/>
+	<fn:var name="horoscope" value="{_this.getPrepared()}"/>
+
+	<!-- Гороскоп -->
+	<fn:match name="horoscope">
+		<div bem:elem="header" title="{horoscope.title}">
+			<bem:mod name="short" test="short"/>
+
+			<div bem:elem="title" fn:if="full">
+				{i18n(\'Гороскоп для\')} <span bem:elem="type">{horoscope.typeLocalized}</span>
+			</div>
+			<div bem:elem="expand">
+				<bem:mod name="short" test="short"/>
+
+				<b:ico name="arrow-back"/>
+			</div>
+		</div>
+
+		<div bem:elem="content">
+			<div bem:elem="text" fn:if="full">
+				{horoscope.text}
+			</div>
+
+			<div bem:elem="image">
+				<bem:mod name="short" test="short"/>
+
+				<img alt="{horoscope.typeLocalized}"
+					 src="{horoscope.image}"/>
+			</div>
+		</div>
+	</fn:match>
+
+	<!-- Виджет -->
+	<a bem:elem="wrap" href="{horoscope.url}" target="_blank">
+		<bem:mod name="short" test="short"/>
+		<bem:mod name="full" test="full"/>
+
+		<fn:apply-match name="horoscope"/>
+	</a>
+</div>
+`,"./app/ui-block/themes-widget-horoscope/themes-widget-horoscope.html")}.apply(t,n))||(e.exports=i)},57906:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+  <fn:var name="short" value="{attrs.size != 'default'}"/>
+  <fn:var name="full" value="{!short}"/>
+  <fn:var name="faded" value="{attrs.faded}"/>
+  <fn:var name="data" value="{_this.data}"/>
+  <fn:var name="date" value="{_this.getDate(data.now_datetime)}"/>
+  <fn:var name="title" value="{data.title}"/>
+  <fn:var name="match" value="{data.matches[attrs['match-index']]}"/>
+
+  <!-- Команда -->
+  <fn:match name="team" args="team">
+    <a bem:block="themes-widget-iihf-team" key="{team.name}" href="{team.url}" target="_blank">
+      <bem:mod name="short" test="short"/>
+
+      <div bem:elem="logo">
+        <bem:mod name="full" test="full"/>
+
+        <img alt="{team.name}"
+             src="{team.logo}"/>
+      </div>
+
+      <div bem:elem="name" fn:if="full">
+        {team.name}
+      </div>
+
+      <div bem:elem="score" fn:if="full">
+        {team.score}
+      </div>
+    </a>
+  </fn:match>
+
+  <!-- Табличка -->
+  <fn:match name="table">
+    <div bem:elem="header" title="{match.title}">
+      <bem:mod name="short" test="short"/>
+
+      <div bem:elem="title" fn:if="full">
+        <bem:mod name="faded" test="faded"/>
+        {match.title}
+      </div>
+      <div bem:elem="expand">
+        <b:ico name="arrow-back"/>
+      </div>
+    </div>
+
+    <div bem:elem="teams">
+      <bem:mod name="short" test="short"/>
+      <bem:mod name="faded" test="faded"/>
+
+      <fn:for data="match.teams" as="team">
+        <fn:apply-match name="team" args="team" key="{team.name}"/>
+      </fn:for>
+    </div>
+  </fn:match>
+
+  <!-- Виджет -->
+  <a bem:elem="wrap" href="{match.url}" target="_blank" fn:if="data">
+    <bem:mod name="short" test="short"/>
+    <bem:mod name="full" test="full"/>
+
+    <fn:apply-match name="table"/>
+  </a>
+</div>
+`,"./app/ui-block/themes-widget-iihf/themes-widget-iihf.html")}.apply(t,n))||(e.exports=i)},93829:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="{attrs.data.href}"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="{attrs.data.href}"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button">{attrs.data.text}</div>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-item/themes-widget-item.html")}.apply(t,n))||(e.exports=i)},82724:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+            <div bem:elem="container">
+                <a
+                    href="https://r.mail.ru/n321254932"
+                    target="_blank"
+                    remit:click.stop="click-button"
+                >
+                    <div bem:elem="logo">
+                    </div>
+                </a>
+            </div>
+		</fn:when>
+
+		<fn:otherwise>
+            <div bem:elem="container">
+                <a
+                    href="https://r.mail.ru/n321254932"
+                    target="_blank"
+                    remit:click.stop="click-button"
+                >
+                    <div bem:elem="logo"></div>
+                </a>
+                <div bem:elem="time">{i18n(\'В кино с 12 марта\')}</div>
+            </div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-letter/themes-widget-letter.html")}.apply(t,n))||(e.exports=i)},20670:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<a
+		href="https://la.mail.ru/?_1lr=0-3048882_2011870&utm_medium=referralcpc&utm_source=mail.ru&utm_campaign=la-temamailru-tema"
+		target="_blank"
+		rel="noopener noreferrer"
+		remit:click.stop="click-button"
+	>
+		<div bem:elem="logo"/>
+	</a>
+</div>
+`,"./app/ui-block/themes-widget-lost-ark/themes-widget-lost-ark.html")}.apply(t,n))||(e.exports=i)},62873:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="{attrs.link}"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="{attrs.link}"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button">{i18n(\'Наметить планы\')}</div>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-new-year-2023/themes-widget-new-year-2023.html")}.apply(t,n))||(e.exports=i)},95296:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n315082998"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n315082998"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button"/>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-new-year/themes-widget-new-year.html")}.apply(t,n))||(e.exports=i)},27039:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full-authorized" test="!short && attrs.authorized"/>
+	<bem:mod name="full-unauthorized" test="!short && !attrs.authorized"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n338918299"
+				target="_blank"
+				remit:click.stop="click-link"
+			>
+				<div bem:elem="logo"/>
+			</a>
+		</fn:when>
+
+		<fn:when test="attrs.load">
+			<div
+				bem:elem="content-load"
+			>
+				<b:spinner
+					size="xs"
+					color="primary"
+				/>
+			</div>
+		</fn:when>
+
+		<fn:when test="!short && !attrs.authorized">
+			<a
+				href="https://r.mail.ru/n338918299"
+				target="_blank"
+				remit:click.stop="click-link"
+				bem:elem="content"
+			>
+				<div bem:elem="logo">
+					<div bem:elem="logo-img"/>
+					<div bem:elem="logo-text">{i18n(\'Одноклассники\')}</div>
+				</div>
+				<div bem:elem="text">{i18n(\'Похоже, у вас есть новый подарок. Проверим?\')}</div>
+				<div bem:elem="button">{i18n(\'Проверить\')}</div>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n338918299"
+				target="_blank"
+				remit:click.stop="click-link"
+				bem:elem="content"
+			>
+				<div bem:elem="logo">
+					<div bem:elem="logo-img"/>
+					<div bem:elem="logo-text">{i18n(\'Одноклассники\')}</div>
+				</div>
+				<div bem:elem="hr"/>
+				<div bem:elem="info">
+					<a
+						href="https://r.mail.ru/n338918297"
+						target="_blank"
+						remit:click.stop="click-notifications"
+					>
+						<div bem:elem="notifications">
+							<div bem:elem="notifications-ico"/>
+							<fn:value output="raw">this.getNotificationsMessage()</fn:value>
+						</div>
+					</a>
+					<a
+						href="https://r.mail.ru/n338918300"
+						target="_blank"
+						remit:click.stop="click-unread"
+					>
+						<div bem:elem="messages">
+							<div bem:elem="messages-ico"/>
+							<fn:value output="raw">this.getNewMessagesMessage()</fn:value>
+						</div>
+					</a>
+				</div>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-ok/themes-widget-ok.html")}.apply(t,n))||(e.exports=i)},71669:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+  <fn:var name="tiny" value="{attrs.size == 'tiny'}"/>
+  <fn:var name="full" value="{attrs.size == 'default'}"/>
+  <fn:var name="data" value="{_this.formatData()}"/>
+  <fn:var name="hasSeparator" value="{_this.hasSeparator()}"/>
+
+  <!-- Счет -->
+  <fn:match name="score" args="country">
+    <span bem:elem="gold">
+      {country.gold}
+    </span>
+    <span>-</span>
+    <span bem:elem="silver">
+	  {country.silver}
+    </span>
+    <span>-</span>
+    <span bem:elem="bronze">
+	  {country.bronze}
+    </span>
+  </fn:match>
+
+  <!-- Страна -->
+  <fn:match name="country" args="country">
+    <a bem:block="themes-widget-olympiad-2021-country" key="{country.title}" href="{country.url}" target="_blank">
+      <div bem:elem="desc">
+        {country.desc}
+      </div>
+      <div bem:elem="logo">
+        <img alt="{country.title}"
+             src="{country.flag}"/>
+      </div>
+
+      <div bem:elem="score">
+		  <fn:apply-match name="score" args="country" key="{country.title}"/>
+      </div>
+    </a>
+  </fn:match>
+
+  <!-- Табличка -->
+  <fn:match name="table">
+    <div bem:elem="header" title="{data.title}">
+		{i18n(\'Весь медальный зачет\')}
+    </div>
+
+    <div bem:elem="countries">
+      <fn:for data="data.countries" as="country" key="index">
+        <fn:apply-match name="country" args="country" key="{country.title}"/>
+        <div bem:elem="separator" fn:if="index == 1 && hasSeparator"></div>
+      </fn:for>
+
+    </div>
+  </fn:match>
+
+  <!-- Виджет -->
+  <a bem:elem="wrap" href="{data.link}" target="_blank" fn:if="data">
+    <bem:mod name="tiny" test="tiny"/>
+
+    <fn:choose>
+      <fn:when test="full">
+        <fn:apply-match name="table"/>
+      </fn:when>
+
+      <fn:otherwise>
+	    <div bem:elem="logo">
+	      <div bem:elem="logo-img">
+		    <bem:mod name="tiny" test="tiny"/>
+		  </div>
+		</div>
+	  </fn:otherwise>
+	</fn:choose>
+  </a>
+</div>
+`,"./app/ui-block/themes-widget-olympiad-2021/themes-widget-olympiad-2021.html")}.apply(t,n))||(e.exports=i)},33558:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="data" value="{attrs.data}"/>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:if test="data">
+		<fn:apply-match name="theme-widget-rick-morty" args="data, short"/>
+	</fn:if>
+
+	<fn:match name="theme-widget-rick-morty" args="data, short">
+		<fn:choose>
+			<fn:when test="short">
+				<a
+					href="https://r.mail.ru/n313702619"
+					target="_blank"
+					remit:click.stop="click-button"
+				>
+					<div bem:elem="2x2"></div>
+				</a>
+			</fn:when>
+
+			<fn:otherwise>
+				<a
+					href="https://r.mail.ru/n313702619"
+					target="_blank"
+					remit:click.stop="click-button"
+				>
+				<div bem:elem="header">
+					<div>{i18n(\'Премьера на\')}</div>
+					<div bem:elem="2x2"></div>
+				</div>
+				<div bem:elem="footer">
+					<div bem:elem="button"></div>
+				</div>
+				</a>
+			</fn:otherwise>
+		</fn:choose>
+	</fn:match>
+</div>
+`,"./app/ui-block/themes-widget-rick-morty/themes-widget-rick-morty.html")}.apply(t,n))||(e.exports=i)},35921:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+
+    <fn:var name="euro" value="{_this.getCostValue('EUR')}"/>
+    <fn:var name="dollar" value="{_this.getCostValue('USD')}"/>
+    <fn:var name="oil" value="{_this.getCostValue('OIL')}"/>
+
+    <fn:var name="euro_change" value="{_this.getChangeValue('EUR')}"/>
+    <fn:var name="dollar_change" value="{_this.getChangeValue('USD')}"/>
+    <fn:var name="oil_change" value="{_this.getChangeValue('OIL')}"/>
+
+    <fn:var name="date" value="{_this.getDate()}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+            <a
+                href="https://news.mail.ru/currency/"
+                target="_blank"
+                remit:click="click-currency"
+                bem:elem="currency-container"
+            >
+                <div bem:elem="logo" bem:mod="dollar">
+                </div>
+                <div bem:elem="currency">
+                    <div bem:elem="cost">
+                        {dollar}
+                    </div>
+                    <div bem:elem="change" bem:mod="{_this.getChangeDirection('USD')}">
+                    </div>
+                </div>
+            </a>
+
+            <a
+                href="https://news.mail.ru/currency/"
+                target="_blank"
+                remit:click="click-currency"
+                bem:elem="currency-container"
+            >
+                <div bem:elem="logo" bem:mod="euro">
+                </div>
+                <div bem:elem="currency">
+                    <div bem:elem="cost">
+                        {euro}
+                    </div>
+                    <div bem:elem="change" bem:mod="{_this.getChangeDirection('EUR')}">
+                    </div>
+                </div>
+            </a>
+		</fn:when>
+
+		<fn:otherwise>
+            <div bem:elem="section" bem:mod="left">
+                <div bem:elem="label">
+                    {i18n(\'Курсы\')}
+                </div>
+                <div bem:elem="date">
+                    {date}
+                </div>
+                <a
+                    href="https://news.mail.ru/currency/"
+                    target="_blank"
+                    remit:click="click-currency"
+                >
+                    <div bem:elem="currency">
+                        <div bem:elem="logo" bem:mod="oil">
+                        </div>
+                        <div bem:elem="cost">
+                            <div bem:elem="value">{oil}</div>
+                            <div bem:elem="change" bem:mod="{_this.getChangeDirection('OIL')}">{oil_change}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div bem:elem="section">
+                <a
+                    href="https://news.mail.ru/currency/"
+                    target="_blank"
+                    remit:click="click-currency"
+                >
+                    <div bem:elem="currency" bem:mod="centered">
+                        <div bem:elem="logo" bem:mod="dollar">
+                        </div>
+                        <div bem:elem="cost">
+                            <div bem:elem="value">{dollar}</div>
+                            <div bem:elem="change" bem:mod="{_this.getChangeDirection('USD')}">{dollar_change}</div>
+                        </div>
+                    </div>
+                </a>
+                <a
+                    href="https://news.mail.ru/currency/"
+                    target="_blank"
+                    remit:click="click-currency"
+                >
+                    <div bem:elem="currency" bem:mod="centered">
+                        <div bem:elem="logo" bem:mod="euro">
+                        </div>
+                        <div bem:elem="cost">
+                            <div bem:elem="value">{euro}</div>
+                            <div bem:elem="change" bem:mod="{_this.getChangeDirection('EUR')}">{euro_change}</div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-serenity/themes-widget-serenity.html")}.apply(t,n))||(e.exports=i)},5835:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				remit:click.stop="click-marusia-link"
+				bem:elem="short-link"
+			>
+				<div bem:elem="marusia"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<div>
+				<div bem:elem="text-container">
+					<div bem:elem="text">
+						{i18n(\'Сказки от\')}
+						<b>{i18n(\'Союзмультфильма\')}</b>
+					</div>
+					<div
+						bem:elem="marusia"
+						remit:click.stop="click-marusia-icon"
+					/>
+				</div>
+				<a
+					remit:click.stop="click-marusia-link"
+					bem:elem="full-link"
+				/>
+			</div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-souzmultfilm/themes-widget-souzmultfilm.html")}.apply(t,n))||(e.exports=i)},99571:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+	<fn:var name="full" value="{!short}"/>
+	<fn:var name="faded" value="{attrs.faded}"/>
+	<fn:var name="data" value="{_this.data}"/>
+	<fn:var name="match" value="{data[attrs['match-index']]}"/>
+
+	<!-- Команда -->
+	<fn:match name="team" args="team">
+		<a bem:block="themes-widget-football-team" key="{team.name}" href="{team.url}" target="_blank">
+			<bem:mod name="short" test="short"/>
+
+			<div bem:elem="logo">
+				<bem:mod name="full" test="full"/>
+
+				<img alt="{team.name}"
+					 src="{team.logo}"/>
+			</div>
+
+			<div bem:elem="name" fn:if="full">
+				{team.name}
+			</div>
+
+			<div bem:elem="score" fn:if="full">
+				{team.score}
+			</div>
+		</a>
+	</fn:match>
+
+	<!-- Табличка -->
+	<fn:match name="table">
+		<div bem:elem="header" title="{match.title}">
+			<bem:mod name="short" test="short"/>
+
+			<div bem:elem="title" fn:if="full">
+				<bem:mod name="faded" test="faded"/>
+				{match.title}
+			</div>
+			<div bem:elem="expand">
+				<b:ico name="arrow-back"/>
+			</div>
+		</div>
+
+		<div bem:elem="teams">
+			<bem:mod name="short" test="short"/>
+			<bem:mod name="faded" test="faded"/>
+
+			<fn:for data="match.teams" as="team">
+				<fn:apply-match name="team" args="team" key="{team.name}"/>
+			</fn:for>
+		</div>
+	</fn:match>
+
+	<!-- Виджет -->
+	<a bem:elem="wrap" href="{match.url}" target="_blank" fn:if="data">
+		<bem:mod name="short" test="short"/>
+		<bem:mod name="full" test="full"/>
+
+		<fn:apply-match name="table"/>
+	</a>
+</div>
+`,"./app/ui-block/themes-widget-spartak-fc/themes-widget-spartak-fc.html")}.apply(t,n))||(e.exports=i)},43532:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n315877129"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="button"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n315877129"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="header">{i18n(\'Cмотрите в кинотеатрах\')}</div>
+				<div bem:elem="button"/>
+				<div bem:elem="footer">© & ™ 2019 Lucasfim Ltd.</div>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-star-wars/themes-widget-star-wars.html")}.apply(t,n))||(e.exports=i)},58850:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full-authorized" test="!short && attrs.authorized"/>
+	<bem:mod name="full-unauthorized" test="!short && !attrs.authorized"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n338917469"
+				target="_blank"
+				remit:click.stop="click-link"
+			>
+				<div bem:elem="logo"/>
+			</a>
+		</fn:when>
+
+		<fn:when test="attrs.load">
+			<div
+				bem:elem="content-load"
+			>
+				<b:spinner
+					size="xs"
+					color="primary"
+				/>
+			</div>
+		</fn:when>
+
+		<fn:when test="!short && !attrs.authorized">
+			<a
+				href="https://r.mail.ru/n338917469"
+				target="_blank"
+				remit:click.stop="click-link"
+				bem:elem="content"
+			>
+				<div bem:elem="logo">
+					<div bem:elem="logo-img"/>
+					<div bem:elem="logo-text">{i18n(\'ВКонтакте\')}</div>
+				</div>
+				<div bem:elem="text">{i18n(\'Собрали самое интересное, чтобы вы ничего не пропустили\')}</div>
+				<div bem:elem="button">{i18n(\'Войти\')}</div>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n338917469"
+				target="_blank"
+				remit:click.stop="click-link"
+				bem:elem="content"
+			>
+				<bem:mod name="only-logo" test="!attrs.friends && !attrs.unread"/>
+
+				<div bem:elem="logo">
+					<div bem:elem="logo-img"/>
+					<div bem:elem="logo-text">{i18n(\'ВКонтакте\')}</div>
+				</div>
+
+				<fn:if test="attrs.friends || attrs.unread">
+					<div bem:elem="hr"/>
+					<div bem:elem="notifications">
+						<a
+							href="https://r.mail.ru/n338917569"
+							target="_blank"
+							remit:click.stop="click-friends"
+						>
+							<div bem:elem="friends">
+								<div bem:elem="friends-ico"/>
+								<fn:value output="raw">this.getFriendsMessage()</fn:value>
+							</div>
+						</a>
+						<a
+							href="https://r.mail.ru/n338917568"
+							target="_blank"
+							remit:click.stop="click-unread"
+						>
+							<div bem:elem="messages">
+								<div bem:elem="messages-ico"/>
+								<fn:value output="raw">this.getNewMessagesMessage()</fn:value>
+							</div>
+						</a>
+					</div>
+				</fn:if>
+			</a>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-vk/themes-widget-vk.html")}.apply(t,n))||(e.exports=i)},28599:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:choose>
+		<fn:when test="short">
+			<a
+				href="https://r.mail.ru/n316297521"
+				target="_blank"
+				remit:click.stop="click-button"
+			>
+				<div bem:elem="ball"/>
+			</a>
+		</fn:when>
+
+		<fn:otherwise>
+			<a
+				href="https://r.mail.ru/n316297521"
+				target="_blank"
+				remit:click.stop="click-button"
+				bem:elem="content"
+			>
+				<div bem:elem="ball"/>
+				<div bem:elem="text"/>
+			</a>
+			<div bem:elem="footer">
+				<fn:value output="raw">_this.getFooterMessage()</fn:value>
+			</div>
+		</fn:otherwise>
+	</fn:choose>
+</div>
+`,"./app/ui-block/themes-widget-warface/themes-widget-warface.html")}.apply(t,n))||(e.exports=i)},53105:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+    <fn:var name="data" value="{attrs.data}"/>
+    <fn:var name="short" value="{attrs.size != 'default'}"/>
+    <fn:var name="messages" value="{_this.getMessages()}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<fn:if test="data">
+		<fn:apply-match name="theme-widget-weather" args="data, short"/>
+	</fn:if>
+
+	<!-- Описание переменных https://confluence.mail.ru/display/RB/Region+mapx -->
+	<fn:match name="theme-widget-weather" args="data, short">
+		<fn:var name="date" value="{_this.getDate(data.now_datetime)}"/>
+
+		<a
+			bem:elem="wrap"
+			href="{data.link}"
+			target="_blank"
+			remit:click="click-weather"
+		>
+			<fn:choose>
+				<fn:when test="short">
+					<div bem:elem="icon"><div class="weather-icon weather-icon_{data.now_icon === 'd' ? '' : 'n'}{data.now_status}" title="{data.now_description}"></div></div>
+					<div bem:elem="today-temp"><div bem:elem="now-temp">{data.now_temp}°</div></div>
+				</fn:when>
+				<fn:otherwise>
+					<div bem:elem="header" title="{data.city}, {date}">
+						<a
+							href="https://mail.ru/region?from=mailwidget"
+							target="_blank"
+							remit:click.stop="click-city"
+						>
+							<span bem:elem="city-link">{data.city}</span>
+						</a>
+						<span bem:elem="date">, {date}</span>
+					</div>
+					<div bem:elem="icon"><div class="weather-icon weather-icon_{data.now_icon === 'd' ? '' : 'n'}{data.now_status}" title="{data.now_description}"></div></div>
+					<div bem:elem="today-temp"><span bem:elem="now-temp">{data.now_temp}°</span> <span bem:elem="near-temp">{data.near_temp}°</span></div>
+					<div bem:elem="tomorrow-temp">
+						{messages.temperature}
+						<div bem:elem="tomorrow-icon"><div class="weather-icon_small weather-icon_{data.tomorrow_status}" title="{data.tomorrow_description}"></div></div>
+					</div>
+				</fn:otherwise>
+			</fn:choose>
+		</a>
+	</fn:match>
+</div>
+`,"./app/ui-block/themes-widget-weather/themes-widget-weather.html")}.apply(t,n))||(e.exports=i)},80054:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:var name="id" value="{attrs.id}"/>
+	<fn:var name="data" value="{attrs.data}"/>
+	<fn:var name="short" value="{attrs.size != 'default'}"/>
+
+	<bem:mod name="short" test="short"/>
+	<bem:mod name="full" test="!short"/>
+
+	<!-- Виджеты -->
+	<span bem:elem="content">
+		<fn:choose>
+			<fn:when test="id === 't1154'">
+				<b:themes-widget-ok
+					use:mediator="routes-manager"
+				/>
+			</fn:when>
+
+			<fn:when test="id === 't1155'">
+				<b:themes-widget-vk
+					use:mediator="routes-manager"
+				/>
+			</fn:when>
+
+			<fn:when test="id === 't1189' || id === 't3015'">
+				<b:themes-widget-weather/>
+			</fn:when>
+
+			<fn:when test="id === 't5010'">
+				<b:themes-widget-euro-2020/>
+			</fn:when>
+
+			<fn:when test="id === 't1201'">
+				<b:themes-widget-olympiad-2021/>
+			</fn:when>
+
+			<fn:when test="id === 't1200'">
+				<b:themes-widget-iihf/>
+			</fn:when>
+
+			<fn:when test="id === 't1190'">
+				<b:themes-widget-football/>
+			</fn:when>
+
+			<fn:when test="id === 't3002'">
+				<b:themes-widget-horoscope/>
+			</fn:when>
+
+			<fn:when test="id === 't5001'">
+				<b:themes-widget-rick-morty/>
+			</fn:when>
+
+			<fn:when test="id === 't1168'">
+				<b:themes-widget-new-year/>
+			</fn:when>
+
+			<fn:when test="id === 't5002'">
+				<b:themes-widget-warface/>
+			</fn:when>
+
+			<fn:when test="id === 't1169' || id === 't5003' || id === 't5004'">
+				<b:themes-widget-star-wars/>
+			</fn:when>
+
+			<fn:when test="id === 't5005'">
+				<b:themes-widget-epicenter/>
+			</fn:when>
+
+			<fn:when test="id === 't2050'">
+				<b:themes-widget-serenity/>
+			</fn:when>
+
+			<fn:when test="id === 't2052'">
+				<b:themes-widget-cloudy/>
+			</fn:when>
+
+			<fn:when test="id === 't2053'">
+				<b:themes-widget-letter/>
+			</fn:when>
+
+			<fn:when test="id === 't2054'">
+				<b:themes-widget-cloudy-remake/>
+			</fn:when>
+
+			<fn:when test="id === 't3012'">
+				<b:themes-widget-spartak-fc/>
+			</fn:when>
+
+			<fn:when test="id === 't5007'">
+				<b:themes-widget-lost-ark/>
+			</fn:when>
+
+			<fn:when test="id === 't2062'">
+				<b:themes-widget-souzmultfilm
+					use:mediator="marusia-manager"
+				/>
+			</fn:when>
+
+			<fn:when test="id === 't5015'">
+				<b:themes-widget-new-year-2023/>
+			</fn:when>
+
+			<fn:when test="!!attrs.widgetData">
+				<b:themes-widget-item data="{attrs.widgetData}"/>
+			</fn:when>
+		</fn:choose>
+	</span>
+</div>
+`,"./app/ui-block/themes-widget/themes-widget.html")}.apply(t,n))||(e.exports=i)},94067:function(e,t,a){var n,i;n=[a(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<a
+		href="{attrs.calendarUrl}"
+		rel="noopener"
+		target="_blank"
+		remit:click="click-radar"
+>
+	<bem:mod name="pony-mode" test="attrs['pony-mode']"/>
+	<bem:mod name="dropdown" test="attrs['dropdown-mode']"/>
+
+	<span bem:elem="wrapper" qa:id="widget-icon-calendar">
+		<bem:mod name="{attrs.variant}"/>
+		<bem:mod name="special-third-september" test="_this.checkSpecialThirdSeptember()"/>
+		<span bem:elem="day">
+			{attrs.day}
+		</span>
+	</span>
+	<fn:if test="attrs.title">
+		<span class="widget__title" qa:id="widget-title-calendar">
+			{attrs.title}
+		</span>
+	</fn:if>
+</a>
+`,"./app/ui-block/widget-calendar/widget-calendar.html")}.apply(t,n))||(e.exports=i)},36967:function(e,t,a){"use strict";a.d(t,{Z:function(){return m}});var n=a(18440),i=a.n(n),r=a(37030);function m(e){var t=new Date(1e3*e);return(0,r.zk)(t)?"".concat((0,r.kC)(r.FF.TODAY),", ").concat((0,r.p6)(t,[["hour","2-digit"],["minute","2-digit"]])):(0,r.p6)(t,[["day","numeric"],["month","long"],["hour","2-digit"],["minute","2-digit"]])}i().vdom.mods["widget-football-date"]=m},64169:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(66206),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-cloudy",template:m(),isolate:!1}))},99549:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(35113),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-epicenter",template:m(),isolate:!1,getHeaderMessage:()=>i18n("21–22 {spanOpen}ДЕКАБРЯ |{spanClose} 2019",{"unsafe-spanOpen":'<span style="color: #FC4F1E">',"unsafe-spanClose":"</span>"})}))},95212:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(36967),m=a(21244),s=a.n(m),o=a(12199);t.default=i().Block.extend({name:"themes-widget-football",template:s(),isolate:!1,blocks:{ico:o.Z},defaults:{"match-index":0,faded:!0},attrChanged:{data(){var e=(arguments.length>0&&void 0!==arguments[0]?arguments[0]:{}).data;if(e){var t=e[0].items[0],a=e[2].items.map(e=>{var t=this.getDate(e.timestamp);return t=t[0].toLocaleUpperCase()+t.substring(1),e.title="".concat(t,", ").concat(e.status),e.teams=e.teams.slice(0,2),e});this.data={title:t,matches:a}}}},_rotationTimerId:null,_animationTimerId:null,data:null,getDate:e=>(0,r.Z)(e),didMount(){this.set("faded",!1),this._rotationTimerId=window.setInterval(()=>{this.set("faded",!0);var e=this.get("match-index");if(e++,this.data&&e>=this.data.matches.length)e=0;this._animationTimerId=window.setTimeout(()=>{this.set({"match-index":e,faded:!1})},250)},1e4)},didUnmount(){window.clearInterval(this._rotationTimerId),window.clearInterval(this._animationTimerId)}})},84455:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(73005),m=a.n(r),s=a(12199),o={aries:i18n("Овна"),taurus:i18n("Тельца"),gemini:i18n("Близнецов"),cancer:i18n("Рака"),leo:i18n("Льва"),virgo:i18n("Девы"),libra:i18n("Весов"),scorpio:i18n("Скорпиона"),sagittarius:i18n("Стрельца"),capricorn:i18n("Козерога"),aquarius:i18n("Водолея"),pisces:i18n("Рыб")};t.default=i().Block.extend({name:"themes-widget-horoscope",template:m(),isolate:!1,blocks:{ico:s.Z},_preparedData:null,prepare(e){var t=e.data;return t.typeLocalized=o[t.type],t.text=t.description.replace(/(<(\/|).*?>)/,""),t},getPrepared(){return this._preparedData=this._preparedData||this.prepare(this.get("data")),this._preparedData}})},81614:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(82724),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-letter",template:m(),isolate:!1}))},7497:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(33558),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-rick-morty",template:m(),isolate:!1}))},3857:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(35921),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-currency",rename:"currency_click"}]})({name:"themes-widget-serenity",template:m(),isolate:!1,getRoundedValue(e){var t=String(e).split("."),a=t[0];if(t[1]){var n=t[1].length>1?t[1].slice(0,2):t[1]+="0";return"".concat(a,".").concat(n)}else return"".concat(a,".00")},getCostValue(e){var t=this.attrs.data.data.currency.find(t=>t.currencyType===e);return this.getRoundedValue(t.rate)},getChangeValue(e){var t=this.attrs.data.data.currency.find(t=>t.currencyType===e),a=this.getRoundedValue(t.incrementNum);if("plus"===this.getChangeDirection(e))return"+"+a;else return"-"+a},getChangeDirection(e){return this.attrs.data.data.currency.find(t=>t.currencyType===e).increment},getDate(){var e=this.attrs.data.data.currency[0].date.split("-"),t=e[0],a=e[1],n=e[2];return"".concat(n,".").concat(a,".").concat(t)}}))},47740:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(36967),m=a(99571),s=a.n(m),o=a(12199);t.default=i().Block.extend({name:"themes-widget-spartak-fc",template:s(),isolate:!1,blocks:{ico:o.Z},defaults:{"match-index":0,faded:!1},attrChanged:{ifChanged(){this.getData()}},_rotationTimerId:null,_animationTimerId:null,data:null,getData(){var e=this.get("data");if(e&&e.matches&&e.matches.items){var t=e.matches.items;this.data=t.map(e=>{var t=this.getDate(e.timestamp);return t=t[0].toLocaleUpperCase()+t.substring(1),e.title="".concat(t,", ").concat(e.status),e.teams=e.teams.slice(0,2),e})}},getDate:e=>(0,r.Z)(e),didMount(){this._rotationTimerId=window.setInterval(()=>{this.set("faded",!0);var e=this.get("match-index");if(e++,this.data&&e>=this.data.length)e=0;this._animationTimerId=window.setTimeout(()=>{this.set({"match-index":e,faded:!1})},250)},1e4)},didUnmount(){window.clearInterval(this._rotationTimerId),window.clearInterval(this._animationTimerId)}})},10866:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(43532),m=a.n(r),s=a(17717),o=a.n(s),l=a(61799);t.default=i().Block.extend((0,l.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-star-wars",template:m(),isolate:!1,events:{"click-button":"handleClick"},handleClick(){o().get("t5003-widget").save({state:!0})}}))},4889:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(28599),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-warface",template:m(),isolate:!1,getFooterMessage:()=>i18n("Название акции: «НОВОГОДНЕЕ БЕЗУМИЕ» Общие сроки Акции: с 13:00 МСК «16» декабря 2019 г. по 23:59 МСК «06» января 2020 г., без учета сроков выдачи призов. {linkOpen}Подробности на сайте.{linkClose}",{"unsafe-linkOpen":'<a href="https://r.mail.ru/n316426078" target="_blank">',"unsafe-linkClose":"</a>"})}))},17858:function(e,t,a){"use strict";a.r(t),a.d(t,{default:function(){return d}});var n=a(18440),i=a.n(n),r=a(37030);function m(e){var t=new Date(1e3*e);return(0,r.p6)(t,[["weekday","short"],["day","numeric"],["month","long"]],{literalAfter:{weekday:", "}})}i().vdom.mods["widget-date"]=m;var s=a(53105),o=a.n(s),l=a(61799),d=i().Block.extend((0,l.Z)({events:[{name:"click-weather",rename:"weather_click"},{name:"click-city",rename:"city_click"}]})({name:"themes-widget-weather",template:o(),isolate:!1,getDate:e=>m(e),getMessages(){return{temperature:i18n("Завтра {temperature}°",{temperature:this.attrs.data.tomorrow_temp})}}}))},93819:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(42418),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-cloudy-remake",template:m(),isolate:!1}))},40456:function(e,t,a){"use strict";a.r(t);var n=a(60033),i=a.n(n),r=a(18440),m=a.n(r),s=a(36967),o=a(82711),l=a.n(o),d=a(12199);t.default=m().Block.extend({name:"themes-widget-euro-2020",template:l(),isolate:!1,blocks:{ico:d.Z},defaults:{"match-index":0,faded:!0},attrChanged:{data:function(e){var t=this;if(e)try{var a=e.data,n=a.find((function(e){return"title"===e.type})).items.find((function(e){return"link"===e.type})).text,r=a.find((function(e){return"schedule"===e.type})).items.map((function(e){var a=t.getDate(e.timestamp);a=a[0].toLocaleUpperCase()+a.slice(1);var n=e.full_status||e.status;return e.title="".concat(a,", ").concat(n),e.teams=e.teams.slice(0,2),e}));this.data={title:n,matches:r}}catch(e){i().send("themes-widget-euro_json-parse-error")}}},_rotationTimerId:null,_animationTimerId:null,data:null,getDate:function(e){return(0,s.Z)(e)},getScore:function(){var e,t,a,n,i=this.data,r=null===(e=null==i?void 0:i.matches[this.get("match-index")])||void 0===e?void 0:e.teams;if(isNaN(null===(t=r[0])||void 0===t?void 0:t.score))return"- -";else return"".concat(null===(a=r[0])||void 0===a?void 0:a.score," : ").concat(null===(n=r[1])||void 0===n?void 0:n.score)},didMount:function(){var e=this;this.set("faded",!1),this._rotationTimerId=window.setInterval((function(){e.set("faded",!0);var t=e.get("match-index");if(t++,e.data&&t>=e.data.matches.length)t=0;e._animationTimerId=window.setTimeout((function(){e.set({"match-index":t,faded:!1})}),250)}),1e4)},didUnmount:function(){window.clearInterval(this._rotationTimerId),window.clearTimeout(this._animationTimerId)}})},57228:function(e,t,a){"use strict";a.r(t);var n=a(60033),i=a.n(n),r=a(18440),m=a.n(r),s=a(36967),o=a(57906),l=a.n(o),d=a(12199);t.default=m().Block.extend({name:"themes-widget-iihf",template:l(),isolate:!1,blocks:{ico:d.Z},defaults:{"match-index":0,faded:!0},attrChanged:{data:function(e){var t=this;if(e)try{var a=e.data,n=a.find((function(e){return"title"===e.type})).items.find((function(e){return"link"===e.type})).text,r=a.find((function(e){return"schedule"===e.type})).items.map((function(e){var a=t.getDate(e.timestamp);a=a[0].toLocaleUpperCase()+a.slice(1);var n=e.full_status||e.status;return e.title="".concat(a,", ").concat(n),e.teams=e.teams.slice(0,2),e}));this.data={title:n,matches:r}}catch(e){i().send("themes-widget-iihf_json-parse-error")}}},_rotationTimerId:null,_animationTimerId:null,data:null,getDate:function(e){return(0,s.Z)(e)},didMount:function(){var e=this;this.set("faded",!1),this._rotationTimerId=window.setInterval((function(){e.set("faded",!0);var t=e.get("match-index");if(t++,e.data&&t>=e.data.matches.length)t=0;e._animationTimerId=window.setTimeout((function(){e.set({"match-index":t,faded:!1})}),250)}),1e4)},didUnmount:function(){window.clearInterval(this._rotationTimerId),window.clearInterval(this._animationTimerId)}})},97078:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(93829),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-item",template:m(),isolate:!1}))},64299:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a(20670),r=a(61799);t.default=n.Block.extend((0,r.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-lost-ark",template:i,isolate:!1}))},17821:function(e,t,a){"use strict";a.r(t);var n=a(21211),i=a(18440),r=a.n(i),m=a(62873),s=a.n(m),o=a(61799);t.default=r().Block.extend((0,o.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-new-year-2023",template:s(),isolate:!1,defaults:{link:n.HREF_THEME_WIDGET_NEW_YEAR_2023}}))},82975:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(95296),m=a.n(r),s=a(61799);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-button",rename:"button_click"}]})({name:"themes-widget-new-year",template:m(),isolate:!1}))},48478:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(27039),m=a.n(r),s=a(61799),o=a(93286),l=a(55426);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-link",rename:"link"},{name:"click-notifications",rename:"notifications"},{name:"click-unread",rename:"unread"}]})({name:"themes-widget-ok",template:m(),isolate:!1,defaults:{authorized:!1,unread:0,notifications:0,load:!1},blocks:{spinner:l.Z},getNotificationsMessage:function(){var e=this.get("notifications");if(!e)return i18n("нет новых уведомлений");var t={count:e};return i18n.plural(e,[i18n("{count} новых уведомлений",t),i18n("{count} новое уведомление",t),i18n("{count} новых уведомления",t)])},getNewMessagesMessage:function(){var e=this.get("unread");if(!e)return i18n("нет новых сообщений");var t={count:e};return i18n.plural(e,[i18n("{count} новых сообщений",t),i18n("{count} новое сообщение",t),i18n("{count} новых сообщения",t)])},didMount:function(){this.set({load:!0}),this.updateData()},updateData:function(){var e=this,t=new XMLHttpRequest;t.open("GET","https://ok.ru/mapi?query=".concat(encodeURIComponent('{"cmd":"getCounters"}')),!0),t.withCredentials=!0,t.onload=function(){var a,n;(0,o.ZP)(["ok-widget","request","ok"]);var i=JSON.parse(t.response);if(e.isMounted())if(200===t.status&&"ok"===i.status)e.set({load:!1,authorized:!0,unread:(null===(a=i.data)||void 0===a?void 0:a.messageCnt)||0,notifications:(null===(n=i.data)||void 0===n?void 0:n.notificationCnt)||0});else e.set({load:!1,authorized:!1})},t.onerror=function(){if((0,o.ZP)(["ok-widget","request","fail"]),e.isMounted())e.set({load:!1,authorized:!1})},t.send()}}))},10275:function(e,t,a){"use strict";a.r(t);var n=a(60033),i=a.n(n),r=a(18440),m=a.n(r),s=a(71669),o=a.n(s),l=a(12199);t.default=m().Block.extend({name:"themes-widget-olympiad-2021",template:o(),isolate:!1,blocks:{ico:l.Z},defaults:{data:{},needSeparator:!1},formatData:function(){var e=this.get("data");if(e)try{var t=e.data.find((function(e){return"countries"===e.type}));return{countries:t.items.slice(0,3).map((function(e){return e.desc=e.place+" "+i18n("место"),e})),link:t.link.url}}catch(e){i().send("themes-widget-olympiad_json-parse-error")}},hasSeparator:function(){var e,t=this.get("data").data,a=null==t?void 0:t.find((function(e){return"countries"===e.type})),n=3===(null===(e=null==a?void 0:a.items)||void 0===e?void 0:e.length),i=null==a?void 0:a.items[2];return n&&"ru"===(null==i?void 0:i.alias)&&(null==i?void 0:i.place)>3}})},4979:function(e,t,a){"use strict";a.r(t);var n=a(21211),i=a(18440),r=a.n(i),m=a(5835),s=a.n(m),o=a(72727),l=a(93286);t.default=r().Block.extend({name:"themes-widget-souzmultfilm",template:s(),isolate:!1,defaults:{},events:{"click-marusia-link":"clickMarusiaLink","click-marusia-icon":"clickMarusiaIcon"},clickMarusia:function(e,t,a){var i=n.THEME_SOUZMULTFILM_MARUSIA.link,r=void 0===i?"":i;if(this.get("marusia-portal-enabled"))this.broadcast(e,t),(0,l.ZP)("th-wdgt-szmltflm-mrs_".concat(a));else(0,o.default)(r),(0,l.ZP)("th-wdgt-szmltflm-mrs_link")},clickMarusiaLink:function(){var e=n.THEME_SOUZMULTFILM_MARUSIA.command,t=void 0===e?"":e;this.clickMarusia("marusia:start:command",{command:t},"command")},clickMarusiaIcon:function(){this.clickMarusia("marusia:open",{},"open")}})},71795:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(58850),m=a.n(r),s=a(61799),o=a(93286),l=a(55426);t.default=i().Block.extend((0,s.Z)({events:[{name:"click-link",rename:"link"},{name:"click-friends",rename:"friends"},{name:"click-unread",rename:"unread"}]})({name:"themes-widget-vk",template:m(),isolate:!1,defaults:{authorized:!1,unread:0,friends:0,load:!1},blocks:{spinner:l.Z},getFriendsMessage:function(){var e=this.get("friends");if(!e)return i18n("нет новых друзей");var t={count:e};return i18n.plural(e,[i18n("{count} новых друзей",t),i18n("{count} новый друг",t),i18n("{count} новых друга",t)])},getNewMessagesMessage:function(){var e=this.get("unread");if(!e)return i18n("нет новых сообщений");var t={count:e};return i18n.plural(e,[i18n("{count} новых сообщений",t),i18n("{count} новое сообщение",t),i18n("{count} новых сообщения",t)])},didMount:function(){this.set({load:!0}),this.updateData()},updateData:function(){var e=this,t=new XMLHttpRequest;t.open("GET","https://vk.com/feed2.php?act=widget",!0),t.withCredentials=!0,t.onload=function(){var a,n;(0,o.ZP)(["vk-widget","request","ok"]);var i=JSON.parse(t.response);if(e.isMounted())if(200===t.status&&i.friends)e.set({load:!1,authorized:!0,unread:(null===(a=i.messages)||void 0===a?void 0:a.count)||0,friends:(null===(n=i.friends)||void 0===n?void 0:n.count)||0});else e.set({load:!1,authorized:!1})},t.onerror=function(){if((0,o.ZP)(["vk-widget","request","fail"]),e.isMounted())e.set({load:!1,authorized:!1})},t.send()}}))},88910:function(e,t,a){"use strict";a.r(t);var n=a(18440),i=a.n(n),r=a(80054),m=a.n(r),s=a(48250),o=a(90557),l=216,d=136;t.default=i().Block.extend({didMount:function(){this.onResize=this.onResize.bind(this),this.adaptiveHandler=new s.O({pureBreakpoints:!0,breakpoints:[{conditions:function(e){return e.width<d},props:{size:"tiny"}},{conditions:function(e){return e.width<l},props:{size:"short"}},{props:{size:"default"}}],onResize:this.onResize,element:this.el})},onResize:function(e){this.set(e)},name:"themes-widget",template:m(),defaults:{size:"default"},lazyBlocks:{"themes-widget-weather":o.ZZ,"themes-widget-football":o.Wt,"themes-widget-horoscope":o.yy,"themes-widget-rick-morty":o.uO,"themes-widget-new-year":o.Bo,"themes-widget-new-year-2023":o.Os,"themes-widget-star-wars":o.YC,"themes-widget-warface":o.w2,"themes-widget-epicenter":o.nJ,"themes-widget-cloudy":o.C5,"themes-widget-letter":o.$S,"themes-widget-serenity":o.nM,"themes-widget-spartak-fc":o.f5,"themes-widget-lost-ark":o.mD,"themes-widget-item":o.Yo,"themes-widget-cloudy-remake":o.es,"themes-widget-iihf":o.E6,"themes-widget-euro-2020":o.OE,"themes-widget-olympiad-2021":o.eX,"themes-widget-souzmultfilm":o.fY,"themes-widget-ok":o.AQ,"themes-widget-vk":o.HE}})},74528:function(e,t,a){"use strict";a.r(t);var n=a(21211),i=a(18440),r=a.n(i),m=a(94067),s=a.n(m);t.default=r().Block.extend({name:"widget-calendar",template:s(),title:i18n("Календарь"),blocks:{},defaults:{calendarUrl:n.USE_X_CALENDAR?n.WIDGET_X_CALENDAR_URL:n.WIDGET_CALENDAR_URL,day:(new Date).getDate(),variant:""},dateTimer:null,onDateTimer:function(){this.set("day",(new Date).getDate())},checkSpecialThirdSeptember:function(){if(!n.SPECIAL_THIRD_SEPTEMBER)return!1;var e=new Date,t=e.getDate(),a=e.getMonth()+1;return 3===t&&9===a},didMount:function(){this.onDateTimer=this.onDateTimer.bind(this),this.dateTimer=window.setInterval(this.onDateTimer,2e3)},didUnmount:function(){window.clearInterval(this.dateTimer)}})}}]);

@@ -1,0 +1,13 @@
+[t200]
+SnapshotXmlFile=snapshot_200.xml
+FileName1=t200.gif
+URL1=https://reklama.mail.ru/d17184638.gif
+Total=2
+RequestHeaderFile=t200_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t200_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t200_1a4a7a900fa2.svg
+URL2=https://home.imgsmail.ru/resplash/191759/i/icons/1a4a7a900fa2.svg

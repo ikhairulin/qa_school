@@ -1,0 +1,8 @@
+"{\"channelExpireTime\":\"Wed, 20 Nov 2024 18:42:13 GMT\",\"channelurl\":\"https://wns2-db5p.no"
+"tify.windows.com/w/?token=BQYAAABOoRm5h1NMhfv6yqOqKSMyy%2bAwL5jxcOmvRexScKGLAPOG%2fv3q93A3x%2b"
+"ztOQd2evLJq0fFx9r1GuB9dpzNRVzT%2fTyI2RQDZeQ56Yi7ygqk3AqKvf%2bPtfXcUQ5hu69SWvpZtFk9V8UZ0i6HRz4n"
+"iJz9lzIeOkulJQQq8FLqAjlXeINmGdu1Wcm3XxnxKRSKjausTsUxM0%2fKC2%2f9l4T%2b525VfpPx0zVVvpenEgM3nSSn"
+"woXrNmCfth%2bd3YUS0bHl4%2fw%3d\",\"deviceId\":\"chr:beWOhSdxuk9DOadDHb5i1A==\",\"publisherFilt"
+"ers\":[{\"activityTypes\":[64,65,66,67,70,71,72,75,77,79,82,103,106,108,109,112],\"application"
+"\":\"edge.activity.windows.com\",\"notificationType\":\"notificationOnly\",\"platform\":\"host"
+"\"}]}"

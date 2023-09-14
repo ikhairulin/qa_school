@@ -1,0 +1,15 @@
+OPTIONS https://corsapi.imgsmail.ru/calendar/graphql HTTP/1.1
+Accept: */*
+Access-Control-Request-Method: POST
+Access-Control-Request-Headers: authorization,content-type,x-email,x-last-mutation-age
+Origin: https://e.mail.ru
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Sec-Fetch-Mode: cors
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Host: corsapi.imgsmail.ru
+Connection: Keep-Alive
+

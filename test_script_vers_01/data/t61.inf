@@ -1,0 +1,13 @@
+[t61]
+FileName1=t61_smart.json
+URL1=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1694541670&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=454066b38097b4d198f3b828ebb3e383:PRiCZb-RoA33rQXLyek9Vqf4fgalX8zylO3D5pngOSt7InRpbWUiOjE2OTQ1NDE2NzYsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NzY4YWJiOWY1NWIxMTAyIn0&_=1694541693445
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_61.xml
+RequestHeaderFile=t61_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t61_ResponseHeader.txt
+FileName2=t61_3778-33c102bcbd142d255b77.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/3778-33c102bcbd142d255b77.bundle.js
+[ProtocolInfo]
+ProtocolId=QTWeb

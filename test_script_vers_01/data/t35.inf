@@ -1,0 +1,13 @@
+[t35]
+FileName1=t35.json
+URL1=https://ad.mail.ru/adp/?_SITEZONE=15&json=1&p=resplash&q=917709&isDarkTheme=0&rb_doodle=&notgb=1
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_35.xml
+RequestHeaderFile=t35_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t35_ResponseHeader.txt
+FileName2=t35_ads-async.html
+URL2=https://ad.mail.ru/static/ads-async.js
+[ProtocolInfo]
+ProtocolId=QTWeb

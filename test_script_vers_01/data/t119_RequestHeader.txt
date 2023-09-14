@@ -1,0 +1,15 @@
+GET https://likemore-go.imgsmail.ru/multimedia_pxt?doc_id=4495391823995661599&meta_info=eNoBJQDa%2FwoCEAFCHwi%2FvYXxnvOOzFwQiMLfqZYHGJbqs42z3svzcCgZMAEwxBFI&meta_type=doc&platform=auto&qid=25ae655b-9f83-409d-9463-c4e98b0d7112&source_id=4321147930496292046&stream_id=lenta_main_mail_ru_mediaproject&title_position=1&uh_vid=COE3ZTkAAAA%3D&url=https%3A%2F%2Fauto.mail.ru%2Farticle%2F89019-shtraf-za-obgon-peshehoda%2F%3Ffrommail%3Dft_ml&user_id=6672148380260589247&p=show HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: https://mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Host: likemore-go.imgsmail.ru
+

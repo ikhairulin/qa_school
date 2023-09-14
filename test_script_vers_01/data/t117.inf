@@ -1,0 +1,11 @@
+[t117]
+SnapshotXmlFile=snapshot_117.xml
+FileName1=t117.gif
+URL1=https://top-fwz1.mail.ru/counter?js=13;id=3217024;u=https%3A/mail.ru/%3Ffrom%3Dlogout;r=https%3A/e.mail.ru/;title=Mail.ru%3A%20%D0%BF%D0%BE%D1%87%D1%82%D0%B0%2C%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B2%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B5%2C%20%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%2C%20%D0%B8%D0%B3%D1%80%D1%8B;s=1920*1080;vp=1407*822;touch=0;hds=1;frame=0;flash=;sid=0674bd19ef65d35d;ver=60.3.0;tz=-180%2FEurope%2FMoscow;ni=5.3/4g/250/0/;detect=0;lvid=1694541598481%3A1694541772932%3A11%3A553445e0b86f410a9c140a2f163f9e39;visible=true;_=0.04862313267359042
+Total=1
+RequestHeaderFile=t117_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t117_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

@@ -1,0 +1,17 @@
+GET https://ad.mail.ru/adp/?_SITEZONE=10&_SITEID=105&start_time=1694542979953&version=octavius&exp_id=492&h=3800&w=240&DT_isDarkTheme=false&DT_siteBgColor=ffffff&DT_urlColor=999999&DT_hoverColor=000000&DT_bg=ffffff&DT_bgHover=ffffff&DT_borderColor=ffffff&DT_textColor=000000&DT_titleColor=005bd1&DT_titleHoverColor=333333&DT_listBg=f0f5ff&DT_listBgHover=f0f5ff&DT_listBorderColor=ffffff&DT_listTitleColor=005BD1&DT_listTitleHoverColor=333333&DT_listTextColor=93969B&DT_listButtonBgColor=ffffff&DT_listButtonTextColor=333333&DT_listButtonBorderColor=e2e2e1&DT_listButtonBorderHoverColor=005BD1&DT_listButtonTextHoverColor=005BD1&DT_listButtonBgHoverColor=ffffff&DT_sentMsgOkBg=ffffff&DT_sentMsgOkBgHover=ffffff&DT_sentMsgOkBorderColor=ffffff&DT_sentMsgOkTextColor=000000&DT_sentMsgOkTitleColor=005bd1&DT_sentMsgOkTitleHoverColor=333333&ponymode=0&in3paneMetathread=0&userid=petya.nikolayev.989%40mail.ru&rounded=1&fid=4890b7e46119182455d0e5342ecbc862&directLoadErrorCallback=directijockoipdze&isDarkTheme=0&q[]=231758 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+Accept: application/json, text/plain, */*
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Origin: https://e.mail.ru
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694542801428; tmr_lvid=5406c5c94f6ad3cb8258a9b550833ff8; tmr_lvidTS=1694542804112; p=RN0AAGzQf4UA; i=AQDbqwBlAgC9BwgEAYIVAYkNBQIBAA==; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; o=petya.nikolayev.989@mail.ru:2196:AAQ=.s; s=fver=0|ww=1422|wh=822|octavius=1; mtrc=%7B%22mytrackerid%22%3A52695%2C%22tmr_lvid%22%3A%225406c5c94f6ad3cb8258a9b550833ff8%22%7D; mrhc=mTGaDUWK7WOpi7aPZCurIl9Iqef0+vh1GPdNJg9ppqY=; Mpop=1694542880:015d794677420e611905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; b=m0wFAKA83GgCo6K2CokXVA1rFjgIAQAACJ9jOA0A; c=eqwAZQEAAHsTAAAUAAAACQAQ; VID=1bERwf1Og22K00000v1oT42K:::a1b04e0-0-0-a1b049f:CAASEIFrIxfLs2h2m_6kDpP8WVYaYIrGGXVvsoQVykYGKjBflLJg3ecEiT0f9vnEjY_gnuRh0ptTYY-KMrWOqaQG-SbmnvWiqHIYz_x66SWiaoPoSsFhH7lT75IerqGo8DuyZ2sH1MgffWw-M7ew7tV2mW3OFQ
+Host: ad.mail.ru
+

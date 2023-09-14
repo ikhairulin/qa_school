@@ -1,0 +1,15 @@
+[t19]
+FileName1=t19.html
+URL1=https://edge.microsoft.com/sync/v1/feeds/me/syncEntities/command/?client=Chromium&client_id=beWOhSdxuk9DOadDHb5i1A%3D%3D
+Total=3
+RequestHeaderFile=t19_RequestHeader.txt
+RequestBodyFile=t19_RequestBody.txt
+ResponseHeaderFile=t19_ResponseHeader.txt
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_19.xml
+FileName2=t19_06b8c4f3-d8f2-47b7-8423-d314058f4063.html
+URL2=https://msedgeextensions.sf.tlu.dl.delivery.mp.microsoft.com/filestreamingservice/files/06b8c4f3-d8f2-47b7-8423-d314058f4063?P1=1695145445&P2=404&P3=2&P4=J43NbN0Q7KVvfg5uBE%2fnzBUf%2b9GBIXIPxtTOYCOBO9xoLxVuaQIqpLSY4t1RljAJdsuJSo3cmwY85uCtql6Nhg%3d%3d
+FileName3=t19_logextensionreliability.txt
+URL3=https://edge.microsoft.com/extensionwebstorebase/v1/logextensionreliability?success=true&cv=qlHFwOnE4a9uVXXA2rg0/M&errorString=&crxId=eeebmbjgheefdiedpldnnmeaebkhhjfg&os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=116.0.1938.76&lang=ru&acceptformat=crx3,puff
+[ProtocolInfo]
+ProtocolId=QTWeb

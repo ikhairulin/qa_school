@@ -1,0 +1,11 @@
+[t130]
+FileName1=t130_multimedia_pxt.html
+URL1=https://likemore-go.imgsmail.ru/multimedia_pxt?doc_id=145599268972324002&meta_info=eNrjYnBi4mAAAAFgAFc%3D&meta_type=doc&platform=kino&qid=0d609d2e-9698-446a-88b4-5e1896e2fc7c&source_id=3678888710876365284&stream_id=lenta_main_mail_ru_mediaproject&title_position=1&url=https%3A%2F%2Fkino.mail.ru%2Fnews%2F58461_putin_raskril_kolichestvo_uehavshih_iz_rossii_artistov%2F%3Ffrom%3Dmr_news%26frommail%3Dft_ml&p=show
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_130.xml
+RequestHeaderFile=t130_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t130_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

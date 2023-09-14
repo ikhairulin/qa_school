@@ -1,0 +1,413 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[2387],{90759:function(e,t,n){var a,i;a=[n(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<span bem:elem="icon">
+		<b:attach-icon name="{attrs.model.getExtension()}"/>
+	</span>
+	<span bem:elem="text">{attrs.model.get('name')}</span>
+</div>
+`,"./app/ui-block/attach-filename/attach-filename.html")}.apply(t,a))||(e.exports=i)},9596:function(e,t,n){var a,i;a=[n(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<bem:mod name="{attrs.name}"/>
+	<b:react-async
+		component="AttachIcon"
+		componentClass="{_this.lazyAttachIcon()}"
+		iconType="{_this.getIconType()}"
+	/>
+</div>
+`,"./app/ui-block/attach-icon/attach-icon.html")}.apply(t,a))||(e.exports=i)},56039:function(e,t,n){var a,i;a=[n(18440)],void 0===(i=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div qa:id="layer-sent-page">
+	<fn:var name="message" value="{attrs.model}"/>
+	<fn:var name="messageAttachments" value="{_this.getAttachments()}"/>
+	<fn:var name="isReady" value="{_this.isReady()}"/>
+	<fn:var name="slim" value="{attrs.slim}"/>
+	<fn:var name="messages" value="{_this.getMessages()}"/>
+	<fn:var name="timerValueText" value="{_this.get('delivery-cancel-timer-text')}"/>
+	<fn:var name="isNotifyVersion" value="{_this.get('is-notify-version')}"/>
+	<fn:var name="isDeliveryCancelVersion" value="{_this.get('is-delivery-cancel-version')}"/>
+	<fn:var name="cancellationResultText" value="{_this.get('cancellation-result-text')}"/>
+	<fn:var name="cancellationOver" value="{_this.get('is-cancellation-over')}"/>
+	<fn:var name="cancellationWithDraft" value="{_this.get('cancellation-with-draft')}"/>
+	<fn:var name="cancelShortcut" value="{_this.getCancelShortcut()}"/>
+	<fn:var name="cancellationInProgress" value="{_this.get('is-cancellation-progress')}"/>
+	<fn:var name="isLetterCanceled" value="{_this.get('is-letter-canceled')}"/>
+	<fn:var name="openDraftFail" value="{_this.get('open-draft-fail')}"/>
+
+	<bem:mod name="slim" test="slim"/>
+	<bem:mod name="mobile" test="attrs.mobile"/>
+
+	<!-- Поле Кому -->
+	<fn:match name="correspondents" args="contactString, dir">
+		<fn:var name="contacts" value="{_this.getContactList(contactString)}"/>
+		<fn:var name="contactList" value="{contacts}"/>
+
+		<fn:for data="contactList" as="contact" key="contactKey">
+			<fn:var name="key" value="{_this.getContactKey(contactKey, dir)}"/>
+
+			<span
+				title="{contact.email}"
+				data-id="{key}"
+				bem:elem="contact-item"
+				key="{key}">
+
+				<fn:value mod="correspondent">contact</fn:value>
+				<fn:value>contactKey === contactList.length - 1 ? ' ': ', '</fn:value>
+			</span>
+		</fn:for>
+	</fn:match>
+
+	<!-- Поле получателей -->
+	<fn:if test="!isDeliveryCancelVersion">
+		<fn:match name="recipients" args="message, more, expanded">
+			<div bem:elem="recipients">
+				<bem:mod name="more" value="{more > 0}"/>
+				<bem:mod name="expanded" value="{expanded}"/>
+
+				<div bem:elem="recipients-container" ref="recipients">
+					<span bem:elem="recipient" fn:if="message.get('correspondents.to.length')">
+						<span bem:elem="recipient-field">{i18n(\'Кому\')}: </span>
+						<fn:apply-match name="correspondents" args="message.get('to'), 'to'"/>
+					</span>
+
+					<span bem:elem="recipient" fn:if="message.get('correspondents.cc.length')">
+						<span bem:elem="recipient-field">{i18n(\'Копия\')}: </span>
+						<fn:apply-match name="correspondents" args="message.get('cc'), 'cc'"/>
+					</span>
+
+					<span bem:elem="recipient" fn:if="message.get('correspondents.bcc.length')">
+						<span bem:elem="recipient-field">{i18n(\'Скрытая\')}: </span>
+						<fn:apply-match name="correspondents" args="message.get('bcc'), 'bcc'"/>
+					</span>
+				</div>
+
+				<div
+					bem:elem="recipients-more"
+					fn:if="more > 0 && !expanded"
+					remit:click="recipients-more:click">
+					<fn:var name="contextMore" value="{Object.fromEntries([['more', more]])}"/>
+					<fn:value output="raw">messages.more(contextMore)</fn:value>
+				</div>
+
+				<div
+					bem:elem="recipient-more"
+					fn:if="more > 0 && expanded"
+					remit:click="recipients-more:click">
+					<span class="layer__link">{i18n(\'Свернуть\')}</span>
+				</div>
+			</div>
+		</fn:match>
+	</fn:if>
+
+	<fn:match name="controls" args="message, type" qa:id="controls">
+		<div bem:elem="controls">
+			<b:button2
+				fn:if="type === 'error'"
+				text="{i18n(\'Отправить ещё раз\')}"
+				event:details="message"
+				remit:click="resend"
+				qa:id="resend"
+			/>
+			<b:button2
+				fn:if="type === 'error'"
+				text="{i18n(\'Вернуться к письму\')}"
+				event:details="message"
+				remit:click="compose-back"
+				qa:id="compose-back"
+			/>
+
+			<fn:if test="isDeliveryCancelVersion">
+				<div bem:elem="cancel">
+					<fn:if test="!cancellationOver && !cancellationInProgress">
+						<b:button2
+							text="{timerValueText}"
+							title="{i18n(\'Отменить отправку\')}"
+							remit:click="cancel"
+							shortcut="ctrl+z|command+z"
+							qa:id="cancel"
+						/>
+
+						<p bem:elem="cancel-combination">{cancelShortcut}</p>
+					</fn:if>
+
+					<fn:if test="cancellationInProgress">
+						<b:button2
+							text="{i18n(\'Идёт отмена отправки...\')}"
+							qa:id="cancel-progress"
+						/>
+					</fn:if>
+
+					<fn:if test="cancellationOver && cancellationWithDraft && !openDraftFail">
+						<b:button2
+							text="{i18n(\'Открываю черновик...\')}"
+							qa:id="draft-progress"
+						/>
+					</fn:if>
+
+					<fn:if test="cancellationOver && cancellationWithDraft && openDraftFail">
+						<b:button2
+							text="{i18n(\'Редактировать в черновике\')}"
+							qa:id="draft-open-fail"
+							remit:click="go-drafts"
+						/>
+					</fn:if>
+
+					<fn:if test="cancellationOver && !cancellationWithDraft">
+						<b:button2
+							text="{i18n(\'Перейти во входящие\')}"
+							remit:click="go-inbox"
+							qa:id="go-inbox"
+						/>
+					</fn:if>
+				</div>
+			</fn:if>
+
+			<fn:if test="!isDeliveryCancelVersion">
+				<fn:choose>
+					<!-- Шаблон сохраняется -->
+					<fn:when test="attrs['template-status'] === 'saving'">
+						<b:spinner small color="gray"/>
+					</fn:when>
+
+					<!-- Шаблон сохранили -->
+					<fn:when test="attrs['template-status'] === 'saved'">
+						<span bem:elem="template-saved">
+							<b:ico name="status:doneround"/>
+							<span>{i18n(\'Шаблон сохранён\')}</span>
+						</span>
+					</fn:when>
+
+					<!-- Сохранение в шаблон не нажали -->
+					<fn:otherwise>
+						<b:button2
+							text="{i18n(\'Сохранить в шаблон\')}"
+							event:details="message"
+							remit:click="template"
+							qa:id="template"
+						/>
+					</fn:otherwise>
+				</fn:choose>
+			</fn:if>
+		</div>
+	</fn:match>
+
+	<!-- Ссылка на звонок -->
+	<fn:match name="calls" args="message, link">
+		<div bem:elem="calls" qa:id="calls">
+			<fn:var name="calls" value="{message.get('calls')}"/>
+
+			<fn:if test="calls.length === 1">
+				<span>{i18n(\'Ссылка на видеозвонок:\')}</span>
+				<a
+					bem:elem="calls-link"
+					href="{calls[0]}"
+					target="_blank"
+					rel="noopener"
+					remit:click="calls-link"
+					qa:id="calls-link"
+				>
+					{calls[0]}
+				</a>
+				<span
+					bem:elem="calls-ico"
+					qa:id="copy"
+					remit:click="calls-copy"
+					ref="callsLinkCopy"
+					title="{i18n(\'Скопировать ссылку\')}"
+				>
+					<b:ico secondary name="actions:copy" size="s"/>
+				</span>
+			</fn:if>
+
+			<fn:if test="calls.length > 1 && !!link">
+				<span>{i18n(\'В письме есть несколько ссылок на звонки.\') }</span>
+				<a
+					bem:elem="calls-link"
+					remit:click="calls-message-link"
+					href="{link}"
+					rel="noopener"
+					qa:id="calls-message-link"
+				>
+					{i18n(\'Перейти в письмо\')}
+				</a>
+			</fn:if>
+		</div>
+	</fn:match>
+
+	<!-- Поле аттачей -->
+	<fn:if test="!isDeliveryCancelVersion">
+		<fn:match name="attachments" args="attachments, more, expanded">
+			<div bem:elem="attachments" qa:id="attachments:{attachments.length}">
+				<bem:mod name="more" value="{more > 0}"/>
+				<bem:mod name="expanded" value="{expanded}"/>
+
+				<div bem:elem="attachments-container" ref="attachments">
+					<fn:for data="attachments" as="attach" key="attachKey">
+						<fn:var name="key" value="{_this.getAttachKey(attachKey)}"/>
+						<span
+							key="{key}"
+							bem:elem="attach-item"
+							data-id="{key}">
+							<b:attach-filename model="{attach}"/>
+						</span>
+					</fn:for>
+				</div>
+
+				<div
+					bem:elem="attachments-more"
+					fn:if="more > 0 && !expanded"
+					remit:click="attachments-more:click">
+					<fn:var name="contextMore" value="{Object.fromEntries([['more', more]])}"/>
+					<fn:value output="raw">messages.more(contextMore)</fn:value>
+				</div>
+
+				<div
+					bem:elem="attachments-more"
+					fn:if="more > 0 && expanded"
+					remit:click="attachments-more:click">
+					<span class="layer__link">{i18n(\'Свернуть\')}</span>
+				</div>
+			</div>
+		</fn:match>
+	</fn:if>
+
+	<!-- Рекламный баннер -->
+	<fn:match name="banner">
+		<div bem:elem="banner" ref="banner" qa:id="banner"></div>
+	</fn:match>
+
+	<!-- Лейер не рисуем, если нужен только notify -->
+	<fn:if test="!isNotifyVersion">
+		<fn:if test="!attrs.mobile">
+			<b:layer
+					remit:close="close"
+					hiddenfooter="{attrs['hide-ads']}"
+					close
+					header
+					media
+					compose
+					wide="{!slim}"
+					size="{slim ? 'm' : ''}"
+					center>
+
+				<fn:match name="header">
+					<fn:if test="!attrs.error">
+						<fn:if test="!isReady">
+							<div qa:id="is-in-progress">
+								{i18n(\'Письмо отправляется...\')}
+							</div>
+						</fn:if>
+						<fn:if test="isReady">
+							<fn:choose>
+								<fn:when test="attrs.isLateSent">
+									<div qa:id="is-schedule-sent">
+										{messages.lateSent}
+									</div>
+								</fn:when>
+
+								<fn:otherwise>
+									<a
+											bem:elem="link"
+											href="{attrs.link}"
+											remit:click="link:click"
+											qa:id="is-sent"
+											fn:if="!isLetterCanceled"
+									>
+										{messages.sent}
+									</a>
+
+									<a
+											bem:elem="link"
+											href="{attrs.link}"
+											remit:click="link:click"
+											qa:id="is-canceled"
+											fn:if="isLetterCanceled"
+									>
+										{cancellationResultText}
+									</a>
+								</fn:otherwise>
+							</fn:choose>
+						</fn:if>
+					</fn:if>
+					<fn:if test="attrs.error">
+						<div qa:id="error">
+							{i18n(\'При отправке письма произошла ошибка\')}
+						</div>
+					</fn:if>
+				</fn:match>
+				<fn:match name="content">
+					<fn:if test="!isReady && !attrs.error">
+						<b:spinner/>
+					</fn:if>
+
+					<fn:if test="isReady || attrs.error">
+						<fn:apply-match
+								name="recipients"
+								args="message, attrs['recipients-more'], attrs['recipients-expanded']"/>
+
+						<fn:apply-match
+								name="calls"
+								fn:if="!attrs['hide-calls'] && message.get('calls') && message.get('calls').length"
+								args="message, attrs.link"/>
+
+						<fn:apply-match
+								name="attachments"
+								fn:if="messageAttachments && messageAttachments.length"
+								args="messageAttachments, attrs['attachments-more'], attrs['attachments-expanded']"/>
+
+						<fn:apply-match
+								name="controls"
+								args="message, attrs.error ? 'error': 'ok'"/>
+					</fn:if>
+				</fn:match>
+				<fn:match name="footer">
+					<fn:apply-match name="banner"/>
+				</fn:match>
+			</b:layer>
+		</fn:if>
+
+		<fn:if test="attrs.mobile">
+			<b:layer-mobile media>
+				<fn:match name="header">
+				<span
+						bem:elem="back"
+						remit:click="layer:close">
+					<b:button2 text="{i18n(\'Назад\')}"
+							   ico="arrow-back"
+							   pure
+							   touch
+							   short
+							   text-center
+					/>
+				</span>
+					<span bem:elem="title">
+					<fn:choose>
+							<fn:when test="attrs.isLateSent">
+								{messages.lateSent}
+							</fn:when>
+							<fn:otherwise>
+								{messages.sent}
+							</fn:otherwise>
+						</fn:choose>
+				</span>
+				</fn:match>
+
+				<fn:match name="content">
+					<fn:apply-match
+							name="recipients"
+							args="message, 0, true"/>
+
+					<fn:apply-match
+							name="calls"
+							fn:if="!attrs['hide-calls'] && message.get('calls') && message.get('calls').length"
+							args="message, attrs.link"/>
+
+					<fn:apply-match
+							fn:if="messageAttachments.length"
+							name="attachments"
+							args="messageAttachments, 0, true"/>
+				</fn:match>
+
+				<fn:match name="footer">
+					<fn:apply-match name="banner"/>
+				</fn:match>
+			</b:layer-mobile>
+		</fn:if>
+	</fn:if>
+</div>
+`,"./app/ui-block/layer-sent-page/layer-sent-page.html")}.apply(t,a))||(e.exports=i)},72387:function(e,t,n){"use strict";n.r(t),n.d(t,{default:function(){return z}});var a=n(63876),i=n.n(a),s=n(99150),l=n(21211),c=n(18440),r=n.n(c),o=n(19008),m=n(37030),f=n(56039),d=n(54844),h=n(83183),u=n(90557),p=n(4872),v=n.n(p),g=n(39783),y=n.n(g),b=n(2335),k=n(50542),_=n(63062),x=n(61799),T=n(93286),C=n(77917),w=n(90759),P=n.n(w),A=n(9596),L=n.n(A),E=n(43845),D=n(51474),S=(0,E.pn)((function(){return n.e(9125).then(n.bind(n,19125)).then(u.MV)})),Z=r().Block.extend({name:"attach-icon",template:L(),lazyAttachIcon:S,blocks:{"react-async":D.Z},getParams:function(){return{type:"image"}},getIconType:function(){if(this.attrs.name)return this.attrs.name;else return""}}),M=r().Block.extend({name:"attach-filename",template:P(),blocks:{"attach-icon":Z}}),R=n(45114),q=n(12199),I=n(2613),O=n(80178),V=n(55426),N=function(){return(N=Object.assign||function(e){for(var t,n=1,a=arguments.length;n<a;n++)for(var i in t=arguments[n])if(Object.prototype.hasOwnProperty.call(t,i))e[i]=t[i];return e}).apply(this,arguments)},F={ok:i18n("Вы отменили отправку письма"),fail:i18n("Не удалось отменить отправку"),openDraft:i18n("Отправка отменена, открываем черновик"),openDraftFail:i18n("Не удалось открыть черновик")},z=c.Block.extend((0,x.Z)({events:["calls-link","calls-copy","calls-message-link"]})((0,C.withWelter)({name:"layer-sent-page",template:f,clipboard:null,mods:{correspondent:o.k0},blocks:{layer:I.Z,"attach-filename":M,button2:R.Z,"layer-mobile":O.default,spinner:V.Z,ico:q.Z},events:{"attachments-more:click":"onAttachmentsToggle","recipients-more:click":"onRecipientsToggle","link:click":"onLinkClick","calls-message-link":"onLinkClick",close:"onClose",resend:"onResend","compose-back":"onComposeBack",template:"onTemplate","calls-copy":"onCallsCopyClick",cancel:"onCancel","go-inbox":"goToInboxFolder","go-drafts":"openDraft"},defaults:{mobile:!1,visible:!1,responsive:!0,isLateSent:!1,lateSentText:"",model:null,loading:!1,error:!1,"delay-visible":l.LAYER_SENT_PAGE_CONFIG.delayVisible,"hide-ads":l.HIDE_TOYS===l.BL_PROP_NAME,"hide-calls":l.DISABLE_CALLS_ON_SENT_PAGE,"loader-timeout-exceeded":!1,"visibility-timeout-exceeded":!1,"template-status":"idle","promo-disabled":!1,"attachments-more":0,"attachments-expanded":!1,"recipients-more":0,"recipients-expanded":!1,"last-recipients-id":"","last-attachments-id":"","is-notify-version":!1,"is-delivery-cancel-version":!1,"delivery-cancel-timer-text":null,"cancellation-result-text":F.ok,"cancellation-interval":null,"is-cancellation-over":!1,"cancellation-with-draft":!1,"is-cancellation-progress":!1,"is-letter-canceled":!1,"timer-start":0,"prev-timer-value":0,"cancel-lifetime":0,"open-draft-fail":!1},attrChanged:{visible:function(){this.isReady()&&this.redraw()},loading:function(){if(this.isMounted()){if(this.isReady())this.redraw();this.setVisibilityTimeout()}},error:function(e){if(e)this.is("visible")&&this.redraw(),clearTimeout(this.visibleTimer)},mobile:function(){this.isReady()&&this.redraw(!0)},model:function(e){this._attachments=e.attachments.filter((function(e){return!e.isInline()}))},"loader-timeout-exceeded":function(){this.isReady()&&this.redraw()},"visibility-timeout-exceeded":function(){if(this.isReady())(0,T.ZP)("sent_close_timeout"),this.onClose()}},isReady:function(){return this.is("visible")&&!this.is("loading")&&!this.is("error")&&(this.is("loader-timeout-exceeded")||!this.loadingTimer)},redraw:function(e){var t=this;if(void 0===e)e=!1;if(this.hideElements("attachments","layer-sent-page__attach-item",e),this.hideElements("recipients","layer-sent-page__contact-item",e),this.clipboard)this.clipboard.destroy();var n=this.refs.callsLinkCopy;if(n){var a=this.get("model"),i=null==a?void 0:a.get("calls");if(!i||!i.length)return(0,T.ZP)([this.name,"calls","error","no-link-to-copy"]);n.setAttribute("data-clipboard-text",i[0]),(0,u.Zz)().then((0,u.qh)(this,(function(e){t.clipboard=t.isMounted()?new e(n):null})))}this.sendCallsRadar()},hideElements:function(e,t,n){if(void 0===n)n=!1;var a=this.refs[e];if(a){var i=a.offsetWidth;if((n||!this.get("".concat(e,"-more")))&&a.scrollWidth>i){for(var s=a.getElementsByClassName(t),l=0;l<s.length&&s[l].offsetLeft+s[l].offsetWidth<i;)l++;if(l!==s.length)this.set("".concat(e,"-more"),s.length-l-1),this.set("last-".concat(e,"-id"),this.get("".concat(e,"-more"))>0?s[l].getAttribute("data-id"):"")}(0,T.ZP)([this.name,e,"more",this.is("".concat(e,"-more")).toString()])}},onAttachmentsToggle:function(){this.set("attachments-expanded",!this.is("attachments-expanded")),(0,T.ZP)([this.name,"attachments","more","click"])},onRecipientsToggle:function(){this.set("recipients-expanded",!this.is("recipients-expanded")),(0,T.ZP)([this.name,"recipients","more","click"])},onLinkClick:function(){var e=this;(0,T.ZP)([this.name,"link"]),this.get("router").nav(this.get("link")).then((function(){e.onClose()}))},onResend:function(){var e=this,t=this.get("model");this.set({loading:!0,error:!1}),(0,T.ZP)([this.name,"resend","click"]),t.send().then((function(t){e.broadcast("resent",{sentMessage:t}),(0,T.ZP)([e.name,"resend","ok"])})).catch((function(){e.set("error",!0),(0,T.ZP)([e.name,"resend","fail"])}))},onComposeBack:function(){var e=this.get("model");e.set("finalized",!1),k.default.add(e),(0,T.ZP)([this.name,"compose-back","click"]),this.broadcast("layer:close",{type:"compose-back"})},prepareModelForTemplate:function(){var e=this.get("model");return y().findOne({id:this.get("sent-id"),remove_emoji_opts:h.Y}).then((function(t){return e.reattach({sync_space_left:!0,sync_attachments:!0,reset_attachments:!0,source_model:t,force:!0})}))},onTemplate:function(){var e=this,t=this.name;(0,T.ZP)([t,"template","click"]),this.set("template-status","saving"),this.clearTimeouts();var n=this.get("model");this.prepareModelForTemplate().then((function(){return n.save({template:!0})})).then((function(){if((0,T.ZP)([t,"template","ok"]),e.isMounted())e.set("template-status","saved"),e.setVisibilityTimeout();else _.default.add({text:i18n("Сохранено в шаблоны")});s.default.updateAll()})).catch((function(){if(e.isMounted())e.broadcast("layer:close"),e.set("template-status","idle");(0,T.ZP)([t,"template","fail"]),_.default.add({type:_.default.types.error,text:i18n("Что-то пошло не так")})}))},clearCancellationInterval:function(){var e=this.get("cancellation-interval");if(e)clearInterval(e),this.set("cancellation-interval",null)},forceDelivery:function(){var e=this.get("model"),t=e.get("delivery_forced"),n=e.get("delivery_canceled"),a=e.get("cancellation_token");if(!t&&!n&&a)e.forceDelivery().then((function(e){var t=e.success?"suc":"err";(0,T.ZP)("del_force_".concat(t))})).catch((function(e){(0,T.ZP)({type:"del_force_fail",rlog:"del_force_fail",rlog_message:e})}))},onCancel:function(){var e=this;(0,T.ZP)({type:"del_cancel_click",value:this.get("time-difference")}),this.set("is-cancellation-progress",!0);var t=this.get("cancellation-notify");null==t||t.close(),clearTimeout(this.visibleTimer);var n=this.get("model");n.cancelDelivery().then((function(t){var a=t.success,i=t.error,s=!e.get("cancellation-interval"),l=a&&!s?[F.ok,"ok"]:[F.fail,"error_".concat(i)],c=l[0],r=l[1],o=a&&n.get("draft_id");if(e.set({"cancellation-result-text":c,"is-cancellation-over":!0,"cancellation-with-draft":o,"is-cancellation-progress":!1,"is-letter-canceled":!0}),e.get("is-notify-version"))_.default.add({text:a?F.openDraft:F.fail,qa:"cancellation-".concat(a?"ok":"fail","-notify")});if(e.clearCancellationInterval(),(0,T.ZP)("del_cancel_".concat(r)),o)e.openDraft()})).catch((function(t){if(e.set({"cancellation-result-text":F.fail,"is-cancellation-progress":!1,"is-letter-canceled":!0}),e.get("is-notify-version"))_.default.add({text:F.fail,qa:"cancellation-error-notify"});(0,T.ZP)({type:"del_cancel_fail",rlog:"del_cancel_fail",rlog_message:t})})).finally((function(){e.setVisibilityTimeout()}))},setTimerValues:function(e,t){if(!(e>=this.get("prev-timer-value")))if(this.get("is-notify-version")){var n=this.get("cancellation-notify");n&&_.default.setData(n,{actions:[{text:this.getCancelMsg(e)}]}),this.set({"time-difference":t,"prev-timer-value":e})}else this.set({"delivery-cancel-timer-text":this.getCancelMsg(e,!1),"time-difference":t,"prev-timer-value":e})},setCancellationTimer:function(){var e=this,t=this.get("cancel-lifetime"),n=setInterval((function(){var n=e.get("timer-start"),a=Math.round((Date.now()-n)/1e3),i=t-a,s=i+l.CANCELLATION_RESERVE_TIME;if(i<=0?e.onCancelTimerOver():e.setTimerValues(i,a),0===s)e.clearCancellationInterval()}),200);this.set({"timer-start":Date.now(),"delivery-cancel-timer-text":this.getCancelMsg(t,!1),"cancellation-interval":n,"prev-timer-value":t})},onClose:function(){if((null==this?void 0:this.el)&&!this.get("is-cancellation-progress"))this.broadcast("layer:close")},onBeforeHide:function(){this.clearTimeouts();var e=i().placement("sent");if(e)e.sleep();b.default.wakeUp("sent"),b.default.update();var t=(null==this?void 0:this.el)&&this.get("is-cancellation-progress");if(l.DELAY_FOR_CANCELLATION&&!t)this.forceDelivery();if(t)return{stopHiding:!0};this.broadcast("layer:on-before-hide")},onCancelTimerOver:function(){if(!((null==this?void 0:this.el)&&this.get("is-cancellation-progress"))){this.set("is-cancellation-over",!0),this.forceDelivery();var e=this.get("cancellation-notify");null==e||e.close()}},showNotify:function(){var e=this.getMessages();if(this.get("is-delivery-cancel-version")){var t=_.default.add({text:e.sent,actions:[{text:this.getCancelMsg(this.get("cancel-lifetime"))}],qa:"letter-cancellation-notify",duration:this.get("cancel-lifetime")});t.on("action",this.onCancel.bind(this)),t.on("closed",this.onClose.bind(this)),this.set("cancellation-notify",t)}else _.default.add({text:this.get("isLateSent")?e.lateSent:e.sent,qa:"".concat(this.get("isLateSent")?"scheduled-":"","letter-sent-notify")})},didMount:function(){var e=this;if(i().placement("sent")){var t=i().placement("sent");t.attachToContainer(this.refs.banner),t.wakeUp(),t.render(!0).catch((function(){return null}))}var n=this.get("is-delivery-cancel-version");if(this.get("is-notify-version"))this.showNotify(),(0,u.BA)().then((function(t){if(e.mounted&&!e.keyLib)e.keyLib=t,t("command+z,ctrl+z",(function(){e.onCancel()}))}));if(n)(0,T.ZP)("cancel_on"),this.setCancellationTimer()},didUnmount:function(){if(this.clearTimeouts(),i().placement("sent"))i().placement("sent").destroy();if(this.clipboard)this.clipboard.destroy();if(this.clearCancellationInterval(),this.keyLib)this.keyLib.unbind("command+z,ctrl+z")},setVisibilityTimeout:function(){var e=this;this.visibleTimer=setTimeout((function(){e.set("visibility-timeout-exceeded",!0)}),this.get("delay-visible"))},clearTimeouts:function(){clearTimeout(this.loadingTimer),clearTimeout(this.visibleTimer)},getContactList:function(e){return(0,o.R0)(e)},getContactKey:function(e,t){return"contact-".concat(t,"-").concat(e)},getAttachKey:function(e){return"attach-".concat(e)},getAttachments:function(){return this._attachments},getMessages:function(){var e=this,t=!Object.values(m.Gh).find((function(t){return e.attrs.lateSentText.includes(t)}));return{more:function(e){return i18n("и {spanOpen}ещё {more}{spanClose}",N({"unsafe-spanOpen":'<span class="layer__link">',"unsafe-spanClose":"</span>"},e))},sent:i18n("Письмо отправлено"),lateSent:t?i18n("Ваше письмо будет отправлено {lateSentText}",{lateSentText:this.attrs.lateSentText}):i18n("Ваше письмо будет отправлено {lateSentTextWithoutPrefix}",{lateSentTextWithoutPrefix:this.attrs.lateSentText})}},onCallsCopyClick:function(){_.default.add({text:i18n("Ссылка скопирована")},"layer-window")},sendCallsRadar:function(){var e=this.get("model"),t=null==e?void 0:e.get("calls");if(this.get("hide-calls")||!t||!t.length)(0,T.ZP)([this.name,"show","no-calls"]);else if(1===t.length)(0,T.ZP)([this.name,"show","calls-one"]);else(0,T.ZP)([this.name,"show","calls-many"])},goToInboxFolder:function(){var e=this.get("router");null==e||e.go("#letters"),this.broadcast("layer:close"),(0,T.ZP)([this.name,"go","inbox"])},openDraft:function(){var e=this;(0,T.ZP)("cncl_draft_clk");var t=this.get("model");return y().fetchData({id:t.get("draft_id"),folder_id:v().DRAFTS,remove_emoji_opts:h.Y},!0,!0).then((function(t){(0,T.ZP)("cncl_draft_ok"),y().set([t]),e.set("open-draft-fail",!1),e.broadcast("compose:draft",new(y())(t)),e.onClose()})).catch((function(t){(0,T.ZP)({type:"cncl_draft_fail",rlog:"cncl_draft_fail",rlog_message:t}),e.set({"open-draft-fail":!0,"cancellation-result-text":F.openDraftFail})}))},getCancelShortcut:function(){return d.Z.mac?"CMD+Z":"CTRL+Z"},getCancelMsg:function(e,t){if(void 0===t)t=!0;var n=l.LETTER_SEND_CANCEL_TIMER_DISPLAY_TIME_AT_THE_END;if(n>0&&e<=n)return t?i18n("Отменить {timerValue}",{timerValue:e}):i18n("Отменить отправку {timerValue}",{timerValue:e});else return t?i18n("Отменить"):i18n("Отменить отправку")}})))}}]);

@@ -1,0 +1,11 @@
+[t196]
+FileName1=t196_smart.json
+URL1=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1694542970&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=43e9d5bd0703c489ba2b530cd27a7ea6:slSWBGQD1wQqcGORgZbv9ssqlmtB7Fg6BT0nJBYkNcN7InRpbWUiOjE2OTQ1NDI5MTIsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NTI2ZjQ1MTY5ZDY4YmYzIn0&_=1694542990483
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_196.xml
+RequestHeaderFile=t196_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t196_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

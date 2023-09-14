@@ -1,0 +1,15 @@
+[t21]
+SnapshotXmlFile=snapshot_21.xml
+FileName1=t21.gif
+URL1=https://mail.ru/api/v1/utils/xray/batch?p=resplash&pgid=lmgmayaw.sqn&o_v=1792
+Total=3
+RequestHeaderFile=t21_RequestHeader.txt
+RequestBodyFile=t21_RequestBody.txt
+ResponseHeaderFile=t21_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t21_app-b60372b2.html
+URL2=https://home.imgsmail.ru/resplash/191759/j/app-b60372b2.js
+FileName3=t21_05c57a900fa2.svg
+URL3=https://home.imgsmail.ru/resplash/191759/i/icons/05c57a900fa2.svg

@@ -1,0 +1,21 @@
+GET https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi&afterReload=1 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-full-version: "116.0.1938.76"
+sec-ch-ua-platform: "Windows"
+sec-ch-ua-platform-version: "10.0.0"
+sec-ch-ua-model: ""
+sec-ch-ua-full-version-list: "Chromium";v="116.0.5845.180", "Not)A;Brand";v="24.0.0.0", "Microsoft Edge";v="116.0.1938.76"
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Referer: https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694542801428; tmr_lvid=5406c5c94f6ad3cb8258a9b550833ff8; tmr_lvidTS=1694542804112; p=RN0AAGzQf4UA; mtrc=%7B%22mytrackerid%22%3A58519%2C%22tmr_lvid%22%3A%225406c5c94f6ad3cb8258a9b550833ff8%22%7D; i=AQDbqwBlAgC9BwgEAYIVAYkNBQIBAA==; b=m0wDAKBx54QCOYx+Ch8BHA0BAAAI; c=D6wAZQAAAHHnhAIRAAQAHgABAAIA; VID=1bERwf1Og22K00000v1oT42K:::0-0-0-a1b049f:CAASEPKkS7O-4opbYIzwUnJ7n20aYIfeVoiHtayPT3fMEx881ZPWOC3OYEA8jm-sfmRPsVm5g_tyENmJezJcskJRwTFk6prcFhLXI5T1Njxeg_47rH0W_wLHsplV34j1pxe6aek1PjBFSTEEpsaejh4OYt_TRQ; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; Mpop=1694542870:015d794677420e611905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; sdcs=sl1:1694542870:bWFG7phxWKv8DlG30zc5ea0H6iqZ6ai2PQZEjVESRzU; mrhc=7tHCKqx/tPMBLowNw38u/7fCPVWQ8dMvN49Vko/IoSM=; o=petya.nikolayev.989@mail.ru:2196:AAQ=.s; s=fver=0|ww=1422|wh=822|octavius=1
+Host: e.mail.ru
+

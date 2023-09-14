@@ -1,0 +1,11 @@
+[t140]
+SnapshotXmlFile=snapshot_140.xml
+FileName1=t140.gif
+URL1=https://rs.mail.ru/d26047874.gif?sz=49&rnd=157692127&ts=1694542854&sz=49
+Total=1
+RequestHeaderFile=t140_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t140_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

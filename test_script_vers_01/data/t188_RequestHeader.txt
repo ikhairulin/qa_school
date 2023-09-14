@@ -1,0 +1,21 @@
+GET https://e.mail.ru/api/v1/messages/delivery/force?cancellation_token=AG_z8JIH1laNSUFhZAMgYnuQ&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=43e9d5bd0703c489ba2b530cd27a7ea6:slSWBGQD1wQqcGORgZbv9ssqlmtB7Fg6BT0nJBYkNcN7InRpbWUiOjE2OTQ1NDI5MTIsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NTI2ZjQ1MTY5ZDY4YmYzIn0&_=1694542976295 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-full-version: "116.0.1938.76"
+Accept: application/json, text/plain, */*
+sec-ch-ua-platform-version: "10.0.0"
+sec-ch-ua-full-version-list: "Chromium";v="116.0.5845.180", "Not)A;Brand";v="24.0.0.0", "Microsoft Edge";v="116.0.1938.76"
+sec-ch-ua-model: ""
+X-Request-Id: 94cc67b9-bf2a-dbb2-cf4f-a787d8f52b5
+sec-ch-ua-platform: "Windows"
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694542801428; tmr_lvid=5406c5c94f6ad3cb8258a9b550833ff8; tmr_lvidTS=1694542804112; p=RN0AAGzQf4UA; i=AQDbqwBlAgC9BwgEAYIVAYkNBQIBAA==; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; sdcs=sl1:1694542870:bWFG7phxWKv8DlG30zc5ea0H6iqZ6ai2PQZEjVESRzU; o=petya.nikolayev.989@mail.ru:2196:AAQ=.s; s=fver=0|ww=1422|wh=822|octavius=1; mtrc=%7B%22mytrackerid%22%3A52695%2C%22tmr_lvid%22%3A%225406c5c94f6ad3cb8258a9b550833ff8%22%7D; gmt=3; mrhc=mTGaDUWK7WOpi7aPZCurIl9Iqef0+vh1GPdNJg9ppqY=; tmr_detect=0%7C1694542875941; Mpop=1694542880:015d794677420e611905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; b=m0wFAKA83GgCo6K2CokXVA1rFjgIAQAACJ9jOA0A; c=eqwAZQEAAHsTAAAUAAAACQAQ; VID=1bERwf1Og22K00000v1oT42K:::a1b04e0-0-0-a1b049f:CAASEAkri-QbDm7vUray_67WFAoaYKbSOtbEsnM0gUcgZsM6bfpOI6VG8lU42T3u8JsJJy6oiv3X1cukruGtdjNhH_8zgu6CZxQlah9cLBjEhjAT70O8orJrJuYfxXUVCzPQAcQ2XdLVuix-UuLXpilRnDSF2A
+Host: e.mail.ru
+

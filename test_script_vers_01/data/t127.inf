@@ -1,0 +1,11 @@
+[t127]
+FileName1=t127_117521a101e5055530708050c541a0c4208665c09505d570701020c5c09050552.json
+URL1=https://mail.ru/res/117521a101e5055530708050c541a0c4208665c09505d570701020c5c09050552
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_127.xml
+RequestHeaderFile=t127_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t127_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

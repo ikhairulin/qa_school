@@ -1,0 +1,15 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Tue, 12 Sep 2023 18:21:11 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 429
+Connection: keep-alive
+accept-ranges: bytes
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST
+access-control-allow-origin: https://e.mail.ru
+set-cookie: t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; Path=/; Domain=mail.ru; Expires=Sun, 10 Mar 2024 18:21:11 GMT
+x-mru-request-id: 3689eb1c-ea13-9108-9603-7805228a202c
+x-envoy-upstream-service-time: 7
+X-Host: spf5.m.smailru.net
+

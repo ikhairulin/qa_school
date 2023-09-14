@@ -1,0 +1,11 @@
+[t56]
+SnapshotXmlFile=snapshot_56.xml
+FileName1=t56.gif
+URL1=https://e.mail.ru/api/v1/utils/xray/batch?p=octavius&email=petya.nikolayev.989%40mail.ru&r=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1%26back%3D1%26from%3Dnavi&pgid=lmgmd0x3.k2d&o_ss=6379.w&o_v=2197
+Total=1
+RequestHeaderFile=t56_RequestHeader.txt
+RequestBodyFile=t56_RequestBody.txt
+ResponseHeaderFile=t56_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

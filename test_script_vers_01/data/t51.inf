@@ -1,0 +1,11 @@
+[t51]
+FileName1=t51.htm
+URL1=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgmchjb.grp&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi
+Total=1
+RequestHeaderFile=t51_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t51_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_51.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

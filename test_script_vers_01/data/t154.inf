@@ -1,0 +1,15 @@
+[t154]
+SnapshotXmlFile=snapshot_154.xml
+FileName1=t154.gif
+URL1=https://e.mail.ru/api/v1/utils/xray/batch?p=whiteline&email=petya.nikolayev.989%40mail.ru&r=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgn291q.7vi%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1%26back%3D1%26from%3Dnavi&pgid=lmgn2lii.9lj&o_ss=6379.w&o_v=2197
+Total=3
+RequestHeaderFile=t154_RequestHeader.txt
+RequestBodyFile=t154_RequestBody.txt
+ResponseHeaderFile=t154_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t154_initial-async-05dcee77f453ae8e910d.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/initial-async-05dcee77f453ae8e910d.bundle.js
+FileName3=t154_all.config.html
+URL3=https://imgs2.imgsmail.ru/themes.outsource/3.1.0/ru_RU/all.config.js

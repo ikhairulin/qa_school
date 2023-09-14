@@ -1,0 +1,25 @@
+HTTP/1.1 200 OK
+Content-Type: application/json; charset=utf-8
+Content-Encoding: gzip
+Vary: Accept-Encoding
+Set-Cookie: _C_ETH=1; expires=Mon, 11 Sep 2023 17:59:25 GMT; domain=.msn.com; path=/; secure; httponly,APP_ANON=A=2A75C0F207F193E58AD22C12FFFFFFFF; expires=Sun, 10 Mar 2024 17:59:25 GMT; domain=msn.com; path=/; secure; samesite=none; httponly,aace=%7b%22child%22%3a0%7d; expires=Sun, 10 Mar 2024 17:59:25 GMT; domain=msn.com; path=/; secure; samesite=none,els=%7b%22account_type%22%3a%22MSA%22%7d; expires=Sun, 10 Mar 2024 17:59:25 GMT; domain=msn.com; path=/; secure; samesite=none
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Headers: TicketType,RequestContinuationKey,AuthToken,Content-Type,x-client-activityid,ms-cv,signedInCookieName,muid,appid,User-Location,user-location,userauthtoken,usertickettype,sitename,s2sauthtoken,thumbprint,Authorization,Ent-Authorization,UserIdToken,DDD-TMPL,DDD-ActivityId,DDD-FeatureSet,DDD-Session-ID,Date,date,ads-referer,ads-referer,taboola-sessionId,taboola-sessionid,Akamai-Request-ID,Akamai-Server-IP,X-MSEdge-Ref,DDD-DebugId,s-xbox-token,OneWebServiceLatency,X-FD-Features,DDD-UserType,traceparent
+Access-Control-Allow-Methods: PUT,PATCH,POST,GET,OPTIONS,DELETE
+Access-Control-Allow-Origin: https://ntp.msn.com
+Access-Control-Expose-Headers: TicketType,RequestContinuationKey,AuthToken,Content-Type,x-client-activityid,ms-cv,signedInCookieName,muid,appid,User-Location,user-location,userauthtoken,usertickettype,sitename,s2sauthtoken,thumbprint,Authorization,Ent-Authorization,UserIdToken,DDD-TMPL,DDD-ActivityId,DDD-FeatureSet,DDD-Session-ID,Date,date,ads-referer,ads-referer,taboola-sessionId,taboola-sessionid,Akamai-Request-ID,Akamai-Server-IP,X-MSEdge-Ref,DDD-DebugId,s-xbox-token,OneWebServiceLatency,X-FD-Features,DDD-UserType,traceparent
+DDD-AuthenticatedWithJwtFlow: False
+DDD-UserType: PersonalMicrosoftAccount
+DDD-ActivityId: 6500a6fd-768f-49ac-aabc-7830cc9fbaee
+DDD-StrategyExecutionLatency: 00:00:00.0001130
+DDD-DebugId: 6500a6fd-768f-49ac-aabc-7830cc9fbaee|2023-09-12T17:59:25.9016255Z|fabric_auth|NEU1|Auth_19
+OneWebServiceLatency: 1
+X-MSEdge-ResponseInfo: 1
+X-Ceto-ref: 6500a6fd544f4c94a6e521e00fb33b3d|2023-09-12T17:59:25.897Z
+nel: {"report_to":"network-errors","max_age":604800,"success_fraction":0.001,"failure_fraction":1.0}
+report-to: {"group":"network-errors","max_age":604800,"endpoints":[{"url":"https://deff.nelreports.net/api/report?cat=msn"}]}
+X-Cache: CONFIG_NOCACHE
+Accept-CH: Sec-CH-UA-Arch, Sec-CH-UA-Bitness, Sec-CH-UA-Full-Version, Sec-CH-UA-Full-Version-List, Sec-CH-UA-Mobile, Sec-CH-UA-Model, Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version
+X-MSEdge-Ref: Ref A: DDE7F6147A604DAD976025A861ED6ABF Ref B: FRAEDGE1414 Ref C: 2023-09-12T17:59:25Z
+Date: Tue, 12 Sep 2023 17:59:25 GMT
+

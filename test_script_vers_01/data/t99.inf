@@ -1,0 +1,13 @@
+[t99]
+SnapshotXmlFile=snapshot_99.xml
+FileName1=t99.gif
+URL1=https://e.mail.ru/api/v1/utils/xray/batch?p=octavius&email=petya.nikolayev.989%40mail.ru&r=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1%26back%3D1%26from%3Dnavi&pgid=lmgmd0x3.k2d&o_ss=6379.w&o_v=2197
+Total=2
+RequestHeaderFile=t99_RequestHeader.txt
+RequestBodyFile=t99_RequestBody.txt
+ResponseHeaderFile=t99_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t99_7622-45ca16909aba0c3e96a9.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/7622-45ca16909aba0c3e96a9.bundle.js

@@ -1,0 +1,13 @@
+[t37]
+FileName1=t37.json
+URL1=https://edge.microsoft.com/extensioninstallverifier/v1.1/installverify
+Total=2
+RequestHeaderFile=t37_RequestHeader.txt
+RequestBodyFile=t37_RequestBody.txt
+ResponseHeaderFile=t37_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_37.xml
+FileName2=t37_logextensionreliability.txt
+URL2=https://edge.microsoft.com/extensionwebstorebase/v1/logextensionreliability?success=true&cv=qlHFwOnE4a9uVXXA2rg0/M&errorString=&crxId=kepdippgcikacmcdaijnponnfgljfbea&os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=116.0.1938.76&lang=ru&acceptformat=crx3,puff
+[ProtocolInfo]
+ProtocolId=QTWeb

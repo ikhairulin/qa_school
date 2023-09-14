@@ -1,0 +1,32 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[5933],{80660:function(t,s,e){var n,i;n=[e(18440)],void 0===(i=function(t){return t.smartParse(t.__FEAST_TEMPLATE__`<div>
+	<b:dropdown
+			id="unsubscribe-dropdown"
+			radar-id="unsubscribe"
+			text="{attrs['dropdown-button-text']}"
+			ico="status_block"
+			base
+			pure
+			touch="{attrs.touch}"
+			short="{attrs.touch || attrs.withoutText}"
+			remit:dropdown-change-state="expanded"
+			expand-left="{attrs['position-right']}"
+			auto-close="{false}"
+			ponymode="{attrs.ponymode}"
+			promoId="{attrs.promoId}"
+	>
+		<fn:match name="items" args="data">
+			<fn:if test="data.attrs.expanded">
+				<b:react-async
+						component="UnsubscribeDropdown"
+						onButtonClick="{_this.onUnsubscribeButtonClick.bind(_this)}"
+						onClose="{data.hide}"
+						senderName="{attrs.senderFrom}"
+						lettersCount="{attrs['sender-letters']}"
+						inProgress="{attrs['in-progress']}"
+						use:mediator="themes-manager"
+				/>
+			</fn:if>
+		</fn:match>
+	</b:dropdown>
+</div>
+`,"./app/ui-block/unsubscribe/unsubscribe.html")}.apply(s,n))||(t.exports=i)},75933:function(t,s,e){"use strict";e.r(s),e.d(s,{default:function(){return v}});var n=e(21211),i=e(18440),o=e.n(i),r=e(19008),a=e(80660),u=e.n(a),c=e(29404),d="unsubscribe_action",b="unsubscribe_read_action",l="unsubscribe_remove_action",p=e(66423),h=e.n(p),m=e(61799),_=e(93286),f=e(94993),g=e(51474),v=o().Block.extend((0,m.Z)({events:[{name:"unsubscribe",data:c.tA}]})({name:"unsubscribe",template:u(),isolateEvents:!1,mods:{correspondent:r.k0},blocks:{dropdown:f.Z,"react-async":g.Z},defaults:{"sender-letters":0,"dropdown-button-text":i18n("Отписаться от рассылки"),"is-component-visible":!1,"actions-finished":!1,"in-progress":!1},events:{expanded:"handleExpandEvent"},attrChanged:{"actions-finished"(t){if(t)this.ids["unsubscribe-dropdown"].hide(),this.set("in-progress",!1)},model(){if((0,_.ZP)({type:"unsubscribe_button_show",intervals:[["button_position",this._getPositionString()]]}),this.is("short"))this.set("dropdown-button-text",i18n("Отписаться"));if(n.UNSUBSCRIBE_COUNT_ALL)h().call("messages/count/all",{from:[this.get("senderFrom")],only_newsletters:!0}).then(t=>{var s=t.body.count;if(s)if(!this.is("is-component-visible"))this.set("sender-letters",s),(0,_.ZP)("unsubscribe_count_all-success")}).catch(t=>(0,_.ZP)("unsubscribe_count_all-error",t))}},onUnsubscribeButtonClick(t){var s=this.get("letterId"),e=this.get("senderFrom"),n=this.get("insteadSpamButton");switch(this.set("in-progress",!0),(0,_.ZP)({type:"unsubscribe_button_click",intervals:[["action_type",t],["button_position",this._getPositionString()]],dwh:{position:n?"portal-menu":"default",action_type:t}}),this.broadcast("unsubscribe",{ids:Array.isArray(s)?s:[s],position:n?"portal-menu":"default"}),t){case d:return;case l:this.broadcast("moveallfrom",{from:e});break;case b:this.broadcast("markallfrom",{from:e})}},handleExpandEvent(t){if(t.details){var s=t.details.state;if(s)(0,_.ZP)({type:"unsubscribe_open_click",intervals:[["button_position",this._getPositionString()]]});this.set("is-component-visible",s)}},_getPositionString(){return this.is("position-right")?"right":"left"}}))}}]);

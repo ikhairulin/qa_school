@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 12 Sep 2023 18:20:59 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 860
+Connection: keep-alive
+X-Elapsed: 2770261
+X-Host: fau39.m.smailru.net
+X-Host-Ver: 19bda5b4c
+X-Mru-Json-Status: 200
+X-Mru-Request-Id: 445497b542
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Critical-CH: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
+Accept-CH: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
+X-XSS-Protection: 1; mode=block; report=https://cspreport.mail.ru/xxssprotection
+Access-Control-Allow-Origin: https://account.mail.ru
+Access-Control-Allow-Credentials: true
+Vary: Origin
+

@@ -1,0 +1,8 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Length: 420
+Content-Type: application/json; charset=utf-8
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: DE2F16809DD54F33879BFFA4A3ACB3FB Ref B: STOEDGE1606 Ref C: 2023-09-12T18:00:25Z
+Date: Tue, 12 Sep 2023 18:00:25 GMT
+

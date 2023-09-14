@@ -1,0 +1,11 @@
+[t145]
+FileName1=t145.json
+URL1=https://account.mail.ru/api/v1/auth/qr/init?login=petya.nikolayev.989@mail.ru&page=https%3A%2F%2Fmail.ru%2F&redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgn291q.7vi%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1&source=polling
+Total=1
+RequestHeaderFile=t145_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t145_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_145.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

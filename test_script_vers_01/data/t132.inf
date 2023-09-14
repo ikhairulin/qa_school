@@ -1,0 +1,11 @@
+[t132]
+SnapshotXmlFile=snapshot_132.xml
+FileName1=t132.gif
+URL1=https://r3.mail.ru/k?fver=0&mh=81e4121baf7286eca0b199916eff4bfd&js=1
+Total=1
+RequestHeaderFile=t132_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t132_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

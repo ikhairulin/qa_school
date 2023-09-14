@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-ID:\Dev\qa_school\test_script_vers_01
+-IC:\Program Files (x86)\Micro Focus\LoadRunner\include
+-ed:\dev\qa_school\test_script_vers_01\\logfile.log
+d:\dev\qa_school\test_script_vers_01\\combined_test_chrome_copy.c
+d:\dev\qa_school\test_script_vers_01\\pre_cci.c

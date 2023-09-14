@@ -1,0 +1,9 @@
+[t1]
+SnapshotXmlFile=snapshot_1.xml
+FileName1=t1.xml
+URL1=https://edge.microsoft.com/extensionwebstorebase/v1/crx?os=win&arch=x64&os_arch=x86_64&nacl_arch=x86-64&prod=edgecrx&prodchannel=&prodversion=116.0.1938.76&lang=ru&acceptformat=crx3,puff&x=id%3Djmjflgjpcpepeafmmgdpfkogkghcpiha%26v%3D1.1.5%26installedby%3Dother%26uc&x=id%3Dodfafepnkmbhccpbejgmiehpchacaeak%26v%3D1.52.0%26installedby%3Dinternal%26uc&x=id%3Dhjahmhljhangdopcgjapldmcaiafpkhm%26v%3D3.4%26installedby%3Dinternal%26uc
+Total=1
+RequestHeaderFile=t1_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t1_ResponseHeader.txt
+ContentType=text/xml

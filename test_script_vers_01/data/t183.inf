@@ -1,0 +1,15 @@
+[t183]
+FileName1=t183.json
+URL1=https://e.mail.ru/api/v1/k8s/messages/send
+Total=3
+RequestHeaderFile=t183_RequestHeader.txt
+RequestBodyFile=t183_RequestBody.txt
+ResponseHeaderFile=t183_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_183.xml
+FileName2=t183_3225-14f1f04f68c44635f039.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/3225-14f1f04f68c44635f039.bundle.js
+FileName3=t183_5933-ef4d0438067b3515b2c8.bundle.html
+URL3=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/5933-ef4d0438067b3515b2c8.bundle.js
+[ProtocolInfo]
+ProtocolId=QTWeb

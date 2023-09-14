@@ -1,0 +1,15 @@
+[t60]
+FileName1=t60_unread.json
+URL1=https://e.mail.ru/api/v1/golang/messages/services/cleanmaster/unread?email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=454066b38097b4d198f3b828ebb3e383:PRiCZb-RoA33rQXLyek9Vqf4fgalX8zylO3D5pngOSt7InRpbWUiOjE2OTQ1NDE2NzYsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NzY4YWJiOWY1NWIxMTAyIn0&_=1694541692609
+Total=3
+ContentType=application/json
+SnapshotXmlFile=snapshot_60.xml
+RequestHeaderFile=t60_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t60_ResponseHeader.txt
+FileName2=t60_7550-62678b1c429469c53e00.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/7550-62678b1c429469c53e00.bundle.js
+FileName3=t60_sw_notifications.html
+URL3=https://e.mail.ru/sw_notifications.js
+[ProtocolInfo]
+ProtocolId=QTWeb

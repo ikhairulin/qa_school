@@ -1,0 +1,13 @@
+[t124]
+SnapshotXmlFile=snapshot_124.xml
+FileName1=t124.gif
+URL1=https://ad.mail.ru/i3465.gif
+Total=2
+RequestHeaderFile=t124_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t124_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t124_external.modern.html
+URL2=https://limg.imgsmail.ru/pkgs/whiteline/2.138.3/external.modern.js

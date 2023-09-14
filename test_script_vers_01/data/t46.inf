@@ -1,0 +1,13 @@
+[t46]
+SnapshotXmlFile=snapshot_46.xml
+FileName1=t46.gif
+URL1=https://account.mail.ru/api/v1/utils/xray/batch?p=thirdpty&split=s10273.b1s12743s&r=https%3A%2F%2Fmail.ru%2F&pgid=lmgmchwe.74a
+Total=2
+RequestHeaderFile=t46_RequestHeader.txt
+RequestBodyFile=t46_RequestBody.txt
+ResponseHeaderFile=t46_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t46_domain.txt
+URL2=https://vk.ru/domain.txt

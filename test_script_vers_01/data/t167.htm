@@ -1,0 +1,15 @@
+<!DOCTYPE html><html><head><meta charset="utf-8" />
+<script>
+		(function (source) {
+			var data = JSON.stringify({"type":"auth","detail":{"state":"cid%3D1%26e%3D__mailru_oauth_1694542874416_0.5112705781299065__","access_token":"e9b23cc22ade74b1999507a1b707cea367212e9837363830"}});
+
+			try {
+				source.proxyToSDK(data);
+			} catch (_) {
+				source.postMessage(data, "https://e.mail.ru");
+			}
+
+			window.close();
+		})(window.opener || window.parent);
+	</script>
+</head></html>

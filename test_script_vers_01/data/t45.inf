@@ -1,0 +1,13 @@
+[t45]
+SnapshotXmlFile=snapshot_45.xml
+FileName1=t45.gif
+URL1=https://top-fwz1.mail.ru/tracker?;js=13;id=3217024;e=RT/beat;sid=70e653c0cc29098a;ids=3217024%2C110605;ver=60.3.0;_=0.4557372182717969
+Total=2
+RequestHeaderFile=t45_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t45_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t45_ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIeCQsDi5f3ZGO0EgUN541ADhIFDf3zgxESBQ3OQUx6.txt
+URL2=https://edge.microsoft.com/autofillservice/v1/pages/ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIeCQsDi5f3ZGO0EgUN541ADhIFDf3zgxESBQ3OQUx6?alt=proto

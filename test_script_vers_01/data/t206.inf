@@ -1,0 +1,11 @@
+[t206]
+SnapshotXmlFile=snapshot_206.xml
+FileName1=t206.gif
+URL1=https://mail.ru/api/v1/utils/xray/batch?p=resplash&r=https%3A%2F%2Fe.mail.ru%2F&pgid=lmgn5ddd.qia&o_ss=6376%2C6387.w&o_v=1792
+Total=1
+RequestHeaderFile=t206_RequestHeader.txt
+RequestBodyFile=t206_RequestBody.txt
+ResponseHeaderFile=t206_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

@@ -1,0 +1,12 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 12 Sep 2023 18:01:24 GMT
+Content-Type: application/octet-stream
+Connection: keep-alive
+Expires: Tue, 12 Sep 2023 20:01:24 GMT
+Cache-Control: max-age=7200
+P3P: policyref="/w3c/p3p.xml", CP="NOI DSP COR NID PSAo PSDo OUR BUS UNI NAV STA INT"
+Access-Control-Allow-Origin: https://e.mail.ru
+Access-Control-Allow-Credentials: true
+Timing-Allow-Origin: *
+

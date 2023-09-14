@@ -1,0 +1,13 @@
+[t43]
+SnapshotXmlFile=snapshot_43.xml
+FileName1=t43.gif
+URL1=https://account.mail.ru/api/v1/utils/xray/batch?p=login&split=s10273.b1s12743s&r=https%3A%2F%2Fmail.ru%2F&pgid=lmgmchwe.74a
+Total=2
+RequestHeaderFile=t43_RequestHeader.txt
+RequestBodyFile=t43_RequestBody.txt
+ResponseHeaderFile=t43_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t43_a3f29483c88e9351eaca.png
+URL2=https://img.imgsmail.ru/pkgs/login.mail.ru/190898/images/a3f29483c88e9351eaca.png

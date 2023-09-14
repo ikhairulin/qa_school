@@ -1,0 +1,18 @@
+GET https://portal.mail.ru/NaviData?mac=1&Socials=1&ldata=1&target=1&_=1695362207359 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Origin: https://mail.ru
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=e9f3e265019548f9a8408cd6f4516322; oid=7GxAwvq4tsGfiJvy5AjT5; mrcu=9CFD6500A70C3E97B1BAFFFFFFFF; mrhc=PftQw+xfBijiz7e5poaKAdFE6/yJwtWJ+HCB4nFd6BY=
+Host: portal.mail.ru
+Connection: Keep-Alive
+

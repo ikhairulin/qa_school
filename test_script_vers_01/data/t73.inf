@@ -1,0 +1,13 @@
+[t73]
+FileName1=t73_smart.json
+URL1=https://e.mail.ru/api/v1/ab/smart?fields=[%22id%22,%22emails%22,%22display_name%22,%22priority%22,%22nick%22,%22name%22]&simple=true&limit=16&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=529c9d1f4373c9c018a208e6c4f13cd5:C9zExkM5ZbGzDJ7z4VLX6C5eUy_tR2xTQg33JsmFu4Z7InRpbWUiOjE2OTQ1NDE3MTIsInR5cGUiOiJjc3JmIiwibm9uY2UiOiJlMzdjZTE1M2EwYjdjYTAyIn0&_=1694541710085
+Total=2
+ContentType=application/json
+SnapshotXmlFile=snapshot_73.xml
+RequestHeaderFile=t73_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t73_ResponseHeader.txt
+FileName2=t73_emoji-list.html
+URL2=https://img.imgsmail.ru/hb/e.mail.ru/compose-emojilist/1.1.2/emoji-list.js
+[ProtocolInfo]
+ProtocolId=QTWeb

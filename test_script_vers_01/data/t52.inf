@@ -1,0 +1,11 @@
+[t52]
+SnapshotXmlFile=snapshot_52.xml
+FileName1=t52.gif
+URL1=https://xray.mail.ru/update?p=resplash&t=logo-ok-onpagehide&v=1&_=1694835473040
+Total=1
+RequestHeaderFile=t52_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t52_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

@@ -1,0 +1,11 @@
+[t18]
+FileName1=t18.html
+URL1=https://edge.microsoft.com/sync/v1/feeds/me/syncEntities/command/?client=Chromium&client_id=beWOhSdxuk9DOadDHb5i1A%3D%3D
+Total=1
+RequestHeaderFile=t18_RequestHeader.txt
+RequestBodyFile=t18_RequestBody.txt
+ResponseHeaderFile=t18_ResponseHeader.txt
+ContentType=application/octet-stream
+SnapshotXmlFile=snapshot_18.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

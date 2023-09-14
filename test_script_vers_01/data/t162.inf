@@ -1,0 +1,11 @@
+[t162]
+SnapshotXmlFile=snapshot_162.xml
+FileName1=t162.gif
+URL1=https://xray.mail.ru/batch?p=whiteline&email=petya.nikolayev.989%40mail.ru&r=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgn291q.7vi%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1%26back%3D1%26from%3Dnavi&pgid=lmgn2lxu.3dt&o_ss=6379.w&o_v=2197
+Total=1
+RequestHeaderFile=t162_RequestHeader.txt
+RequestBodyFile=t162_RequestBody.txt
+ResponseHeaderFile=t162_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

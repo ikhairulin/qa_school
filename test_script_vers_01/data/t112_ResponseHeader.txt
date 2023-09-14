@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx/1.14.2
+Date: Tue, 12 Sep 2023 18:02:51 GMT
+Content-Type: application/json; charset=UTF-8
+Content-Length: 429
+Connection: keep-alive
+accept-ranges: bytes
+access-control-allow-credentials: true
+access-control-allow-methods: GET, POST
+access-control-allow-origin: https://e.mail.ru
+x-mru-request-id: 266272ac-a5aa-9f4f-94a3-4de77f4962ca
+x-envoy-upstream-service-time: 27
+X-Host: spf24.m.smailru.net
+

@@ -1,0 +1,11 @@
+[t33]
+SnapshotXmlFile=snapshot_33.xml
+FileName1=t33.gif
+URL1=https://top-fwz1.mail.ru/tracker?js=13;id=3260250;u=https%3A/mail.ru/;st=1694541586104;title=Mail.ru%3A%20%D0%BF%D0%BE%D1%87%D1%82%D0%B0%2C%20%D0%BF%D0%BE%D0%B8%D1%81%D0%BA%20%D0%B2%20%D0%B8%D0%BD%D1%82%D0%B5%D1%80%D0%BD%D0%B5%D1%82%D0%B5%2C%20%D0%BD%D0%BE%D0%B2%D0%BE%D1%81%D1%82%D0%B8%2C%20%D0%B8%D0%B3%D1%80%D1%8B;s=1920*1080;vp=1407*822;touch=0;hds=1;frame=0;flash=;sid=70e653c0cc29098a;ver=60.3.0;tz=-180%2FEurope%2FMoscow;ni=0.6/3g/700/0/;params=%7B%7D;detect=0;lvid=1694541598481%3A1694541616676%3A5%3A553445e0b86f410a9c140a2f163f9e39;opts=sec;visible=true;_=0.14231473014759444;e=RG%3A/DAU
+Total=1
+RequestHeaderFile=t33_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t33_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

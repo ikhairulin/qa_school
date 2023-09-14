@@ -1,0 +1,15 @@
+[t123]
+SnapshotXmlFile=snapshot_123.xml
+FileName1=t123.gif
+URL1=https://rs.mail.ru/bulkstat/?type=imp&banner_ids=33772932,703055&_=1695191483159
+Total=3
+RequestHeaderFile=t123_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t123_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t123_code.html
+URL2=https://top-fwz1.mail.ru/js/code.js
+FileName3=t123_home.html
+URL3=https://img.imgsmail.ru/hb/e.mail.ru/@mail-core/logger-preset/home.js?&v13.3.1&pv=13.3.1&f=1694542680000-0

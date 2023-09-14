@@ -1,0 +1,11 @@
+[t207]
+SnapshotXmlFile=snapshot_207.xml
+FileName1=t207.gif
+URL1=https://xray.mail.ru/update?p=resplash&t=logo-ok-onpagehide&v=1&r=https%3A%2F%2Fe.mail.ru%2F&_=1695533317725
+Total=1
+RequestHeaderFile=t207_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t207_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

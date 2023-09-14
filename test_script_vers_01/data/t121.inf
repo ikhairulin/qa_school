@@ -1,0 +1,11 @@
+[t121]
+FileName1=t121.json
+URL1=https://ad.mail.ru/adp/?_SITEZONE=15&json=1&p=resplash&q=917709&q=998963&q=217&q=4015&isDarkTheme=0&fid=3109c5f5fbf5ff5fa07bed868ec20b8c&rb_doodle=&notgb=1
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_121.xml
+RequestHeaderFile=t121_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t121_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

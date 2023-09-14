@@ -1,0 +1,18 @@
+POST https://account.mail.ru/api/v1/auth/qr/init?login=&page=https%3A%2F%2Fmail.ru%2F&redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgn291q.7vi%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1&source=polling HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Origin: https://account.mail.ru
+Sec-Fetch-Site: same-origin
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://account.mail.ru/login/?mode=simple&v=2.10.0&account_host=account.mail.ru&type=login&allow_external=1&app_id_mytracker=58519&success_redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fback%3D1&project=home&source=mailbox&from=navi&parent_url=https%3A%2F%2Fmail.ru%2F&responsive=compact
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694542801428; c=1KsAZQAAAI0txAMRAAQAHgABAAIA; tmr_lvid=5406c5c94f6ad3cb8258a9b550833ff8; tmr_lvidTS=1694542804112; p=RN0AAGzQf4UA; mtrc=%7B%22mytrackerid%22%3A58519%2C%22tmr_lvid%22%3A%225406c5c94f6ad3cb8258a9b550833ff8%22%7D; i=AQDbqwBlAgC9BwgEAYIVAYkNBQIBAA==; s=ww=1422|wh=822|fver=0; b=m0wCAJCNLcQDAQAAhHO6TgMA; VID=1bERwf1Og22K00000v1oT42K:::0-0-0-a1b049f:CAASENn05TTSXXcj6BjTRxwj1tAaYJnb_JUq0S44kgUIz-FUpKSidZpjLDg__Q1Edi4evRvBNP0Y9g4KX_DfaCBqwzQY3EtEOxIRVjQDabZRVxT3wEGILfIv1IpkDKAtIDAordBtlKQFwXMpWyKDQ9tEnt0eZQ; mrhc=KLb6c5hihZM0oSmCySbNHn+aMcnf061DREkibStfxqA=
+Host: account.mail.ru
+Content-Length: 0
+

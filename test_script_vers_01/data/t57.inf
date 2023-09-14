@@ -1,0 +1,17 @@
+[t57]
+FileName1=t57_NaviData.json
+URL1=https://portal.mail.ru/NaviData?mac=1&Socials=1&ldata=1&Login=petya.nikolayev.989%40mail.ru&_=1695330175656
+Total=4
+ContentType=application/json
+SnapshotXmlFile=snapshot_57.xml
+RequestHeaderFile=t57_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t57_ResponseHeader.txt
+FileName2=t57_initial-async-05dcee77f453ae8e910d.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/initial-async-05dcee77f453ae8e910d.bundle.js
+FileName3=t57_bell.mp3.html
+URL3=https://img.imgsmail.ru/static.promo/sounds/notifier/bell.mp3
+FileName4=t57_ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIQCTI1FWRzk7o-EgUNkWGVTg==.txt
+URL4=https://edge.microsoft.com/autofillservice/v1/pages/ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIQCTI1FWRzk7o-EgUNkWGVTg==?alt=proto
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,11 @@
+[t203]
+SnapshotXmlFile=snapshot_203.xml
+FileName1=t203.gif
+URL1=https://rs.mail.ru/pixel/AAD99gGVF4RkJx27O5u-6hpoKW8l1nH1oYgwUnGfMGXw2lLiwdY4ueapKjI2-kNJvHfLCtfl_LrlgtSi3y398XbpElYlS_d7eEvAAxs7PVZLP6M7Xt6gVRjQNuL5EkLlGHo3-0Hy0FLfcC1ndvMg_b69M5zP7LtUcUOFZZBeoBME1bfMF58SQi88AAAAGzEICbA3a3Q0C-YTky4rMgu84dGzVpuTIS3OPevtduU798cSrXwuzmmu9MymcmmxxVcBqZkaeJIHhoGLSY-Vxw.gif
+Total=1
+RequestHeaderFile=t203_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t203_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

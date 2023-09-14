@@ -1,0 +1,13 @@
+[t141]
+SnapshotXmlFile=snapshot_141.xml
+FileName1=t141.gif
+URL1=https://account.mail.ru/api/v1/utils/xray/batch?p=thirdpty&split=s10273.b1s12743s&r=https%3A%2F%2Fmail.ru%2F&pgid=lmgn2agw.mcm
+Total=2
+RequestHeaderFile=t141_RequestHeader.txt
+RequestBodyFile=t141_RequestBody.txt
+ResponseHeaderFile=t141_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t141_0aa9d89c15214731ae5b.png
+URL2=https://img.imgsmail.ru/pkgs/login.mail.ru/190898/images/0aa9d89c15214731ae5b.png

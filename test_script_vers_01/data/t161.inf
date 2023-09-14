@@ -1,0 +1,15 @@
+[t161]
+FileName1=t161.json
+URL1=https://ad.mail.ru/adp/?_SITEZONE=10&_SITEID=105&start_time=1694542873334&version=octavius&count=1&exp_id=492&h=3800&w=240&DT_isDarkTheme=false&DT_siteBgColor=ffffff&DT_urlColor=999999&DT_hoverColor=000000&DT_bg=ffffff&DT_bgHover=ffffff&DT_borderColor=ffffff&DT_textColor=000000&DT_titleColor=005bd1&DT_titleHoverColor=333333&DT_listBg=f0f5ff&DT_listBgHover=f0f5ff&DT_listBorderColor=ffffff&DT_listTitleColor=005BD1&DT_listTitleHoverColor=333333&DT_listTextColor=93969B&DT_listButtonBgColor=ffffff&DT_listButtonTextColor=333333&DT_listButtonBorderColor=e2e2e1&DT_listButtonBorderHoverColor=005BD1&DT_listButtonTextHoverColor=005BD1&DT_listButtonBgHoverColor=ffffff&DT_sentMsgOkBg=ffffff&DT_sentMsgOkBgHover=ffffff&DT_sentMsgOkBorderColor=ffffff&DT_sentMsgOkTextColor=000000&DT_sentMsgOkTitleColor=005bd1&DT_sentMsgOkTitleHoverColor=333333&mail_event=login&ponymode=0&in3paneMetathread=0&userid=petya.nikolayev.989%40mail.ru&rounded=1&fid=4890b7e46119182455d0e5342ecbc862&directLoadErrorCallback=directijockoipdze&isDarkTheme=0&q[]=216790.0
+Total=3
+ContentType=application/json
+SnapshotXmlFile=snapshot_161.xml
+RequestHeaderFile=t161_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t161_ResponseHeader.txt
+FileName2=t161_9009-6abcb497c302fc694ee1.bundle.html
+URL2=https://imgs2.imgsmail.ru/octavius/ru_RU/bundles/wp/9009-6abcb497c302fc694ee1.bundle.js
+FileName3=t161_ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIXCQZf0zno1NbzEgUNkWGVThIFDZFhlU4=.txt
+URL3=https://edge.microsoft.com/autofillservice/v1/pages/ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIXCQZf0zno1NbzEgUNkWGVThIFDZFhlU4=?alt=proto
+[ProtocolInfo]
+ProtocolId=QTWeb

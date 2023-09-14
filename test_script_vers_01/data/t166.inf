@@ -1,0 +1,11 @@
+[t166]
+SnapshotXmlFile=snapshot_166.xml
+FileName1=t166.gif
+URL1=https://pixel.adlooxtracking.ru/ads/ic.php?_=413234663&type=pixel&plat=30&tag_id=62&client=weborama&id1=1085&id2=66&id3=&id4=&id5=9164&id6=0&id7=9312&id8=4f429fe249b4287a&id11=&id12=russia&id13=display&id14=$ADLOOX_WEBSITE
+Total=1
+RequestHeaderFile=t166_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t166_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

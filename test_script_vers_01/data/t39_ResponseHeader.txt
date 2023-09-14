@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Cache-Control: no-store, must-revalidate, no-cache, max-age=0
+Pragma: no-cache
+Content-Length: 180
+Content-Type: application/json
+Content-Encoding: gzip
+Expires: Mon, 01 Jan 1990 00:00:00 GMT
+X-Frame-Options: SAMEORIGIN
+X-Content-Type-Options: nosniff
+X-XSS-Protection: 1; mode=block
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: C6C54E5CB87A4249834BD55C547A825B Ref B: STOEDGE1606 Ref C: 2023-09-12T18:00:40Z
+Date: Tue, 12 Sep 2023 18:00:40 GMT
+

@@ -1,0 +1,18 @@
+HTTP/1.1 200 OK
+Server: nginx/1.22.0
+Date: Tue, 12 Sep 2023 18:02:55 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 61
+Last-Modified: Tue, 30 Mar 2021 11:07:58 GMT
+Connection: keep-alive
+ETag: "6063068e-3d"
+X-XSS-Protection: 1; mode=block; report=https://cspreport.mail.ru/xxssprotection
+X-Content-Type-Options: nosniff
+X-Frame-Options: SAMEORIGIN
+X-Host: lf251.m.smailru.net
+X-ETime: 0.000
+Expires: Thu, 12 Oct 2023 18:02:55 GMT
+Cache-Control: max-age=2592000
+Vary: Origin
+Accept-Ranges: bytes
+

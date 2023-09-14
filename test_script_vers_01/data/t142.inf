@@ -1,0 +1,11 @@
+[t142]
+SnapshotXmlFile=snapshot_142.xml
+FileName1=t142.gif
+URL1=https://account.mail.ru/api/v1/utils/xray/batch?p=login&split=s10273.b1s12743s&r=https%3A%2F%2Fmail.ru%2F&pgid=lmgn2agw.mcm
+Total=1
+RequestHeaderFile=t142_RequestHeader.txt
+RequestBodyFile=t142_RequestBody.txt
+ResponseHeaderFile=t142_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

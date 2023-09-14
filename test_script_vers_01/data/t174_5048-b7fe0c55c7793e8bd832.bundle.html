@@ -1,0 +1,21 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[5048],{40683:function(e,t,n){var i,o;i=[n(18440)],void 0===(o=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div>
+	<fn:match name="spinner">
+		<div bem:elem="spinner-container">
+			<b:spinner/>
+		</div>
+	</fn:match>
+
+	<b:layer name="edit-settings-filter"
+			 remit:close="layer:close"
+			 center
+			 hiddenfooter
+			 standard>
+
+		<fn:match name="content">
+			<div class="layer-edit-settings-filter_content" ref="content">
+				<fn:apply-match name="spinner"/>
+			</div>
+		</fn:match>
+	</b:layer>
+</div>
+`,"./app/ui-block/layer-edit-settings-filter/layer-edit-settings-filter.html")}.apply(t,i))||(e.exports=o)},50909:function(e,t,n){var i,o,r=this&&this.__importDefault||function(e){return e&&e.__esModule?e:{default:e}};i=[n,t,n(66423),n(57123),n(69832)],void 0===(o=function(e,t,n,i,o){"use strict";n=r(n),i=r(i),o=r(o);var a=i.default.extend({url:o.default.url("edit"),prepare:function(e){return this._removeEmptyParams(e)},_removeEmptyParams:function(e){return e.filters.forEach((function(e){if(e.actions.notify&&!e.actions.notify.length)delete e.actions.notify;if(null===e.actions.replace_category)delete e.actions.replace_category})),e},operation:function(e){var t={};if(e.filters.forEach((function(e,n){if(!e.id)t["filters."+n+".id"]="required"})),Object.keys(t).length)return Promise.reject(t);else return n.default.call(this.url,e).then((function(t){return a.processResult(e,t)}))}});return a.processResult=function(e,t){return o.default.map(e.filters.map((function(e,n){if(e.id=t.get("body."+n),e.apply_folders=t.get("data.apply_folders"),!e.conditions)e.conditions=[];return e})))},i.default.register("filters.Edit",a),a.version="0.1.0",t.default=a,a}.apply(t,i))||(e.exports=o)},15048:function(e,t,n){"use strict";n.r(t);var i=n(99150),o=n(21211),r=n(18440),a=n.n(r),l=n(40683),s=n.n(l),u=n(50909),c=n.n(u),f=n(17304),d=n.n(f),p=n(69832),m=n.n(p),h=n(43197),_=n(4872),v=n.n(_),y=n(74456),E=n(63062),T=n(61799),g=n(93286),P=n(96384),b=n(2613),A=n(55426);t.default=a().Block.extend((0,T.Z)()({name:"layer-edit-settings-filter",template:s(),blocks:{layer:b.Z,spinner:A.Z},events:{close:"onClose",cancel:"onCancel"},defaults:{filterModel:{},applyFolders:[],expandExtendOptions:!1},onLoad:function(){},onClose:function(){this.broadcast("layer:close")},onCancel:function(){},didUnmount:function(){this.editor.unmount()},load:function(){var e=this;return new Promise((function(t){Promise.all([(0,y.Z)("blitz")]).then((function(){(0,h.t)("filters/actions/Edit",c()),(0,h.t)("filters/Filter",m()),(0,h.t)("filters/actions/SaveSeveral",d()),(0,y.Z)("filters.mail.ru").then((function(i){e.ui=i,Promise.resolve().then((function(){var i=[n(10705)];(function(n){n.default.register(e),t()}).apply(null,i)})).catch(n.oe)}))}))}))},didMount:function(){var e=this;this.load().then((function(){if(e.isMounted()){var t=e.refs.content;e.editor=new e.ui(t),e.editor.mount({model:e.get("filterModel"),templateValues:e.get("templateValues"),expandExtendOptions:e.get("expandExtendOptions"),useBlackTheme:e.is("dark-mode"),useOctaviusTheme:!0,autoreplyLink:o.SETTINGS_AUTOREPLY_LINK,config:{radar:{p:o.RADAR_PROJECT},popup:!0},onClose:function(){e.onClose()},onCancel:function(){e.onClose()},successSave:function(){e.onClose(),setTimeout((function(){i.default.updateAll()}),o.FILTER_SAVE_UPDATE_TIMEOUT),E.default.add({text:i18n("Фильтр успешно создан")})},successApply:function(){setTimeout((function(){i.default.updateAll()}),o.FILTER_SAVE_UPDATE_TIMEOUT)},onSendRadar:g.ZP,onFolderNeedOpen:function(e){return v().findOne({id:e}).then((function(e){return(0,P.Z)(e)})).then((function(e){return!e&&Promise.reject()}))}})}}))}}))}}]);

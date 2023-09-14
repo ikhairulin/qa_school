@@ -1,0 +1,2 @@
+"{\"operationName\":\"FetchCalendars\",\"variables\":{},\"query\":\"query FetchCalendars {\\n  "
+"calendars(onlyAccepted: true) {\\n    uid\\n    isDefault\\n    __typename\\n  }\\n}\\n\"}"

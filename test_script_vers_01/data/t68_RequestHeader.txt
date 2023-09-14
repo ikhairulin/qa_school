@@ -1,0 +1,18 @@
+GET https://o2.mail.ru/login?client_id=b4c073bb6c5a4b1b84d2c7d2a1bceb9b&redirect_uri=https://e.mail.ru&lang=ru&scope=calendar.calendars.read%20calendar.events.read&response_type=token&mode=hidden&state=cid%3D1%26e%3D__mailru_oauth_1694541698068_0.3685982756387418__ HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-platform: "Windows"
+Upgrade-Insecure-Requests: 1
+DNT: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: iframe
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=e9f3e265019548f9a8408cd6f4516322; oid=7GxAwvq4tsGfiJvy5AjT5; mrcu=9CFD6500A70C3E97B1BAFFFFFFFF; p=wPAAAHz30ioA; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694541586080; tmr_lvid=553445e0b86f410a9c140a2f163f9e39; tmr_lvidTS=1694541598481; i=AQATpwBlAgBdBgUCAQC9BwgEAYIVAQ==; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; Mpop=1694541673:7d7449707e5f6b671905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; o=petya.nikolayev.989@mail.ru:2196:AAQ=.s; s=fver=0|ww=1422|wh=822|octavius=1; VID=1bD-480U7b2K00000v1oT42K:::a1b0029-0-0-a1affe1:CAASEPcrOzcxusaB5q9GD4QMIL0aYPzc1o6g0kr6YCWA5XT_Q7kso2cwC-FGmA4GSpugoeOUF66564vWSE-giRNksFBJ6waIAQMCCxpIImVujupH-s5RQ-yvvvK8_wSLX4mD1Npbm3WL-nrXeyGx8K1K2baF5Q; mtrc=%7B%22mytrackerid%22%3A52695%2C%22tmr_lvid%22%3A%22553445e0b86f410a9c140a2f163f9e39%22%7D; mrhc=mMEUFaGIzlewvKxzW4rK8yhBNsXyhhLFxv5EDpg+W1o=; b=m0wFAKA83GgCiRdUDaOitgprFjgIAQAACBPwNg0A; c=gKcAZQEAAHsTAAAUAAAACQAQ
+Host: o2.mail.ru
+Connection: Keep-Alive
+

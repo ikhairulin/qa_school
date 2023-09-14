@@ -1,0 +1,13 @@
+[t44]
+FileName1=t44.json
+URL1=https://account.mail.ru/api/v1/auth/qr/init?login=&page=https%3A%2F%2Fmail.ru%2F&redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1&source=polling
+Total=2
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t44_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_44.xml
+FileName2=t44_0aa9d89c15214731ae5b.png
+URL2=https://img.imgsmail.ru/pkgs/login.mail.ru/190898/images/0aa9d89c15214731ae5b.png
+[ProtocolInfo]
+ProtocolId=QTWeb

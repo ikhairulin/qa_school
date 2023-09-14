@@ -1,0 +1,30 @@
+GET https://ntp.msn.com/edge/ntp?locale=ru&title=%D0%9D%D0%BE%D0%B2%D0%B0%D1%8F%20%D0%B2%D0%BA%D0%BB%D0%B0%D0%B4%D0%BA%D0%B0&dsp=0&sp=%D0%AF%D0%BD%D0%B4%D0%B5%D0%BA%D1%81&startpage=1&PC=U531&prerender=1 HTTP/1.1
+device-memory: 8
+rtt: 200
+downlink: 1.75
+ect: 4g
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+sec-ch-ua-mobile: ?0
+sec-ch-ua-full-version: "116.0.1938.76"
+sec-ch-ua-arch: "x86"
+sec-ch-ua-platform: "Windows"
+sec-ch-ua-platform-version: "10.0.0"
+sec-ch-ua-model: ""
+sec-ch-ua-bitness: "64"
+sec-ch-ua-full-version-list: "Chromium";v="116.0.5845.180", "Not)A;Brand";v="24.0.0.0", "Microsoft Edge";v="116.0.1938.76"
+sec-ch-prefers-color-scheme: light
+DNT: 1
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+sec-edge-ntp: {"back_block":0,"bg_cur":{"provider":"NoBackground","userSelected":true},"bg_img_typ":"bing","exp":["msQuickLinksDefaultOneRow","msShoppingWebAssistOnNtp","msShoppingHistogramsOnNtp","msEnableWinHPNewTabBackButtonFocusAndClose","msCustomMaxQuickLinks","msMaxQuickLinksAt20","msAllowThemeInstallationFromChromeStore"],"feed":0,"feed_dis":"headingsonly","feed_lay":{"source":"wpo","targettedCount":1,"time":1.668844183038e+12,"type":"multi","version":1.1},"layout":3,"quick_links_opt":1,"sel_feed_piv":"","show_greet":true,"tscollapsed":0,"vp":{"height":822,"width":1382},"vt_opened":false}
+Service-Worker-Navigation-Preload: true
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: navigate
+Sec-Fetch-Dest: document
+Accept-Encoding: gzip, deflate
+Accept-Language: ru,en;q=0.9,en-GB;q=0.8,en-US;q=0.7
+Cookie: pglt-edgeChromium-dhp=129; pglt-edgeChromium-ntp=129; APP_ANON=A=2A75C0F207F193E58AD22C12FFFFFFFF; aace=%7b%22child%22%3a0%7d; USRLOC=; sptmarket=ru||ru|ru-ru|ru-ru|ru||RefA=0AE0EF6410774D048F86D8CF0C0133AA.RefC=2022-11-21T18:42:18Z; MicrosoftApplicationsTelemetryDeviceId=0c0cf4fa-be07-4f88-adaf-6d8b1aa2ae99; MUID=0A616DD13B88642637C37FB23AA06552; els=%7b%22account_type%22%3a%22MSA%22%7d; MUIDB=0A616DD13B88642637C37FB23AA06552; lt=t=EwBQA6AEAAAURnNPDOP4v1G28DRF5A6y6RDoGigAAdx3Ph/YyN4szCxBAJuvMnLEMuEUB8OA2k0AeUQz+WjU2eGiZ4XazGso68Jdr3MJxMlstIqhXA/QUF3YcIbbCIz8jQoKqjVnb0d6cbHHqEYY9n9esQPYnWSQE20Er2WkwEgehEyMXiuOVx2mRI+ha4hFH/EcwavO8M5/k+T6FEcmYdN4CMCILRoje1jgcy8Pcrj8i2LDnKUdXTZBlpgh/tJodR0AOrHmDocDJ8MwPOlGPSgPTPak+8fjJMkfXvriVSl2NYE5sYHtY+EbniwInq6GsT8dMGmB9oJgTuIxY8grbmMjFtEcVj3bcCpgajdIOqO1RvfRzuvIeno4vzdSDTwDZgAACNXGbTs//rwXIAJx29ccbpMqdfv5X8xeqEvzmOaDwOipXTNquVG/HTM9DIk7ObrPswPCXBxQY25sdPGTeQwhCEt+lpEb5eRZ+odzNJOsg6Wg6hfOEaDpeyqrxtlBgIm5lCPtGkb6usmu7ok6IFf64mK2VdYk+scsoEnbQrVG+ypKdPFz+4zC666SgOv3VCbeijVYcs31y5tPm2zRPNnfF8tdRN2REFDLbIu2H2jaa16nvdrYU23NQqGwPeuamu7t7o7SIPVtCLICDWzmaVpQ67nOjNPAZMlXaCBJmVZ9VG1KJUTqpk53tZ2Ulnb/xQG6xTQzeGbSnY5+cr2S1BGLRaCGmBAFdN2pGNJ895EMMojh56HK9vzz7wQr68ehn0VJATWlcEk5JMmODe6qCr//duIB21OPzXxRAYKM6v9FEM3LbwEfzfEu2FD/w8RRpOWKUFFuc6q4yixdXyGK9W1MzOcUOz7LH6f2+s81WmEwdze+iD+I/Qlz1+cxkBleA2anc+k0PJuhXMoC3My77OsGO0HRZMeuKEB9DKk7MiyyttgxFLjfhGDf5zcTLZuoQB943CfYmqWqJxwEMvbRZtGeEnI5AyiqlR2C3L8UFa3moZzsWm4E+2WVOpcvkoANDyhmkEAGh9G78gC2SjJOcRIR/Mn7bpuAZRnRH8No8D8Vw7JcfGm+1XDDk7gpUJNf1msBL7YtC4vAJNLsG8O7iszAgkyFqKSzIy45Ba+6TgI=&p=
+Host: ntp.msn.com
+Connection: Keep-Alive
+

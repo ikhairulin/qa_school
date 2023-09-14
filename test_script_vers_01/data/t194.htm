@@ -1,0 +1,1685 @@
+
+
+
+
+
+
+
+<div class="mailru-visibility-check"> <span class="mailru-visibility-check-counter" data-counter="https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZTuYvlKyAAAAZ93QNdJ3pk7lRlesfse7bizwQKRVn3NOK3h7kg5AgOSoi1PDP8GgRwqIOSztfD6ODFKQ9RMV3rWLqowl1lhcSa2dY9L6DwVfpb3Ec6W_fadSFwq_PqDgueJ7qFQ2b126nEor3ZySjPP3t5qmfNu3MvkQhkYvVw8Ip56FVy10n9YCU55GsJeN0u1TxfXZsL0lnPzoYewPMjftu3DbxsqQKBDCn2YPIaYCZu6PvaghWFm8fP_Do1g1EwVyYbxjmPkn.gif" style="display:none"></span> <img src="https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZRmRwmmvAAAA4fmOtqbnkKIm-xSy8qJSKEsHCIK_BNDB5g-B42hlOkVbllKuq8hhCEAyqW4Wqta5g7WTiFo1YPoTU9tQyttW5WGoGKW_KLjc8FSoeHk-rXG3Nv_BGCYlZG5BBZaNCg-gK5MVT8abT1p-ZtILoqIBiv7p6xxIWAM5G6pxDhTOsNXh2dWhEhQhDjkxBQxAxun2mEurjkvOOiOhBM4HNQeJA3H3o5hK7V5BoGqK5EHJPSc.gif" style="width:0;height:0;position:absolute;visibility:hidden;" alt=""/>
+
+
+<!-- t1  -->
+<!-- t2  -->
+<!-- t3 0 -->
+<!-- aw  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+
+
+    
+    
+
+
+
+
+
+
+
+
+<!-- 6477 -->
+    
+    
+    <!-- marketing -->
+        
+
+        
+        <div id="trg-b-119817434-906865652" data-hide-906865652="hide-banner" style="display:block; ">
+        
+        
+        
+        </div>
+        
+<script>
+  try{
+    (function (w, d, prefix) {
+    w.RB = w.RB && w.RB.v && w.RB.v === 1 ? w.RB : (function () {
+      var // main flag,
+        enabled = !1,
+        servingType = serveType(),
+        useObserver = !!window.IntersectionObserver,
+        useGeom = !useObserver && servingType !== "XD_FRAME",
+        // old opera focus flag
+        focused = !0,
+        // counted flag
+        counted = "mailru-visibility-counted",
+        // banners to inspect
+        banners = {},
+        // shortcuts
+        e = d.documentElement,
+        VE = d.mozVisibilityState ? "mozvisibilitychange" : d.webkitVisibilityState ? "webkitvisibilitychange" : d.visibilityState ? "visibilitychange" : "",
+        HP = "hidden" in d ? "hidden" : "webkitHidden" in d ? "webkitHidden" : "mozHidden" in d ? "mozHidden" : "",
+        // lastTimeStamp = 0,
+
+        // timing
+        tm,
+        // interstion observer instance
+        observer;
+
+      // handlers
+      function onFocusIn() {
+        focused = !0;
+        C(!0);
+      }
+
+      function onFocusOut() {
+        focused = !1;
+      }
+
+      function onUnload() {
+        Clear();
+        off();
+      }
+
+      // using visibility could have profits when tab is not
+
+      function onVisibilityChange() {
+        if (!d[HP]) onFocusIn();
+        else onFocusOut();
+      }
+
+      function onWindowScroll() {
+        C();
+      }
+
+      function onWindowResize() {
+        C();
+      }
+
+      // I &ndash; inspect
+
+      function I(bannerObject, id) {
+        if (Object.prototype.toString.call(bannerObject) === "[object Array]") {
+          Clear(bannerObject);
+          var k = bannerObject.length - 1;
+          for (; k >= 0; k--) {
+            if (!s(bannerObject[k].el, counted)) {
+              I(bannerObject[k]);
+            }
+          }
+          return;
+        }
+
+        if (!useObserver && !useGeom) {
+          tr(bannerObject.pixels_undetermined);
+          bannerObject.el[counted] = true;
+          return;
+        }
+        // bannerObject contains bannerObject.el and bannerObject.pixels
+        if (!bannerObject.el.id) {
+          id =
+            prefix +
+            new Date().getTime() +
+            Math.round(Math.random() * 1e6);
+          bannerObject.el.id = id;
+        }
+
+        id = bannerObject.el.id;
+
+        // lastTimeStamp = new Date().getTime();
+        // adding the banner container to storage
+        if (!banners[id]) {
+          banners[id] = {
+            c: bannerObject.el,
+            px: bannerObject.pixels,
+            px_un: bannerObject.pixels_undetermined,
+            px_nv: bannerObject.pixels_nonviewable,
+            cb: bannerObject.callback,
+            io: useObserver
+          };
+        }
+
+        // enabling anyway
+        on();
+        if (useObserver) {
+          o(bannerObject.el);
+        }
+        C(!0);
+      }
+
+      // C &ndash; check viewability of banner with t, timeout after loading
+
+      function C(t) {
+        for (var id in banners) {
+          if (banners[id] && !G(id)) {
+            CL(id);
+          } else if (
+            banners[id] &&
+            getVA(banners[id].c) >= 50 &&
+            hasFocus() &&
+            !banners[id].t
+          ) {
+            (function (_id) {
+              banners[_id].t = setTimeout(function () {
+                try {
+                  P(_id);
+                } catch (e) {}
+              }, 1E3);
+            })(id);
+          } else if (
+            banners[id] &&
+            getVA(banners[id].c) < 50
+          ) {
+            if (banners[id].t) {
+              clearTimeout(banners[id].t);
+              delete banners[id].t;
+            }
+          } else if (banners[id] && !hasFocus()) {
+            if (banners[id].t) {
+              clearTimeout(banners[id].t);
+              delete banners[id].t;
+              clearTimeout(tm);
+              t = false;
+            }
+          } else if (!banners[id]) {
+            CL(id);
+          }
+        }
+
+        if (t) {
+          clearTimeout(tm);
+          tm = setTimeout(
+            function () {
+              C(!0);
+            },
+            useGeom ? 3e2 : 10e3
+          );
+        }
+      }
+
+      // CL &ndash; Clear timers and stop listeners
+
+      function CL(id, onlyTM, noCount) {
+        if (id && banners[id]) {
+          clearTimeout(banners[id].t);
+          banners[id].t = null;
+          if (!onlyTM) {
+            if (banners[id].io && observer) {
+              observer.unobserve(banners[id].c);
+            }
+
+            if (!noCount && !s(banners[id].c, counted)) {
+              tr(banners[id].px_nv);
+              banners[id].c[counted] = true;
+            }
+            banners[id].c = null;
+            delete banners[id];
+          }
+          return;
+        }
+        clearTimeout(tm);
+        tm = null;
+        for (var id in banners) {
+          if (banners[id].t) {
+            CL(id, !0);
+          }
+        }
+      }
+
+      function Clear(bannersArray) {
+        if (bannersArray && bannersArray.length >= 0) {
+          //clear banners from array
+          var k = bannersArray.length - 1;
+          var id;
+          for (; k >= 0; k--) {
+            id = bannersArray[k].el.id;
+            if (id && banners[id]) {
+              // clear but don't count nonviewable
+              CL(id, !1, !0);
+            }
+          }
+        } else {
+          for (var id in banners) {
+            //clear all
+            CL(id);
+          }
+        }
+      }
+
+      // P &ndash; pixel to send
+      function P(id, obj, cnt) {
+        if (!G(id)) {
+          CL(id);
+          // banner removed
+          return;
+        }
+
+        if (banners[id]) {
+          obj = banners[id].c;
+        } else {
+          return;
+        }
+
+        if (!hasFocus()) {
+          CL(id, !0);
+          return;
+        } else if (getVA(obj) < 50) {
+          CL(id, !0);
+          return;
+        }
+
+        for (cnt = banners[id].px.length - 1; cnt >= 0; cnt--) {
+          new Image().src = banners[id].px[cnt];
+        }
+        // set counted flag - skip in next collect loops
+        obj[counted] = true;
+        //try fire callback
+        var cb = banners[id].cb;
+        if (cb && typeof cb === "function") {
+          try {
+            cb();
+          } catch (e) {}
+        }
+        // remove banner from storage of inspectable items
+        CL(id);
+        // turn listeners off if banners are not present
+        if (!l(banners)) off();
+      }
+
+      function hasFocus() {
+        if (HP) focused = !d[HP];
+        else if (!VE && typeof d.hasFocus === "function")
+          focused = d.hasFocus();
+        return focused;
+      }
+
+      function getVA(obj, source) {
+        if (obj.id && banners[obj.id] && banners[obj.id].io) {
+          return banners[obj.id].v || 0;
+        }
+
+        var percent = getGeometryViewableArea(obj).percent;
+
+        return percent;
+      }
+
+      /** LISTENERS SWITCHERS **/
+      function on() {
+        if (enabled) return;
+        if (useGeom) {
+          ev(w, "resize", onWindowResize);
+          ev(w, "scroll", onWindowScroll);
+        }
+        if (useObserver) {
+          observer = new IntersectionObserver(h, {
+            threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+          });
+        }
+        if (VE) ev(d, VE, onVisibilityChange);
+        else {
+          ev(w, "blur", onFocusOut);
+          ev(w, "focus", onFocusIn);
+        }
+        ev(w, "unload", onUnload);
+        enabled = true;
+      }
+
+      function off() {
+        rm(w, "unload", onUnload);
+        rm(w, "resize", onWindowResize);
+        rm(w, "scroll", onWindowScroll);
+        if (VE) rm(d, VE, onVisibilityChange);
+        rm(w, "focus", onFocusIn);
+        rm(w, "blur", onFocusOut);
+        if (observer) {
+          observer.disconnect();
+          observer = null;
+        }
+        clearTimeout(tm);
+        enabled = false;
+      }
+
+      /** INTERSECTION OBSERVER UTILS **/
+      function o(e) {
+        observer && observer.observe(e);
+      }
+
+      function h(changes) {
+        changes.forEach(function (changeRecord) {
+          var element = changeRecord.target;
+          var id = element.id;
+
+          if (id && banners[id]) {
+            banners[id].v = Math.round(
+              changeRecord.intersectionRatio * 100
+            );
+          }
+        });
+        C();
+      }
+
+      /** UTILS **/
+      // G - get element by ID;
+      function G(E) {
+        return d.getElementById(E);
+      }
+      // ev - EVent to handle
+      function ev(elem, eventName, callback) {
+        elem.addEventListener
+          ? elem.addEventListener(eventName, callback, !1)
+          : elem.attachEvent &&
+            elem.attachEvent("on" + eventName, callback);
+      }
+
+      function rm(elem, eventName, callback) {
+        elem.removeEventListener
+          ? elem.removeEventListener(eventName, callback, !1)
+          : elem.detachEvent &&
+            elem.detachEvent("on" + eventName, callback);
+      }
+      // obj length
+      function l(obj) {
+        var s = 0,
+          key;
+        for (key in obj) {
+          if (obj.hasOwnProperty(key)) s++;
+        }
+        return s;
+      }
+      //elem state
+      function s(elem, state) {
+        return !(typeof elem[state] == undefined || elem[state] !== true);
+      }
+      //track
+      function tr(pixels) {
+        if (pixels && pixels.length) {
+          for (cnt = pixels.length - 1; cnt >= 0; cnt--) {
+            new Image().src = pixels[cnt];
+          }
+        }
+      }
+      function serveType() {
+        try {
+          if (window === window.top) {
+            return "ON_PAGE";
+          }
+
+          var currentWindow = window;
+
+          while (currentWindow !== currentWindow.parent) {
+            if (
+              currentWindow.document.domain !==
+              currentWindow.parent.document.domain
+            ) {
+              return "XD_FRAME";
+            }
+            currentWindow = currentWindow.parent;
+          }
+
+          return "S_FRAME";
+        } catch (e) {}
+
+        return "XD_FRAME";
+      }
+
+      // geometry viewability
+      function getGeometryViewableArea(element, contextWindow) {
+        try {
+          var rect = element.getBoundingClientRect();
+          var area = getArea(rect);
+          var currentWindow = window;
+
+          contextWindow = contextWindow || window.top;
+
+          while (currentWindow !== contextWindow) {
+            // 1) get current frame coordinates inside its parent
+            // 2) get element coordinates relative to parent
+            // 3) get visible element coordinates relative to parent
+            var currentRect = currentWindow.frameElement.getBoundingClientRect();
+
+            rect = getRR(rect, currentRect);
+            rect.left = Math.max(currentRect.left, rect.left);
+            rect.right = Math.min(currentRect.right, rect.right);
+            rect.top = Math.max(currentRect.top, rect.top);
+            rect.bottom = Math.min(currentRect.bottom, rect.bottom);
+
+            if (rect.right < rect.left) {
+              rect.right = rect.left;
+            }
+            if (rect.bottom < rect.top) {
+              rect.bottom = rect.top;
+            }
+
+            currentWindow = currentWindow.parent;
+          }
+          rect = getRVA(rect, contextWindow);
+
+          var viewableArea = getArea(rect);
+
+          rect.percent = (viewableArea / area) * 100;
+
+          return rect;
+        } catch (e) {
+          return { left: 0, right: 0, top: 0, bottom: 0, percent: 0 };
+        }
+      }
+
+      function getArea(rect) {
+        return (rect.right - rect.left) * (rect.bottom - rect.top);
+      }
+      // relative rect
+      function getRR(rect, contextRect) {
+        return {
+          left: rect.left + contextRect.left,
+          right: rect.right + contextRect.left,
+          top: rect.top + contextRect.top,
+          bottom: rect.bottom + contextRect.top,
+        };
+      }
+      // relative viewable area
+      function getRVA(rect, contextWindow) {
+        var result = {};
+        var contextSize = getVS(contextWindow);
+
+        result.left = Math.max(0, rect.left);
+        result.right = Math.min(contextSize.width, rect.right);
+        result.top = Math.max(0, rect.top);
+        result.bottom = Math.min(contextSize.height, rect.bottom);
+
+        return result;
+      }
+      // viewport size
+      function getVS(w) {
+        var viewPortSize = {
+          width: Infinity,
+          height: Infinity,
+        };
+        var d = w.document;
+
+        if (!isNaN(d.body.clientWidth) && d.body.clientWidth > 0) {
+          viewPortSize.width = d.body.clientWidth;
+        }
+        if (!isNaN(d.body.clientHeight) && d.body.clientHeight > 0) {
+          viewPortSize.height = d.body.clientHeight;
+        }
+        if (
+          !!d.documentElement &&
+          !!d.documentElement.clientWidth &&
+          !isNaN(d.documentElement.clientWidth)
+        ) {
+          viewPortSize.width = d.documentElement.clientWidth;
+        }
+        if (
+          !!d.documentElement &&
+          !!d.documentElement.clientHeight &&
+          !isNaN(d.documentElement.clientHeight)
+        ) {
+          viewPortSize.height = d.documentElement.clientHeight;
+        }
+        if (!!w.innerWidth && !isNaN(w.innerWidth)) {
+          viewPortSize.width = Math.min(viewPortSize.width, w.innerWidth);
+        }
+        if (!!w.innerHeight && !isNaN(w.innerHeight)) {
+          viewPortSize.height = Math.min(
+            viewPortSize.height,
+            w.innerHeight
+          );
+        }
+
+        return viewPortSize;
+      }
+
+      /** PUBLIC INTERFACE **/
+
+      return {
+        I: I,
+        // debug
+        // , banners: banners
+        v: 1,
+      };
+    })();
+  })(window, document, 'mailru')
+  }catch (e) {}
+</script>
+  
+
+<script>
+  (function(prefix){
+    try{
+      
+      function getAdsContainers() {
+  			var ADS_CLASS = prefix + '-visibility-check',
+  				ADS_COUNTER_CLASS = ADS_CLASS + '-counter',
+  				ADS_CALLBACK_CLASS = ADS_CLASS + '-callback',
+  				COUNTER_ATTR = 'data-counter',
+  				COUNTER_ATTR_UNDETERMINED = COUNTER_ATTR + '-un',
+  				COUNTER_ATTR_NONVIEWABLE = COUNTER_ATTR + '-nv',
+  				CALLBACK_ATTR = 'data-callback',
+  				OBSERVER_ATTR = 'data-observer',
+  				containers = [],
+  				countables = [],
+  				i, k, counters, _counter, _observer;
+   
+  			containers = getByClass(document, ADS_CLASS);
+  			for (i = containers.length - 1; i >= 0; i--) {
+  				var counters = getByClass(containers[i], ADS_COUNTER_CLASS, 'span');
+  				_counter = containers[i].getAttribute(COUNTER_ATTR);
+  				_observer = containers[i].hasAttribute(OBSERVER_ATTR);
+  				countables[i] = {
+  					el: containers[i],
+  					pixels: [],
+  					pixels_undetermined: [],
+  					pixels_nonviewable: [],
+  					observer: _observer
+  				};
+  				if (_counter) countables[i].pixels.push(_counter);
+  				for (k = counters.length - 1; k >= 0; k--) {
+  					if (counters[k].parentNode === countables[i].el) {
+              _counter = counters[k].getAttribute(COUNTER_ATTR);
+              if (_counter) {
+                countables[i].pixels.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_UNDETERMINED);
+              if (_counter) {
+                countables[i].pixels_undetermined.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_NONVIEWABLE);
+              if (_counter) {
+                countables[i].pixels_nonviewable.push(_counter);
+              }
+            }
+  				}
+  				var callback = getByClass(containers[i], ADS_CALLBACK_CLASS, 'span');
+  				if (callback[0]) {
+  				  var _callback = callback[0].getAttribute(CALLBACK_ATTR);
+  				  if (_callback && window.RB_CALLBACKS && window.RB_CALLBACKS[_callback]) {
+  				    countables[i].callback = window.RB_CALLBACKS[_callback];
+  				  }
+  				}
+  				if (!countables[i].pixels.length) countables.splice(i, 1);
+  			}
+   
+  			return countables;
+  		}
+   
+  		function getByClass(parent, childClassName, tagName) {
+  			if (parent.getElementsByClassName) {
+  				return parent.getElementsByClassName(childClassName);
+  			} else if (parent.querySelectorAll) {
+   
+  				return parent.querySelectorAll('.' + childClassName);
+  			} else {
+  				var els = [];
+  				var tmp = parent.getElementsByTagName(tagName ? tagName : "*");
+  				var regex = new RegExp("(^|\s)" + childClassName + "(\s|$)");
+  				for (var i = 0; i < tmp.length; i++) {
+  					if (regex.test(tmp[i].className)) {
+  						els.push(tmp[i]);
+  					}
+  				}
+  				return els;
+  			}
+  		}
+   
+  		RB.I(getAdsContainers());
+      
+    }catch(e){}
+  }('mailru'))
+</script>
+
+    
+
+
+<style>
+  #trg-b-119817434-906865652[data-hide-906865652] {
+    position: absolute!important;
+    left: -9999px!important;
+    z-index: -1!important;
+    width: 100%;
+  }
+</style>
+
+<script>
+  try{
+    (function (w, d, prefix) {
+    w.RB = w.RB && w.RB.v && w.RB.v === 1 ? w.RB : (function () {
+      var // main flag,
+        enabled = !1,
+        servingType = serveType(),
+        useObserver = !!window.IntersectionObserver,
+        useGeom = !useObserver && servingType !== "XD_FRAME",
+        // old opera focus flag
+        focused = !0,
+        // counted flag
+        counted = "mailru-visibility-counted",
+        // banners to inspect
+        banners = {},
+        // shortcuts
+        e = d.documentElement,
+        VE = d.mozVisibilityState ? "mozvisibilitychange" : d.webkitVisibilityState ? "webkitvisibilitychange" : d.visibilityState ? "visibilitychange" : "",
+        HP = "hidden" in d ? "hidden" : "webkitHidden" in d ? "webkitHidden" : "mozHidden" in d ? "mozHidden" : "",
+        // lastTimeStamp = 0,
+
+        // timing
+        tm,
+        // interstion observer instance
+        observer;
+
+      // handlers
+      function onFocusIn() {
+        focused = !0;
+        C(!0);
+      }
+
+      function onFocusOut() {
+        focused = !1;
+      }
+
+      function onUnload() {
+        Clear();
+        off();
+      }
+
+      // using visibility could have profits when tab is not
+
+      function onVisibilityChange() {
+        if (!d[HP]) onFocusIn();
+        else onFocusOut();
+      }
+
+      function onWindowScroll() {
+        C();
+      }
+
+      function onWindowResize() {
+        C();
+      }
+
+      // I &ndash; inspect
+
+      function I(bannerObject, id) {
+        if (Object.prototype.toString.call(bannerObject) === "[object Array]") {
+          Clear(bannerObject);
+          var k = bannerObject.length - 1;
+          for (; k >= 0; k--) {
+            if (!s(bannerObject[k].el, counted)) {
+              I(bannerObject[k]);
+            }
+          }
+          return;
+        }
+
+        if (!useObserver && !useGeom) {
+          tr(bannerObject.pixels_undetermined);
+          bannerObject.el[counted] = true;
+          return;
+        }
+        // bannerObject contains bannerObject.el and bannerObject.pixels
+        if (!bannerObject.el.id) {
+          id =
+            prefix +
+            new Date().getTime() +
+            Math.round(Math.random() * 1e6);
+          bannerObject.el.id = id;
+        }
+
+        id = bannerObject.el.id;
+
+        // lastTimeStamp = new Date().getTime();
+        // adding the banner container to storage
+        if (!banners[id]) {
+          banners[id] = {
+            c: bannerObject.el,
+            px: bannerObject.pixels,
+            px_un: bannerObject.pixels_undetermined,
+            px_nv: bannerObject.pixels_nonviewable,
+            cb: bannerObject.callback,
+            io: useObserver
+          };
+        }
+
+        // enabling anyway
+        on();
+        if (useObserver) {
+          o(bannerObject.el);
+        }
+        C(!0);
+      }
+
+      // C &ndash; check viewability of banner with t, timeout after loading
+
+      function C(t) {
+        for (var id in banners) {
+          if (banners[id] && !G(id)) {
+            CL(id);
+          } else if (
+            banners[id] &&
+            getVA(banners[id].c) >= 50 &&
+            hasFocus() &&
+            !banners[id].t
+          ) {
+            (function (_id) {
+              banners[_id].t = setTimeout(function () {
+                try {
+                  P(_id);
+                } catch (e) {}
+              }, 1E3);
+            })(id);
+          } else if (
+            banners[id] &&
+            getVA(banners[id].c) < 50
+          ) {
+            if (banners[id].t) {
+              clearTimeout(banners[id].t);
+              delete banners[id].t;
+            }
+          } else if (banners[id] && !hasFocus()) {
+            if (banners[id].t) {
+              clearTimeout(banners[id].t);
+              delete banners[id].t;
+              clearTimeout(tm);
+              t = false;
+            }
+          } else if (!banners[id]) {
+            CL(id);
+          }
+        }
+
+        if (t) {
+          clearTimeout(tm);
+          tm = setTimeout(
+            function () {
+              C(!0);
+            },
+            useGeom ? 3e2 : 10e3
+          );
+        }
+      }
+
+      // CL &ndash; Clear timers and stop listeners
+
+      function CL(id, onlyTM, noCount) {
+        if (id && banners[id]) {
+          clearTimeout(banners[id].t);
+          banners[id].t = null;
+          if (!onlyTM) {
+            if (banners[id].io && observer) {
+              observer.unobserve(banners[id].c);
+            }
+
+            if (!noCount && !s(banners[id].c, counted)) {
+              tr(banners[id].px_nv);
+              banners[id].c[counted] = true;
+            }
+            banners[id].c = null;
+            delete banners[id];
+          }
+          return;
+        }
+        clearTimeout(tm);
+        tm = null;
+        for (var id in banners) {
+          if (banners[id].t) {
+            CL(id, !0);
+          }
+        }
+      }
+
+      function Clear(bannersArray) {
+        if (bannersArray && bannersArray.length >= 0) {
+          //clear banners from array
+          var k = bannersArray.length - 1;
+          var id;
+          for (; k >= 0; k--) {
+            id = bannersArray[k].el.id;
+            if (id && banners[id]) {
+              // clear but don't count nonviewable
+              CL(id, !1, !0);
+            }
+          }
+        } else {
+          for (var id in banners) {
+            //clear all
+            CL(id);
+          }
+        }
+      }
+
+      // P &ndash; pixel to send
+      function P(id, obj, cnt) {
+        if (!G(id)) {
+          CL(id);
+          // banner removed
+          return;
+        }
+
+        if (banners[id]) {
+          obj = banners[id].c;
+        } else {
+          return;
+        }
+
+        if (!hasFocus()) {
+          CL(id, !0);
+          return;
+        } else if (getVA(obj) < 50) {
+          CL(id, !0);
+          return;
+        }
+
+        for (cnt = banners[id].px.length - 1; cnt >= 0; cnt--) {
+          new Image().src = banners[id].px[cnt];
+        }
+        // set counted flag - skip in next collect loops
+        obj[counted] = true;
+        //try fire callback
+        var cb = banners[id].cb;
+        if (cb && typeof cb === "function") {
+          try {
+            cb();
+          } catch (e) {}
+        }
+        // remove banner from storage of inspectable items
+        CL(id);
+        // turn listeners off if banners are not present
+        if (!l(banners)) off();
+      }
+
+      function hasFocus() {
+        if (HP) focused = !d[HP];
+        else if (!VE && typeof d.hasFocus === "function")
+          focused = d.hasFocus();
+        return focused;
+      }
+
+      function getVA(obj, source) {
+        if (obj.id && banners[obj.id] && banners[obj.id].io) {
+          return banners[obj.id].v || 0;
+        }
+
+        var percent = getGeometryViewableArea(obj).percent;
+
+        return percent;
+      }
+
+      /** LISTENERS SWITCHERS **/
+      function on() {
+        if (enabled) return;
+        if (useGeom) {
+          ev(w, "resize", onWindowResize);
+          ev(w, "scroll", onWindowScroll);
+        }
+        if (useObserver) {
+          observer = new IntersectionObserver(h, {
+            threshold: [0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0],
+          });
+        }
+        if (VE) ev(d, VE, onVisibilityChange);
+        else {
+          ev(w, "blur", onFocusOut);
+          ev(w, "focus", onFocusIn);
+        }
+        ev(w, "unload", onUnload);
+        enabled = true;
+      }
+
+      function off() {
+        rm(w, "unload", onUnload);
+        rm(w, "resize", onWindowResize);
+        rm(w, "scroll", onWindowScroll);
+        if (VE) rm(d, VE, onVisibilityChange);
+        rm(w, "focus", onFocusIn);
+        rm(w, "blur", onFocusOut);
+        if (observer) {
+          observer.disconnect();
+          observer = null;
+        }
+        clearTimeout(tm);
+        enabled = false;
+      }
+
+      /** INTERSECTION OBSERVER UTILS **/
+      function o(e) {
+        observer && observer.observe(e);
+      }
+
+      function h(changes) {
+        changes.forEach(function (changeRecord) {
+          var element = changeRecord.target;
+          var id = element.id;
+
+          if (id && banners[id]) {
+            banners[id].v = Math.round(
+              changeRecord.intersectionRatio * 100
+            );
+          }
+        });
+        C();
+      }
+
+      /** UTILS **/
+      // G - get element by ID;
+      function G(E) {
+        return d.getElementById(E);
+      }
+      // ev - EVent to handle
+      function ev(elem, eventName, callback) {
+        elem.addEventListener
+          ? elem.addEventListener(eventName, callback, !1)
+          : elem.attachEvent &&
+            elem.attachEvent("on" + eventName, callback);
+      }
+
+      function rm(elem, eventName, callback) {
+        elem.removeEventListener
+          ? elem.removeEventListener(eventName, callback, !1)
+          : elem.detachEvent &&
+            elem.detachEvent("on" + eventName, callback);
+      }
+      // obj length
+      function l(obj) {
+        var s = 0,
+          key;
+        for (key in obj) {
+          if (obj.hasOwnProperty(key)) s++;
+        }
+        return s;
+      }
+      //elem state
+      function s(elem, state) {
+        return !(typeof elem[state] == undefined || elem[state] !== true);
+      }
+      //track
+      function tr(pixels) {
+        if (pixels && pixels.length) {
+          for (cnt = pixels.length - 1; cnt >= 0; cnt--) {
+            new Image().src = pixels[cnt];
+          }
+        }
+      }
+      function serveType() {
+        try {
+          if (window === window.top) {
+            return "ON_PAGE";
+          }
+
+          var currentWindow = window;
+
+          while (currentWindow !== currentWindow.parent) {
+            if (
+              currentWindow.document.domain !==
+              currentWindow.parent.document.domain
+            ) {
+              return "XD_FRAME";
+            }
+            currentWindow = currentWindow.parent;
+          }
+
+          return "S_FRAME";
+        } catch (e) {}
+
+        return "XD_FRAME";
+      }
+
+      // geometry viewability
+      function getGeometryViewableArea(element, contextWindow) {
+        try {
+          var rect = element.getBoundingClientRect();
+          var area = getArea(rect);
+          var currentWindow = window;
+
+          contextWindow = contextWindow || window.top;
+
+          while (currentWindow !== contextWindow) {
+            // 1) get current frame coordinates inside its parent
+            // 2) get element coordinates relative to parent
+            // 3) get visible element coordinates relative to parent
+            var currentRect = currentWindow.frameElement.getBoundingClientRect();
+
+            rect = getRR(rect, currentRect);
+            rect.left = Math.max(currentRect.left, rect.left);
+            rect.right = Math.min(currentRect.right, rect.right);
+            rect.top = Math.max(currentRect.top, rect.top);
+            rect.bottom = Math.min(currentRect.bottom, rect.bottom);
+
+            if (rect.right < rect.left) {
+              rect.right = rect.left;
+            }
+            if (rect.bottom < rect.top) {
+              rect.bottom = rect.top;
+            }
+
+            currentWindow = currentWindow.parent;
+          }
+          rect = getRVA(rect, contextWindow);
+
+          var viewableArea = getArea(rect);
+
+          rect.percent = (viewableArea / area) * 100;
+
+          return rect;
+        } catch (e) {
+          return { left: 0, right: 0, top: 0, bottom: 0, percent: 0 };
+        }
+      }
+
+      function getArea(rect) {
+        return (rect.right - rect.left) * (rect.bottom - rect.top);
+      }
+      // relative rect
+      function getRR(rect, contextRect) {
+        return {
+          left: rect.left + contextRect.left,
+          right: rect.right + contextRect.left,
+          top: rect.top + contextRect.top,
+          bottom: rect.bottom + contextRect.top,
+        };
+      }
+      // relative viewable area
+      function getRVA(rect, contextWindow) {
+        var result = {};
+        var contextSize = getVS(contextWindow);
+
+        result.left = Math.max(0, rect.left);
+        result.right = Math.min(contextSize.width, rect.right);
+        result.top = Math.max(0, rect.top);
+        result.bottom = Math.min(contextSize.height, rect.bottom);
+
+        return result;
+      }
+      // viewport size
+      function getVS(w) {
+        var viewPortSize = {
+          width: Infinity,
+          height: Infinity,
+        };
+        var d = w.document;
+
+        if (!isNaN(d.body.clientWidth) && d.body.clientWidth > 0) {
+          viewPortSize.width = d.body.clientWidth;
+        }
+        if (!isNaN(d.body.clientHeight) && d.body.clientHeight > 0) {
+          viewPortSize.height = d.body.clientHeight;
+        }
+        if (
+          !!d.documentElement &&
+          !!d.documentElement.clientWidth &&
+          !isNaN(d.documentElement.clientWidth)
+        ) {
+          viewPortSize.width = d.documentElement.clientWidth;
+        }
+        if (
+          !!d.documentElement &&
+          !!d.documentElement.clientHeight &&
+          !isNaN(d.documentElement.clientHeight)
+        ) {
+          viewPortSize.height = d.documentElement.clientHeight;
+        }
+        if (!!w.innerWidth && !isNaN(w.innerWidth)) {
+          viewPortSize.width = Math.min(viewPortSize.width, w.innerWidth);
+        }
+        if (!!w.innerHeight && !isNaN(w.innerHeight)) {
+          viewPortSize.height = Math.min(
+            viewPortSize.height,
+            w.innerHeight
+          );
+        }
+
+        return viewPortSize;
+      }
+
+      /** PUBLIC INTERFACE **/
+
+      return {
+        I: I,
+        // debug
+        // , banners: banners
+        v: 1,
+      };
+    })();
+  })(window, document, 'mailru')
+  }catch (e) {}
+</script>
+
+
+<script>
+  (function(prefix){
+    try{
+      
+      function getAdsContainers() {
+  			var ADS_CLASS = prefix + '-visibility-check',
+  				ADS_COUNTER_CLASS = ADS_CLASS + '-counter',
+  				ADS_CALLBACK_CLASS = ADS_CLASS + '-callback',
+  				COUNTER_ATTR = 'data-counter',
+  				COUNTER_ATTR_UNDETERMINED = COUNTER_ATTR + '-un',
+  				COUNTER_ATTR_NONVIEWABLE = COUNTER_ATTR + '-nv',
+  				CALLBACK_ATTR = 'data-callback',
+  				OBSERVER_ATTR = 'data-observer',
+  				containers = [],
+  				countables = [],
+  				i, k, counters, _counter, _observer;
+   
+  			containers = getByClass(document, ADS_CLASS);
+  			for (i = containers.length - 1; i >= 0; i--) {
+  				var counters = getByClass(containers[i], ADS_COUNTER_CLASS, 'span');
+  				_counter = containers[i].getAttribute(COUNTER_ATTR);
+  				_observer = containers[i].hasAttribute(OBSERVER_ATTR);
+  				countables[i] = {
+  					el: containers[i],
+  					pixels: [],
+  					pixels_undetermined: [],
+  					pixels_nonviewable: [],
+  					observer: _observer
+  				};
+  				if (_counter) countables[i].pixels.push(_counter);
+  				for (k = counters.length - 1; k >= 0; k--) {
+  					if (counters[k].parentNode === countables[i].el) {
+              _counter = counters[k].getAttribute(COUNTER_ATTR);
+              if (_counter) {
+                countables[i].pixels.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_UNDETERMINED);
+              if (_counter) {
+                countables[i].pixels_undetermined.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_NONVIEWABLE);
+              if (_counter) {
+                countables[i].pixels_nonviewable.push(_counter);
+              }
+            }
+  				}
+  				var callback = getByClass(containers[i], ADS_CALLBACK_CLASS, 'span');
+  				if (callback[0]) {
+  				  var _callback = callback[0].getAttribute(CALLBACK_ATTR);
+  				  if (_callback && window.RB_CALLBACKS && window.RB_CALLBACKS[_callback]) {
+  				    countables[i].callback = window.RB_CALLBACKS[_callback];
+  				  }
+  				}
+  				if (!countables[i].pixels.length) countables.splice(i, 1);
+  			}
+   
+  			return countables;
+  		}
+   
+  		function getByClass(parent, childClassName, tagName) {
+  			if (parent.getElementsByClassName) {
+  				return parent.getElementsByClassName(childClassName);
+  			} else if (parent.querySelectorAll) {
+   
+  				return parent.querySelectorAll('.' + childClassName);
+  			} else {
+  				var els = [];
+  				var tmp = parent.getElementsByTagName(tagName ? tagName : "*");
+  				var regex = new RegExp("(^|\s)" + childClassName + "(\s|$)");
+  				for (var i = 0; i < tmp.length; i++) {
+  					if (regex.test(tmp[i].className)) {
+  						els.push(tmp[i]);
+  					}
+  				}
+  				return els;
+  			}
+  		}
+   
+  		RB.I(getAdsContainers());
+      
+    }catch(e){}
+  }('mailru'))
+</script>
+
+<div id="yandex_ad_R-142108-737_906865652" style="border-radius: 12px;clip-path: inset(1px round 12px);position: relative;overflow:hidden;width: 240px;height: 400px;"></div>
+<script type="text/javascript">
+	(function(w, d, n, s, t) {
+	  var countryId = '188';
+	  var provinceId = '70';
+	  var regionId = '5506';
+
+	  var timeStart = +new Date();
+
+	  var firstDirectRender = true;
+	  var fallbackInvoked = false;
+	  var fallbackTimeout = null;
+
+	  var fallbackType = {
+		  FORCE: 'force',
+		  UNSUPPORT: 'unsupport',
+		  TIMEOUT: 'timeout',
+		  ERROR: 'error',
+		  EMPTY: 'empty'
+	  };
+
+		if (!w.Map || (w.attachEvent && !w.addEventListener)) { // "bad" IE
+		  setTimeout(function() {
+		    fallback(fallbackType.UNSUPPORT);
+		  }, 0);
+		  return;
+		}
+
+		var fallbackDelay = 2500;
+
+	  if (fallbackDelay) {
+  	  fallbackTimeout = setTimeout(function() {
+  	    fallback(fallbackType.TIMEOUT);
+  	  }, fallbackDelay);
+	  } else {
+		  setTimeout(function() {
+		    fallback(fallbackType.FORCE);
+		  }, 0);
+	    return;
+	  }
+
+  	function getBrowserLabel() {
+  		var browser = 'unk';
+  		var ua = navigator.userAgent;
+
+  		if (ua.indexOf('Opera') !== -1 || ua.indexOf('OPR') !== -1) {
+  			browser = 'opr';
+  		} else if (ua.indexOf('Edge') !== -1) {
+  			browser = 'edg';
+  		} else if (ua.indexOf('Chrome') !== -1) {
+  			browser = 'chr';
+  		} else if (ua.indexOf('Safari') !== -1) {
+  			browser = 'sfr';
+  		} else if (ua.indexOf('Firefox') !== -1) {
+  			browser = 'ff';
+  		} else if ((ua.indexOf('MSIE') !== -1) || (!!document.documentMode === true)) {
+  			browser = 'ie';
+  		}
+
+  		return browser;
+  	}
+
+    function sendXray(t, i, dwh) {
+      if (w.xray) {
+        try {
+          if (xray.sendImmediately) {
+            xray.sendImmediately(t, {i: i, dwh: dwh});
+          } else {
+            xray.send(t, {i: i, dwh: dwh});
+          }
+        } catch (e) {}
+      }
+    }
+
+    function selectScore(duration) {
+      var durationType = 'fail';
+      if (duration < 100) {
+        durationType = 'instantly1';
+      } else if (duration < 300) {
+        durationType = 'instantly2';
+      } else if (duration < 500) {
+        durationType = 'instantly3';
+      } else if (duration < 1000) {
+        durationType = 'very-fast';
+      } else if (duration < 2000) {
+        durationType = 'fast';
+      } else if (duration < 4000) {
+        durationType = 'moderate';
+      } else if (duration < 8000) {
+        durationType = 'slightly-slow';
+      } else if (duration < 15000) {
+        durationType = 'slow';
+      } else if (duration < 30000) {
+        durationType = 'very-slow';
+      }
+      return durationType;
+    }
+    
+    function logContextLibLoadDurationType(duration) {
+      var durationType = selectScore(duration);
+      var i = {load: 1};
+      i['load_' + durationType] = 1;
+
+      sendXray('adman-ya-cntx', i, {
+        country_id: countryId,
+        province_id: provinceId,
+        region_id: regionId,
+        duration_type: durationType
+      });
+    }
+
+    function logDirectRenderDurationType(duration) {
+      if (w.__TS && __TS > 1670862466560) {
+        var durationType = selectScore(duration);
+        var i = {direct: 1};
+        i['direct_' + durationType] = 1;
+  
+        sendXray('adman-time', i, {
+          country_id: countryId,
+          province_id: provinceId,
+          region_id: regionId,
+          duration_type: durationType
+        });
+      }
+    }
+
+    function logRender(fallbackType) {
+
+      function createMetrics(duration, durationType, withScore) {
+        var browser = getBrowserLabel();
+        var slotId = '948435';
+        var iprefix = 'b-' + browser + '_s-' + slotId;
+
+        var idata = {};
+
+        idata[iprefix + '_render'] = duration;
+        
+        var webPerfExpId = '';
+        if (webPerfExpId) {
+          idata[webPerfExpId + '_' + iprefix + '_render'] = duration;
+        }
+
+        if (withScore) {
+          idata['render'] = duration;
+          idata[iprefix + '_sc-' + durationType] = duration;
+        } else {
+          if (fallbackType) {
+            idata[iprefix + '_' + fallbackType] = duration;
+
+            if ('1') {
+              idata[iprefix + '_mrk'] = duration;
+              idata[iprefix + '_' + fallbackType + '_mrk'] = duration;
+            } else {
+              idata[iprefix + '_trg'] = duration;
+              idata[iprefix + '_' + fallbackType + '_trg'] = duration;
+
+              if ('') {
+                idata[iprefix + '_trg_hi'] = duration;
+                idata[iprefix + '_' + fallbackType + '_trg_hi'] = duration;
+              } else {
+                idata[iprefix + '_trg_lo'] = duration;
+                idata[iprefix + '_' + fallbackType + '_trg_lo'] = duration;
+              }
+            }
+          } else {
+            idata[iprefix + '_direct'] = duration;
+
+            if ('') {
+              idata[iprefix + '_direct_hi'] = duration;
+            } else {
+              idata[iprefix + '_direct_lo'] = duration;
+            }
+          }
+        }
+
+        return idata;
+      }
+
+      var duration = new Date() - timeStart;
+      var durationType = selectScore(duration);
+      sendXray('adman-time', createMetrics(duration, durationType), null);
+
+      if (w._timers && 'ready_app' in _timers && w._now) {
+        if (w.__TS && __TS > 1670579404891) {
+          var durationFirstRender = Math.round(_timers.ready_app + _now());
+          var durationFirstRenderType = selectScore(durationFirstRender);
+          sendXray('adman-frtime', createMetrics(durationFirstRender, durationFirstRenderType, true), {
+            country_id: countryId,
+            province_id: provinceId,
+            region_id: regionId,
+            duration_type: durationFirstRenderType
+          });
+        }
+
+        delete _timers.ready_app;
+      }
+      
+      if (0 && w.Ya && Ya.codeVer && !w.logYaContextVersion) {
+        w.logYaContextVersion = true;
+        sendXray('adman-ya-cntx', 'hit', {
+          ya_version: Ya.codeVer
+        });
+      }
+    }
+
+	  function fallback(type) {
+		  if (fallbackInvoked) return;
+		  clearTimeout(fallbackTimeout);
+		  fallbackInvoked = true;
+
+      var trgB = document.getElementById("trg-b-119817434-906865652");
+      var trgYa = document.getElementById("yandex_ad_R-142108-737_906865652");
+
+      if (trgYa) {
+        trgYa.style.display = 'none';
+      }
+
+      if (trgB) {
+        if (trgB.getAttribute("data-hide-906865652") === "hide-banner") {
+          trgB.removeAttribute("data-hide-906865652");
+        }
+  			trgB.style.display = "block";
+  			var container = document.querySelectorAll('#trg-b-119817434-906865652 .trg-v-banner');
+        if (container.length) { container = container[0] || null; }
+        if (container && container.playVideoCheck && typeof container.playVideoCheck === 'function') {
+            container.playVideoCheck();
+        }
+        new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZauhN3SzAAAAmS5N09EjLwP3_RgPV0GxQEH7QOt0q6N0HIvNtAn6XNpw4twfkwZdSMh_o6_qZxUDRiWMUyiNM1_zEXNxM7aYjeTO6p8yOZSt7-3ki0qUORbfYA2oLg44OolOhD979lPivVATiFOKX0ypeadu8ti-brVrZBWSwA6azTuyfM9dP9tLyTYYPzQMrrV6GXdlfEXnSlx030KBhQsV5VC0B-IdA3n-SiTpZIFL6K_pJUnuDokVAFLdDKVfSNJ-9-csFQCV.gif";
+        RB.I({
+            el: trgB,
+            pixels:  ['https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZV27G1uzAAAAkBA7LAjK2t6HmTyvj05032FODk5VqMZZvLBAuGeKYyy6O9vZqRIYGstCfeQw4od3_yP92c71DsyzIPfWVxT912YmJSTEvtxi6wDJXhDm43y34oRUWyjnC7hvEQRH5jNRj87guhDCijKyurpSY9Fvc76jUT8PYWomO-bV5CzoFjdRorg920Amc-52HsCx6mw0BETLTuQlla69G4JpEoDUZQZtohoTCFIAoj7ojonPVkblAm6NR8K8q9V18MQQJR3I.gif']
+        });
+
+        if (type === fallbackType.TIMEOUT) {
+          new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZXalPTazAAAAUQ6c6BNVAOJxqmRX7BTb0jfQwzMJ0jFl8T3TpyncsOB6h6Pl9GGtaUyWcSq-CZ-rCyh3Y__7nIktJM7i5zcNTiaNU7tFZSd5BXowH2X7kYoibuQ3QvptS5ilbL9T6X37HVUxXq_50iDAZtUWp6G7p5slxc1VVTG8TtPs1CpbYAbUQ8eqhJ7ZkjzECueJWfmyprbFKmIANHwTxQT2GYSI4Wrc6noaH2g0YLGCkAuDpmCgnRpiXBWKjgKeqjkrepo2.gif";
+        } else if (type === fallbackType.ERROR) {
+          new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZcj63gqzAAAAWXu1wejI_zxNtoHxFTTT-Jr7t87Q_rMI8_ja76a1IROLZJJFq77sqelzaJMxAi-UXRV5Xz4OyJAg9QFoDi4AbO2Ex8pTBkROZ9qe5TRBcizSsVckHW0YH38d1NhZw1XOKi0PB3AFE0Lgv44kkDtAZNsfDJZKhTa_7CbvK2A7gj_LPe4EuEeo5jvzQV2wDws7lu-EJ8LjL-i31ss4wcxq73jVJmV2oxoKg0_0sbytPNoJbUQKPA965YoeK3ycvrgB.gif";
+        } else if (type === fallbackType.EMPTY) {
+          new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZcoU0RazAAAA3G3--Luu0KV0NeQyjrhuE9CbRVeZ17ZgC85ScAzdMRu3k7p8iKoYYdocBbXRFlMigzRDbjtUc_uHYjGs8cinP8q1QRpC947fB1NreZhQG42s55zelSEBtepK3QyV88Zk_7DyxgLECA3vWxrhUToJQSWTnTlRUJvqEtt5icik3UBUdrT_v6zKx3OMgldOgnnluQaAqy2WfDpzxrHXfjMYypTccfPYb3NwX2qYyvMcSUjEoqtAXd9bysiq4zynBCx7.gif";
+        }
+
+        logRender(type);
+      }
+		}
+
+		// Stat utils
+    function getAreaRatio(container, selector) {
+        var elems = container.querySelectorAll(selector);
+        var totalArea = 0;
+
+        for (var i = 0, l = elems.length; i < l; i++) {
+            var el = elems[i];
+            var w = (el.clientWidth === 0) ? 0 : (el.width || el.clientWidth);
+            var h = (el.clientHeight === 0) ? 0 : (el.height || el.clientHeight);
+            totalArea += w * h;
+        }
+
+        if (totalArea === 0) {
+            return totalArea;
+        }
+
+        var containerArea = container.clientWidth * container.clientHeight;
+        return totalArea / containerArea;
+    }
+
+		function onContextReady() {
+		  var contextReadyStartTime = +new Date();
+		  
+			Ya.Context.AdvManager.render({
+				blockId: "R-142108-737",
+				renderTo: "yandex_ad_R-142108-737_906865652",
+				statId: "492",
+				async: true,
+				disableHighlight: true,
+				onRender: function (data) {
+				  if (fallbackInvoked) return;
+				  clearTimeout(fallbackTimeout);
+				  
+				  var yaNode = document.getElementById("yandex_ad_R-142108-737_906865652");
+				  
+				  if (data && data.refresh) {
+            new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZb9WAmqzAAAAiodrWw0vAUC_uezt3F3Q4AabJ_mFZvYHNG9VNmSqLSjCBNYVKYWeQk38iGYLZ52nsV0_kr_IeVI9Rf74CUdiuCXYUB57g9H_xfhoAhsYuhr3sJt6yecXZseMY8ndL6hoJl80FVTirwHXYgY8V8n1ACESfGEC-KiCYx0x1oE3vmnFpA3Ltf1txMdaLwN5lmP3s-I5xykV7cjq13qAS3Rf_PhYgYL8ok4KNZYVt3M39r-D2S_3dJSTY_OsSCIaSiLQ.gif";
+          } else {
+            new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZX_ZJAGzAAAAcLFV6b8DNdSGaddgnCXcpeXkXTnmIeF_mF-Rtp2RLTXvWPiQOy_Lgw0nV2gM1JJ1LLBDEtbkWr_NGplyGU5OJe5XNDBrTnMKaa6cdJvF7BcDLvgdOt1ZsBd2e3FkHTX0A_LolTOkHzcqimEA0JhwwcLRMalGHYRwf57XEN9nsLgk_-aF6OaKsHDrx2jUkq_SYpdDg8kMxrpr25-JA1-6So4FaQRosa7NjYI8dyrqBVhVyx70ElaLc29CnkRG3Lyl.gif";
+
+            if (yaNode && firstDirectRender) {
+              firstDirectRender = false;
+
+              RB.I({
+                el: yaNode,
+                pixels: ['https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZTlnY2qzAAAA6dG8hibCv-zxN8WPj5knKgQwWxWcnUAQYraRWruI1urhnbc2l3ZYCgYw81w8cKV7JmZqb5FBnOioUte01tlEcVRIU65ASwKQeCUNFebuPU5hCtvK9aDAsttikF9odCOy09q4UBLRM8cr2Uzf7b96IzWy8N200Ykwzwquvfl6TyaLRM--FL-IWa4Tb6JzZ4DfHfJssq4Bza6wQHVhNhFLSHwvfDiBSHOVPKwelbj9f5vYnbY8d-01FBTDBk0bY6ox.gif']
+              });
+
+              logRender();
+              
+              logDirectRenderDurationType(new Date().getTime() - contextReadyStartTime);
+            }
+          }
+          
+          if (yaNode && getAreaRatio(yaNode, 'img') > 0.3) {
+            new Image().src = "https://rs.mail.ru/pixel/AAD99gEWww_ptGuXKcqmtGO4yqpSfXgo_MUo20Zz3rltZ0R9Kjfmdm-zB3C0bYdRw5J_xk8OQlRLsYJATQ91sHxpjqkNc8fKvva17mBDqLbpX4-CLq9nv1Fi44F5hsX6iV6lNdklqNOdhtHLDX4fxfZiE17J39EO-2lEnK3BLUz10maIZRKZcjGzAAAASjrRqZXMnFDLMTQQpiGkoJ7Ui4jrQKX9ZMgvAmNdkxMNFox36O5iKm60TSqPBqKtXe01UPCuXaApYtltTR1Ekedn-ExrQhOdSa_W4wDSsDfh0QQBPsCMl017rv2Q1rHZ3CEzLoWopxbe9BoetYeb4673mAawDgaoDLeuiJxnEVIzFOYb61ysWKDPJAeQR3QnIcYxC6fWRtlggtHBoD65SduY3cC8PA8V9K0-0sgFfOmaYz5PcRehMxbWN7RftZj2.gif";
+          }
+				}
+			}, function () {
+			  if (firstDirectRender) {
+			    fallback(fallbackType.EMPTY);
+			  }
+			});
+		}
+    
+    w.YA_MAILRU_OK = true;
+    
+  	if (w.Ya && Ya.Context && Ya.Context.AdvManager && Ya.Context.AdvManager.render) {
+  		onContextReady();
+  	} else {
+  		w[n] = w[n] || [];
+  		w[n].push(onContextReady);
+  
+  		t = d.getElementsByTagName("script")[0];
+  		s = d.createElement("script");
+  		s.type = "text/javascript";
+  		s.src = "//yandex.ru/ads/system/context.js";
+  		s.async = true;
+  		s.onerror = function () {
+        fallback(fallbackType.ERROR);
+      };
+  		s.onload = function () {
+        logContextLibLoadDurationType(new Date().getTime() - timeStart);
+      };
+  		t.parentNode.insertBefore(s, t);
+  	}
+	})(this, this.document, "yandexContextAsyncCallbacks");
+</script>
+<!--RB-JSON:[
+    {
+        nodeId: 'yandex_ad_R-142108-737_906865652',
+        source: 'direct',
+        is_expensive: 'False',format: 'teaser',
+        count: 3,
+        bannerId: '119817434',
+        fallback: [
+            {
+                nodeId: 'trg-b-119817434-906865652',
+                source: 'marketing',
+                format: 'banner',
+                count: 1
+                }
+        ]
+    }
+]-->
+
+
+
+
+
+ </div>
+
+
+<script>
+  (function(prefix){
+    try{
+      
+      function getAdsContainers() {
+  			var ADS_CLASS = prefix + '-visibility-check',
+  				ADS_COUNTER_CLASS = ADS_CLASS + '-counter',
+  				ADS_CALLBACK_CLASS = ADS_CLASS + '-callback',
+  				COUNTER_ATTR = 'data-counter',
+  				COUNTER_ATTR_UNDETERMINED = COUNTER_ATTR + '-un',
+  				COUNTER_ATTR_NONVIEWABLE = COUNTER_ATTR + '-nv',
+  				CALLBACK_ATTR = 'data-callback',
+  				OBSERVER_ATTR = 'data-observer',
+  				containers = [],
+  				countables = [],
+  				i, k, counters, _counter, _observer;
+   
+  			containers = getByClass(document, ADS_CLASS);
+  			for (i = containers.length - 1; i >= 0; i--) {
+  				var counters = getByClass(containers[i], ADS_COUNTER_CLASS, 'span');
+  				_counter = containers[i].getAttribute(COUNTER_ATTR);
+  				_observer = containers[i].hasAttribute(OBSERVER_ATTR);
+  				countables[i] = {
+  					el: containers[i],
+  					pixels: [],
+  					pixels_undetermined: [],
+  					pixels_nonviewable: [],
+  					observer: _observer
+  				};
+  				if (_counter) countables[i].pixels.push(_counter);
+  				for (k = counters.length - 1; k >= 0; k--) {
+  					if (counters[k].parentNode === countables[i].el) {
+              _counter = counters[k].getAttribute(COUNTER_ATTR);
+              if (_counter) {
+                countables[i].pixels.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_UNDETERMINED);
+              if (_counter) {
+                countables[i].pixels_undetermined.push(_counter);
+              }
+              _counter = counters[k].getAttribute(COUNTER_ATTR_NONVIEWABLE);
+              if (_counter) {
+                countables[i].pixels_nonviewable.push(_counter);
+              }
+            }
+  				}
+  				var callback = getByClass(containers[i], ADS_CALLBACK_CLASS, 'span');
+  				if (callback[0]) {
+  				  var _callback = callback[0].getAttribute(CALLBACK_ATTR);
+  				  if (_callback && window.RB_CALLBACKS && window.RB_CALLBACKS[_callback]) {
+  				    countables[i].callback = window.RB_CALLBACKS[_callback];
+  				  }
+  				}
+  				if (!countables[i].pixels.length) countables.splice(i, 1);
+  			}
+   
+  			return countables;
+  		}
+   
+  		function getByClass(parent, childClassName, tagName) {
+  			if (parent.getElementsByClassName) {
+  				return parent.getElementsByClassName(childClassName);
+  			} else if (parent.querySelectorAll) {
+   
+  				return parent.querySelectorAll('.' + childClassName);
+  			} else {
+  				var els = [];
+  				var tmp = parent.getElementsByTagName(tagName ? tagName : "*");
+  				var regex = new RegExp("(^|\s)" + childClassName + "(\s|$)");
+  				for (var i = 0; i < tmp.length; i++) {
+  					if (regex.test(tmp[i].className)) {
+  						els.push(tmp[i]);
+  					}
+  				}
+  				return els;
+  			}
+  		}
+   
+  		RB.I(getAdsContainers());
+      
+    }catch(e){}
+  }('mailru'))
+</script>

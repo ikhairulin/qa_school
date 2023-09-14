@@ -1,0 +1,6 @@
+"{"userAgent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko)"
+" Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76","language":"ru","colorDepth":24,"deviceMemo"
+"ry":8,"pixelRatio":1,"screenResolution":"1920;1080","availableScreenResolution":"1920;1040","t"
+"imezone":"Europe/Moscow","timezoneOffset":-180,"hasLocalStorage":true,"hasSessionStorage":true"
+","hasIndexedDb":true,"hasOpenDB":true,"hardwareConcurrency":12,"platform":"Win32","dnt":"1","t"
+"ouchSupport":"0;false;false"}"

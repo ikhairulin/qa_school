@@ -1,0 +1,17 @@
+GET https://ad.mail.ru/adp/?_SITEZONE=15&json=1&p=resplash&q=917709&isDarkTheme=0&rb_doodle=&notgb=1 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Origin: https://mail.ru
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=e9f3e265019548f9a8408cd6f4516322; oid=7GxAwvq4tsGfiJvy5AjT5; mrcu=9CFD6500A70C3E97B1BAFFFFFFFF; mrhc=PftQw+xfBijiz7e5poaKAdFE6/yJwtWJ+HCB4nFd6BY=; p=wPAAAHz30ioA; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694541586080; mtrc=%7B%22mytrackerid%22%3A58519%7D; tmr_lvid=553445e0b86f410a9c140a2f163f9e39; tmr_lvidTS=1694541598481; i=AQATpwBlAgBdBgUCAQC9BwgEAYIVAQ==; s=ww=1422|wh=822|fver=0; b=m0wCAJCNLcQD53SdhgAAAAIA; c=M6cAZQAAAI0txAMRAAQAHgABAAIA; VID=1bD-480U7b2K00000v1oT42K:::0-0-0-a1affe1:CAASEOXFJr7GSoHBnXoR9dH8WVIaYAkCZ2-2bw20LIdzlXohp17P6ldOQufVWHD9oJb_iQmNLexLyDQsRDxldSxIWPbmekxqpTt1D3TlIKzMc4Bi2R1HzIIeRJZDL9g3sFSccuvtODjo3zKUMuv7QahGBOglAw
+Host: ad.mail.ru
+

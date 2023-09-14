@@ -1,0 +1,11 @@
+[t59]
+FileName1=t59_aliases.json
+URL1=https://e.mail.ru/api/v1/aliases?email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=454066b38097b4d198f3b828ebb3e383:PRiCZb-RoA33rQXLyek9Vqf4fgalX8zylO3D5pngOSt7InRpbWUiOjE2OTQ1NDE2NzYsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NzY4YWJiOWY1NWIxMTAyIn0&_=1694541689812
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_59.xml
+RequestHeaderFile=t59_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t59_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

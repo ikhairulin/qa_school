@@ -1,0 +1,11 @@
+[t153]
+FileName1=t153_NaviData.json
+URL1=https://portal.mail.ru/NaviData?mac=1&Socials=1&ldata=1&Login=petya.nikolayev.989%40mail.ru&target=1&_=1694906993957
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_153.xml
+RequestHeaderFile=t153_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t153_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

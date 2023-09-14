@@ -1,0 +1,62 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[3225],{64338:function(e,t,r){var s,o;s=[r(18440)],void 0===(o=function(e){return e.smartParse(e.__FEAST_TEMPLATE__`<div qa:id="layer-confirm-delete-folder">
+	<fn:var name="messages" value="{_this.getMessages()}"/>
+
+	<bem:mod name="touch" test="attrs.mobile"/>
+	<bem:mod name="full" test="!attrs.mobile"/>
+	<bem:mod name="hidden" test="attrs.hidden"/>
+
+	<b:layer
+			remit:close="layer:close"
+			model="{attrs.model}"
+			error="{attrs.error}"
+			mobile="{attrs.mobile}"
+			processing="{attrs.processing}"
+			name="confirm-clear-folder"
+			close
+			header
+			footer
+			center
+			standard
+			resolvable
+	>
+
+		<fn:match name="header" args="attrs">
+			{messages.confirm}
+		</fn:match>
+
+		<fn:match name="content" args="attrs">
+			<fn:if test="attrs.error">
+				<div bem:elem="error" qa:id="{attrs.error}">
+					{messages[attrs.error]}
+				</div>
+			</fn:if>
+			{i18n(\'Все письма будут перенесены в папку «Корзина».\')}
+		</fn:match>
+
+		<fn:match name="footer" args="attrs">
+			<div bem:elem="submit-button">
+				<b:button2
+						remit:click="layer:resolve"
+						disabled="{attrs.processing}"
+						text="{i18n(\'Удалить\')}"
+						primary
+						fluid
+						touch="{attrs.mobile}"
+						qa:id="submit"
+				/>
+			</div>
+
+			<div bem:elem="cancel-button">
+				<b:button2
+						remit:click="layer:close"
+						disabled="{attrs.processing}"
+						text="{i18n(\'Отменить\')}"
+						fluid
+						touch="{attrs.mobile}"
+				/>
+			</div>
+		</fn:match>
+
+	</b:layer>
+</div>
+`,"./app/ui-block/layer-confirm-delete-folder/layer-confirm-delete-folder.html")}.apply(t,s))||(e.exports=o)},63225:function(e,t,r){"use strict";r.r(t);var s=r(18440),o=r.n(s),a=r(64338),i=r.n(a),n=r(45114),l=r(2613);t.default=o().Block.extend({name:"layer-confirm-delete-folder",template:i(),blocks:{layer:l.Z,button2:n.Z},events:{"layer:resolve":"onConfirm"},defaults:{processing:!1,error:null},getMessages:function(){return{confirm:i18n("Удалить папку «{folderName}»?",{folderName:this.attrs.model.get("name")}),isCollectorRoot:i18n("Нельзя удалить папку, так как в неё собирается почта из другого ящика"),systemFolder:i18n("Невозможно удалить системную папку"),folderNotExists:i18n("Папка больше не существует"),invalidFolder:i18n("Невозможно удалить папку"),unknownError:i18n("Произошла неизвестная ошибка")}},onConfirm:function(){if(!this.is("processing")&&!this.is("error"))this.set("processing",!0)}})}}]);

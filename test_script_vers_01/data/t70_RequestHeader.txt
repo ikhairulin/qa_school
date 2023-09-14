@@ -1,0 +1,21 @@
+POST https://corsapi.imgsmail.ru/calendar/graphql HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+x-last-mutation-age: -1
+DNT: 1
+sec-ch-ua-mobile: ?0
+authorization: Bearer a58118268b7b76c09b16d0162140123967212e9837363830
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Content-Type: application/json
+Accept: */*
+x-email: petya.nikolayev.989@mail.ru
+sec-ch-ua-platform: "Windows"
+Origin: https://e.mail.ru
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Host: corsapi.imgsmail.ru
+Content-Length: 167
+

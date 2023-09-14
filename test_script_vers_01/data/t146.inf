@@ -1,0 +1,11 @@
+[t146]
+FileName1=t146.json
+URL1=https://account.mail.ru/api/v1/auth/qr/polling?token=AG_StnOKxwlYLiNMXFb6VhHr&sign=8wz0IR9q8zl9FGZUrhu2AiMBYE-QhNiVFSvcU2f8BIF9UVV3vrzICWSfN9NdrTtSdqKiXVIkuH21Z_EmjwaXRmw=
+Total=1
+RequestHeaderFile=t146_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t146_ResponseHeader.txt
+ContentType=application/json
+SnapshotXmlFile=snapshot_146.xml
+[ProtocolInfo]
+ProtocolId=QTWeb

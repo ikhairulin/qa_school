@@ -1,0 +1,14 @@
+POST https://data-edge.smartscreen.microsoft.com/api/browser/edge/data/bloomfilter/x/3 HTTP/1.1
+Accept: application/octet-stream;application/x-patch-bsdiff;
+Authorization: SmartScreenHash eyJhdXRoSWQiOiI0MWE0MzhiYy0xMjQ5LTQzZDMtYTI2ZC02OWNkNjJjMDgzMTciLCAia2V5Ijoic1Q3dXFiOW91QmRTZHd4TS91eWhRdz09IiwgImhhc2giOiJlZGFOditoSjIxOD0ifQ==
+Content-Type: application/json; charset=utf-8
+If-None-Match: "638300524547538171"
+Sec-Fetch-Site: none
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: empty
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate
+Host: data-edge.smartscreen.microsoft.com
+Content-Length: 1092
+Connection: Keep-Alive
+

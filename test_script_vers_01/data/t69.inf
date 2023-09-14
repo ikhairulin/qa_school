@@ -1,0 +1,11 @@
+[t69]
+SnapshotXmlFile=snapshot_69.xml
+FileName1=t69.gif
+URL1=https://top-fwz1.mail.ru/tracker?js=13;id=3123967;u=https%3A/e.mail.ru/inbox/%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%252C1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%252Cnavi%26x-login-auth%3D1%26afterReload%3D1;r=https%3A/e.mail.ru/messages/inbox%3Fapp_id_mytracker%3D58519%26authid%3Dlmgmchjb.grp%26back%3D1%26dwhsplit%3Ds10273.b1ss12743s%26from%3Dlogin%26x-login-auth%3D1%26back%3D1%26from%3Dnavi;st=1694541680076;title=(3)%20%D0%92%D1%85%D0%BE%D0%B4%D1%8F%D1%89%D0%B8%D0%B5%20-%20%D0%9F%D0%BE%D1%87%D1%82%D0%B0%20Mail.ru;s=1920*1080;vp=1422*822;touch=0;hds=1;frame=0;flash=;sid=78d9c704811dde02;ver=60.3.0;tz=-180%2FEurope%2FMoscow;nt=0/0/1694541672916/2567/2567//12/12/12/14/622/15/622/2561/2564/2567/7160/15850/15850/20281/20281/20281;ni=1.05/3g/700/0/;lvid=1694541598481%3A1694541697160%3A13%3A553445e0b86f410a9c140a2f163f9e39;opts=sec;visible=true;_=0.09983071582247005;e=RT/load;et=1694541697157
+Total=1
+RequestHeaderFile=t69_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t69_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

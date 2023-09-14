@@ -1,0 +1,15 @@
+[t177]
+FileName1=t177_smart.json
+URL1=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1694542875&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=43e9d5bd0703c489ba2b530cd27a7ea6:slSWBGQD1wQqcGORgZbv9ssqlmtB7Fg6BT0nJBYkNcN7InRpbWUiOjE2OTQ1NDI5MTIsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NTI2ZjQ1MTY5ZDY4YmYzIn0&_=1694542910395
+Total=3
+ContentType=application/json
+SnapshotXmlFile=snapshot_177.xml
+RequestHeaderFile=t177_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t177_ResponseHeader.txt
+FileName2=t177_emoji-list.html
+URL2=https://img.imgsmail.ru/hb/e.mail.ru/compose-emojilist/1.1.2/emoji-list.js
+FileName3=t177_ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIlCWqdk_4JFs0LEgUNkWGVThIFDaTLTs0SBQ2RYZVOEgUNkWGVTg==.txt
+URL3=https://edge.microsoft.com/autofillservice/v1/pages/ChRDaHJvbWUvMTE2LjAuMTkzOC43NhIlCWqdk_4JFs0LEgUNkWGVThIFDaTLTs0SBQ2RYZVOEgUNkWGVTg==?alt=proto
+[ProtocolInfo]
+ProtocolId=QTWeb

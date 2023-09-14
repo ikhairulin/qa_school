@@ -1,0 +1,13 @@
+[t42]
+SnapshotXmlFile=snapshot_42.xml
+FileName1=t42.gif
+URL1=https://rs.mail.ru/d26047874.gif?sz=49&rnd=225928759&ts=1694541652&sz=49
+Total=2
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1
+FileName2=t42_MailSansMedium.html
+URL2=https://img.imgsmail.ru/hb/e.mail.ru/static/fonts/MailSans/WOFF2/MailSansMedium.woff2

@@ -1,0 +1,17 @@
+GET https://portal.mail.ru/NaviData?mac=1&Socials=1&ldata=1&Login=petya.nikolayev.989%40mail.ru&_=1695203859182 HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: */*
+Origin: https://e.mail.ru
+Sec-Fetch-Site: same-site
+Sec-Fetch-Mode: cors
+Sec-Fetch-Dest: empty
+Referer: https://e.mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Cookie: act=0f24b1b822ba44e0b9a63b7466086329; oid=7cakjzYN6nsE3sDKbomnU; mrcu=C50C6500ABD106C3CFF5FFFFFFFF; re_theme=system; re_theme_actual=light; ph_tp_horo-mail-ru=t=1|d=1694542801428; tmr_lvid=5406c5c94f6ad3cb8258a9b550833ff8; tmr_lvidTS=1694542804112; p=RN0AAGzQf4UA; i=AQDbqwBlAgC9BwgEAYIVAYkNBQIBAA==; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; Mpop=1694542870:015d794677420e611905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; mrhc=7tHCKqx/tPMBLowNw38u/7fCPVWQ8dMvN49Vko/IoSM=; o=petya.nikolayev.989@mail.ru:2196:AAQ=.s; s=fver=0|ww=1422|wh=822|octavius=1; VID=1bERwf1Og22K00000v1oT42K:::a1b04d6-0-0-a1b049f:CAASEBbmdKcEK6ISAgmSydqhajYaYMKUJo_K5cFIu4vGLn1y0Uy7eDx7zO7h9gKvI8QyX-sdpbZFZoa6FiWI-_8ELVL2R75yGxC7OF88SjJuuTI4uuVwJ2xaED0-vW-6t3hFVwkQsBDsV1Ciyl4TH0lFbnp51w; b=m0wEAKA83GgCo6K2CokXVA1rFjgIAQAACAAA; c=F6wAZQEAoHsTAAAUAAQACQAAQAuAsJ8mNAAA; mtrc=%7B%22mytrackerid%22%3A52695%2C%22tmr_lvid%22%3A%225406c5c94f6ad3cb8258a9b550833ff8%22%7D
+Host: portal.mail.ru
+

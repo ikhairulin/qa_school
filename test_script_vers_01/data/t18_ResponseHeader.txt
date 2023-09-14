@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Type: application/octet-stream
+Content-Encoding: gzip
+Vary: Accept-Encoding
+MS-CV: LTe17TZGwGFBkKNEETwsng.0
+X-AFS-Tracking: cV=LTe17TZGwGFBkKNEETwsng.0;server=general01000013;cloudType=Consumer;environment=Prod_WestEurope_000l;migrationStage=NotStarted
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 356083F53ED244539C7E69BE73749235 Ref B: STOEDGE1606 Ref C: 2023-09-12T17:59:26Z
+Date: Tue, 12 Sep 2023 17:59:27 GMT
+

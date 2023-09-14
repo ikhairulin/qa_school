@@ -1,0 +1,11 @@
+[t30]
+FileName1=t30_multimedia_pxt.html
+URL1=https://likemore-go.imgsmail.ru/multimedia_pxt?doc_id=5043159300741208271&meta_info=eNrjYnBi4mAAAAFgAFc%3D&meta_type=doc&platform=sport&qid=86213e01-8fda-44a6-90d2-34f8b9731f9e&source_id=5467704833012698134&stream_id=lenta_main_mail_ru_mediaproject&title_position=1&url=https%3A%2F%2Fsportmail.ru%2Farticle%2Fboxing%2F57789436%2F%3Ffrommail%3Dft_ml&p=show
+Total=1
+ContentType=
+SnapshotXmlFile=snapshot_30.xml
+RequestHeaderFile=t30_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t30_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb

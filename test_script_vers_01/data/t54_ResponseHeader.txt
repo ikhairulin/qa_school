@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 12 Sep 2023 18:01:23 GMT
+Content-Type: application/octet-stream
+Content-Length: 0
+Connection: keep-alive
+Expires: Tue, 12 Sep 2023 20:01:23 GMT
+Cache-Control: max-age=7200
+Access-Control-Allow-Origin: https://e.mail.ru
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Method: POST
+Access-Control-Allow-Headers: content-type
+Access-Control-Max-Age: 1728000
+

@@ -1,0 +1,11 @@
+[t139]
+SnapshotXmlFile=snapshot_139.xml
+FileName1=t139.gif
+URL1=https://rs.mail.ru/sb84226411.gif?sz=15&_=1694619932404
+Total=1
+RequestHeaderFile=t139_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t139_ResponseHeader.txt
+ContentType=image/gif
+FrameIndex1=0
+UseFrameIndex=1

@@ -1,0 +1,19 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Tue, 12 Sep 2023 18:01:42 GMT
+Content-Type: text/html; charset=utf-8
+Content-Length: 477
+Connection: keep-alive
+X-Mru-Request-Id: f4e09a06
+Cache-Control: no-cache,no-store,must-revalidate
+Pragma: no-cache
+Expires: Mon, 12 Sep 2022 18:01:42 GMT
+Last-Modified: Tue, 12 Sep 2023 21:01:42 GMT
+X-Host: fau39.m.smailru.net
+Strict-Transport-Security: max-age=31536000; includeSubDomains; preload
+Critical-CH: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
+Accept-CH: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
+X-XSS-Protection: 1; mode=block; report=https://cspreport.mail.ru/xxssprotection
+X-Content-Type-Options: nosniff
+Vary: Origin
+

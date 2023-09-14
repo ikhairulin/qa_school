@@ -1,0 +1,10 @@
+HTTP/1.1 200 OK
+Cache-Control: max-age=0, no-cache, no-store, must-revalidate
+Content-Length: 116
+Content-Type: application/json; charset=utf-8
+MS-CV: APic2+iYQs6pbXOwsdeOPf.0
+X-AFS-Tracking: cV=APic2+iYQs6pbXOwsdeOPf.0;server=general01000007;cloudType=Consumer;environment=Prod_WestEurope_000l;migrationStage=NotStarted
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 9E99C4BEB8D14E8F82E26C2CB584B2A4 Ref B: STOEDGE1606 Ref C: 2023-09-12T17:59:16Z
+Date: Tue, 12 Sep 2023 17:59:15 GMT
+

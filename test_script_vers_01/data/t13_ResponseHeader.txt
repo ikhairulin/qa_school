@@ -1,0 +1,11 @@
+HTTP/1.1 201 Created
+Cache-Control: public, max-age=30
+Content-Length: 865
+Content-Type: application/json; charset=utf-8
+Location: v%7Bversion:apiVersion%7D/feeds/me/subscriptions/1ebf2322-ae4b-cd65-630d-1498379d7d28
+MS-CV: bEx5rAS5xUKsMAJjRxYE0A.0
+X-AFS-Tracking: cV=bEx5rAS5xUKsMAJjRxYE0A.0;server=general0100000S;cloudType=Consumer;environment=Prod_WestEurope_000l;migrationStage=NotStarted
+X-Cache: CONFIG_NOCACHE
+X-MSEdge-Ref: Ref A: 0A7D2F538F7B4C9DB8608D1AC9475345 Ref B: STOEDGE1015 Ref C: 2023-09-12T17:59:24Z
+Date: Tue, 12 Sep 2023 17:59:25 GMT
+

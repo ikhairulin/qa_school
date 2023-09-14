@@ -1,0 +1,16 @@
+GET https://likemore-go.imgsmail.ru/multimedia_pxt?doc_id=6847710359776648273&meta_info=eNrjYnBi4mAAAAFgAFc%3D&meta_type=doc&platform=hi-tech&qid=86213e01-8fda-44a6-90d2-34f8b9731f9e&source_id=6115257028045650506&stream_id=lenta_main_mail_ru_mediaproject&title_position=7099&url=https%3A%2F%2Fhi-tech.mail.ru%2Freview%2F102537-rossiyane-skupayut-audiokassety%2F%3Ffrommail%3Dft_ml&p=show HTTP/1.1
+sec-ch-ua: "Chromium";v="116", "Not)A;Brand";v="24", "Microsoft Edge";v="116"
+DNT: 1
+sec-ch-ua-mobile: ?0
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+sec-ch-ua-platform: "Windows"
+Accept: image/webp,image/apng,image/svg+xml,image/*,*/*;q=0.8
+Sec-Fetch-Site: cross-site
+Sec-Fetch-Mode: no-cors
+Sec-Fetch-Dest: image
+Referer: https://mail.ru/
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Host: likemore-go.imgsmail.ru
+Connection: Keep-Alive
+

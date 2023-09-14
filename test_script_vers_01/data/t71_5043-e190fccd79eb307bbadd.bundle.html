@@ -1,0 +1,17 @@
+(self.webpackChunk_mail_octavius=self.webpackChunk_mail_octavius||[]).push([[5043],{14903:function(t,e,a){var s,n;s=[a(18440)],void 0===(n=function(t){return t.smartParse(t.__FEAST_TEMPLATE__`<div qa:id="layer-metathreads-settings" promo:id="layer-metathreads-settings">
+	<b:react-async
+		key="{attrs.metathreadsData.length}"
+		component="MetathreadsSettingsContainer"
+		layer
+		darkMode="{attrs['dark-mode']}"
+		metathreadsData="{attrs.metathreadsData}"
+		onHelpClick="{_this.onHelpClick}"
+		onSettingsEdit="{_this.onSettingsEdit}"
+		onCreateFilter="{_this.onCreateFilter}"
+		filtersCount="{attrs.metathreadsFiltersCount}"
+		filtersCountLoading="{attrs.metathreadsFiltersCountLoading}"
+		onClose="{_this.onClose}"
+		use:mediator="settings-manager themes-manager folders-actions"
+	/>
+</div>
+`,"./app/ui-block/layer-metathreads-settings/layer-metathreads-settings.html")}.apply(e,s))||(t.exports=n)},45043:function(t,e,a){"use strict";a.r(e);var s=a(54498),n=a(18440),i=a.n(n),r=a(14903),o=a.n(r),l=a(4183),d=a(61799),h=a(2613),c=a(51474);e.default=i().Block.extend((0,d.Z)({events:[{name:"help:open",rename:"help_open"}]})({name:"layer-metathreads-settings",template:o(),defaults:{helpLink:"metathreads",metathreadsData:[],metathreadsFiltersCount:0,metathreadsFiltersCountLoading:!1},blocks:{layer:h.Z,"react-async":c.Z},constructor:function(){i().Block.apply(this,arguments),this.onClose=this.onClose.bind(this),this.onSettingsEdit=this.onSettingsEdit.bind(this),this.onHelpClick=this.onHelpClick.bind(this)},onClose:function(){this.broadcast("layer:close")},uid:0,onSettingsEdit:function(t){var e=this;return(0,l.default)({type:s.EDIT_METATHREADS_SETTINGS,uid:this.uid++,settings:t}).then((function(t){return e.broadcast("metathreads:settings:updated"),t}))},onHelpClick:function(){this.broadcast("help:open",this.attrs.helpLink)},onCreateFilter:function(){this.broadcast("metathreads:filters:create")}}))}}]);

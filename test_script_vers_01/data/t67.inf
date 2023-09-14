@@ -1,0 +1,11 @@
+[t67]
+SnapshotXmlFile=snapshot_67.xml
+FileName1=t67.jpg
+URL1=https://imgs2.imgsmail.ru/themes.outsource/3.1.0/t2031/images/vertical__preview.jpg
+Total=2
+RequestHeaderFile=t67_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t67_ResponseHeader.txt
+ContentType=image/jpeg
+FileName2=t67_onboarding-cat-dark-10.png
+URL2=https://img.imgsmail.ru/static.promo/announcement/promo/onboarding2/onboarding-cat-dark-10.png

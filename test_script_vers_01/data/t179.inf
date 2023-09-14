@@ -1,0 +1,11 @@
+[t179]
+FileName1=t179_short.json
+URL1=https://e.mail.ru/api/v1/user/short?email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=43e9d5bd0703c489ba2b530cd27a7ea6:slSWBGQD1wQqcGORgZbv9ssqlmtB7Fg6BT0nJBYkNcN7InRpbWUiOjE2OTQ1NDI5MTIsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI0NTI2ZjQ1MTY5ZDY4YmYzIn0&_=1694542910517
+Total=1
+ContentType=application/json
+SnapshotXmlFile=snapshot_179.xml
+RequestHeaderFile=t179_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t179_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
