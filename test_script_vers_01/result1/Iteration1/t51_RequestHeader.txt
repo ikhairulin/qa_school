@@ -1,0 +1,10 @@
+GET /cgi-bin/logout?next=1&lang=ru_RU&page=https%3A%2F%2Fmail.ru%2F%3Ffrom%3Dlogout HTTP/1.1
+Referer: https://e.mail.ru/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Accept: */*
+Connection: Keep-Alive
+Host: auth.mail.ru
+Cookie: act=704026de2e2f4e21bcd737629cbeb31c; oid=2VKdX9J9sxuNh9DAo7nKj; mrcu=6E37650472A30446E10A88A9FC6D; mrhc=aPYcvpgFuEcGLQBXoJ1FLL9o7mapmAAY6gkDVJTbuNY=; p=qBgAAAXBxm4A; i=AQCkcgRlAQCJDQUCAQA=; searchuid=7428501261694790308; GarageID=d063badd2c074ad0b03e8edea6524796; Mpop=1694790309:000e0a4f600f7e551905000017031f051c054f6c5150445e05190401041d415c444e501757515a5f5d564c52431f0d0f00105d57515e1c4a4c:petya.nikolayev.989@mail.ru:; ssdc=b9bb083607e543b5b58016a1991c0a6a; ssdc_info=b9bb:0:1694790308; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAcEzgcA; s=; o=petya.nikolayev.989@mail.ru:2205:AAQ=.s; b=nkwBAAA83GgCAQAC; c=pXIEZQEAAHsTAAAUAAAACQAQ
+

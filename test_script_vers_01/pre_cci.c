@@ -2616,10 +2616,13 @@ vuser_init()
 
 # 1 "Action.c" 1
 Action()
+	
 {
 
-	int i;
-	
+    char* x_num = lr_eval_string("{custom_iteration_num}");
+    int send_iter_num = atoi(x_num);
+    int i;
+
 	lr_start_transaction("01_get_start_url");
 
 	web_set_sockets_option("SSL_VERSION", "AUTO");
@@ -2635,13 +2638,13 @@ Action()
 		"RegExp=\"?(?:act|CSRF|csrf)(?:Token)?\"?(?:=|:)\\s?\"?(.*?)\"?[,;}]",
 		"LAST");
 
-	web_url("mail.ru", 
-		"URL=https://mail.ru/", 
-		"TargetFrame=", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=", 
-		"Snapshot=t122.inf", 
+	web_url("mail.ru",
+		"URL=https://mail.ru/",
+		"TargetFrame=",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=",
+		"Snapshot=t122.inf",
 		"Mode=HTML");
 
 	web_reg_find("Search=Body",
@@ -2649,7 +2652,7 @@ Action()
 	            "LAST");
 
 	lr_end_transaction("01_get_start_url",2);
-	
+
 	lr_start_transaction("02_login");
 
 	web_url("login",
@@ -2664,68 +2667,20 @@ Action()
 
 	 
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-	web_submit_data("info", 
-		"Action=https://auth.mail.ru/api/v1/pushauth/info", 
-		"Method=POST", 
-		"EncType=multipart/form-data", 
-		"TargetFrame=", 
-		"RecContentType=application/json", 
-		"Referer=https://account.mail.ru/", 
-		"Snapshot=t144.inf", 
-		"Mode=HTML", 
-		"ITEMDATA", 
-		"Name=login", "Value={login}@mail.ru", "ENDITEM", 
-		"Name=htmlencoded", "Value=false", "ENDITEM", 
-		"Name=referrer", "Value=https://mail.ru/", "ENDITEM", 
+	web_submit_data("info",
+		"Action=https://auth.mail.ru/api/v1/pushauth/info",
+		"Method=POST",
+		"EncType=multipart/form-data",
+		"TargetFrame=",
+		"RecContentType=application/json",
+		"Referer=https://account.mail.ru/",
+		"Snapshot=t144.inf",
+		"Mode=HTML",
+		"ITEMDATA",
+		"Name=login", "Value={login}@mail.ru", "ENDITEM",
+		"Name=htmlencoded", "Value=false", "ENDITEM",
+		"Name=referrer", "Value=https://mail.ru/", "ENDITEM",
 		"LAST");
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
 	web_submit_data("auth",
 		"Action=https://auth.mail.ru/cgi-bin/auth?from=navi",
@@ -2759,31 +2714,6 @@ Action()
 		"Snapshot=t152.inf",
 		"Mode=HTML",
 		"LAST");
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
 	web_url("smart",
 		"URL=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&pinned_limit=50&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542870475",
@@ -2865,9 +2795,15 @@ Action()
 		"Snapshot=t167.inf",
 		"Mode=HTML",
 		"LAST");
-	
+
 	lr_end_transaction("02_login",2);
 
+
+
+for (i = 0; i<send_iter_num; i++){
+		
+    char* mail_address = lr_eval_string("{mail_address}");
+		
 
 	lr_start_transaction("03_click_send_mail");
 
@@ -2880,6 +2816,10 @@ Action()
 	web_reg_save_param_json(
 		"ParamName=token_1",
 		"QueryString=$.body.token",
+		"LAST");
+
+	web_reg_find("Search=All",
+		"Text=200",
 		"LAST");
 
 	web_submit_data("short",
@@ -2913,26 +2853,6 @@ Action()
 		"Name=htmlencoded", "Value=false", "ENDITEM",
 		"Name=token", "Value={token_1}", "ENDITEM",
 		"LAST");
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
- 
- 
- 
- 
- 
- 
- 
- 
- 
 
 	web_url("security",
 		"URL=https://e.mail.ru/api/v1/golang/user/security?email={login}%40mail.ru&htmlencoded=false&token={token_1}&_=1694542910517",
@@ -2993,9 +2913,14 @@ Action()
 	web_reg_save_param_json(
 		"ParamName=id",
 		"QueryString=$.body.id",
-		"SEARCH_FILTERS",
-		"Scope=Body",
-		"IgnoreRedirections=No",
+		"LAST");
+
+	web_reg_find("Search=All",
+		"Text=200",
+		"LAST");
+
+	web_reg_find("Search=Body",
+		"Text=cancellation_button_lifetime\":\"20\"",
 		"LAST");
 
 	web_submit_data("send",
@@ -3020,7 +2945,7 @@ Action()
 		"Name=subject", "Value=TESTTESTTEST", "ENDITEM",
 		"Name=priority", "Value=3", "ENDITEM",
 		"Name=send_date", "Value=", "ENDITEM",
-		"Name=body", "Value={\"html\":\"<div>TEST mail_01 {time}</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail_01\\n"
+		"Name=body", "Value={\"html\":\"<div>TEST mail {time}</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail\\n"
 		"\\n"
 		"\\n"
 		"\\n"
@@ -3029,7 +2954,7 @@ Action()
 		"Петр Николаев\\n"
 		"Отправлено из Почты Mail.ru\"}", "ENDITEM",
 		"Name=from", "Value=Петр Николаев <{login}@mail.ru>", "ENDITEM",
-		"Name=correspondents", "Value={\"to\":\"ikhairulin <ikhairulin@gmail.com>\",\"cc\":\"\",\"bcc\":\"\"}", "ENDITEM",
+		"Name=correspondents", "Value={\"to\":\"<{mail_address}>\",\"cc\":\"\",\"bcc\":\"\"}", "ENDITEM",
 		"Name=folder_id", "Value=", "ENDITEM",
 		"Name=triggerModelChangePlease", "Value=true", "ENDITEM",
 		"Name=compose_stat", "Value={\"user_track\":\"m|201|226|2|1;m|250|25|1|0;m|2040|147|1|1;m|16080|604|3|1;m|201|119|1|0;m|205|2|1|0;m|204|164|1|1;m|201|31|1|0;c|180|0|432|71;m|21|5|1|0;m|614|35|1|1;m|202|18|1|0;m|201|6|1|0;m|202|28|1|1;m|208|44|1|1;c|156|0|494|175;m|248|3|1|1;m|200|60|1|1;m|206|8|1|0;c|182|0|452|120;k|796|6;m|6348|1|1|1;m|205|3|1|1;m|408|3|1|1;m|202|14|1|1;m|201|52|1|1;m|201|104|1|1;m|203|16|1|0;m|204|5|1|0;m|202|2|1|0;m|203|34|1|1;m|204|3|1|0;m|203|5|1|1;m|203|3|1|0;c|168|0|479|123;m|32|2|1|0;k|45|4;m|162|72|1|1;m|203|82|1|1;c|181|0|374|237;m|21|3|1|0;k|153|4;m|47|5|1|1;m|206|5|1|0;c|86|0|378|244;k|69|4;m|255|6|1|1;k|713|9;k|1344|6;m|1599|80|1|1;m|1012|28|1|1;m|200|429|3|1;m|18268|132|1|1;m|201|510|3|1;m|206|141|1|0;m|204|59|1|0;c|195|0|349|726;m|14|3|1|0\",\"build\":\"release-fmail-21883.1970-01-03T05_30_35\",\"serverTime\":1693930713831}", "ENDITEM",
@@ -3067,31 +2992,15 @@ Action()
 		"Name=token", "Value={token_1}", "ENDITEM",
 		"LAST");
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
 	lr_end_transaction("04_send_mail",2);
-
-	lr_think_time(5);
+	
+}
 
 	lr_start_transaction("05_logout");
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
+	web_reg_find("Search=All",
+		"Text=200",
+		"LAST");
 
 	web_submit_data("update_10",
 		"Action=https://e.mail.ru/api/v1/helpers/update",
@@ -3110,18 +3019,18 @@ Action()
 		"Name=token", "Value={token_1}", "ENDITEM",
 		"LAST");
 
-	web_url("logout", 
-		"URL=https://auth.mail.ru/cgi-bin/logout?next=1&lang=ru_RU&page=https%3A%2F%2Fmail.ru%2F%3Ffrom%3Dlogout", 
-		"TargetFrame=", 
-		"Resource=0", 
-		"RecContentType=text/html", 
-		"Referer=https://e.mail.ru/", 
-		"Snapshot=t199.inf", 
-		"Mode=HTML", 
+	web_url("logout",
+		"URL=https://auth.mail.ru/cgi-bin/logout?next=1&lang=ru_RU&page=https%3A%2F%2Fmail.ru%2F%3Ffrom%3Dlogout",
+		"TargetFrame=",
+		"Resource=0",
+		"RecContentType=text/html",
+		"Referer=https://e.mail.ru/",
+		"Snapshot=t199.inf",
+		"Mode=HTML",
 		"LAST");
 
 	lr_end_transaction("05_logout",2);
-	
+
 	return 0;
 }
 # 5 "d:\\dev\\qa_school\\test_script_vers_01\\\\combined_test_chrome_copy.c" 2
