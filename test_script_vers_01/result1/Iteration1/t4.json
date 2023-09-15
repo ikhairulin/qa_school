@@ -1,1 +1,1 @@
-{"status":200,"htmlencoded":false,"body":{"type":"expired","meta":{"mode":"polling","retry_after":10000},"payload":null}}
+{"status":200,"htmlencoded":false,"body":{"uri":"https://account.mail.ru/api/v1/auth/qr/polling?token=AG_49lfF3bwkK8PXT6ILoc2Q&sign=h320iGaAxocZKWNhOyYzLkMSlI2haXVgyJMEGoo1BDff_kXQio2Taab60W6EujAjGMbu5rwZ7Z4Calc8RX-Yxqk=","expires":1800}}

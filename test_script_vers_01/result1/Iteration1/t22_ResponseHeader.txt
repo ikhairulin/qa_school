@@ -1,16 +1,16 @@
 HTTP/2.0 200
 Status: 200
 server: nginx
-date: Thu, 14 Sep 2023 05:17:59 GMT
+date: Fri, 15 Sep 2023 08:51:17 GMT
 content-type: application/json; charset=utf-8
-content-length: 86
-x-mru-k8s-pod: mailapi-fc5b746bf-t9ppf
-x-mru-request-id: ec61d205-f493-9e60-843e-93b292b5a345
-x-envoy-upstream-service-time: 3
+content-length: 182
+x-mru-k8s-pod: mailapi-fc5b746bf-rz86z
+x-mru-request-id: c1106eea-91c8-916e-a48f-28f02e6ac113
+x-envoy-upstream-service-time: 11
 x-frame-options: SAMEORIGIN
-x-host: f410.i.mail.ru
+x-host: f148.i.mail.ru
 x-xss-protection: 1; mode=block; report=https://cspreport.mail.ru/xxssprotection
-x-etime: 0.004
+x-etime: 0.018
 x-content-type-options: nosniff
 strict-transport-security: max-age=16070400; includeSubDomains; preload
 accept-ch: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List

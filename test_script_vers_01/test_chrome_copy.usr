@@ -1,7 +1,7 @@
 [General]
 Type=Multi
 DefaultCfg=default.cfg
-ParameterFile=
+ParameterFile=test_chrome_copy.prm
 GlobalParameterFile=
 NewFunctionHeader=1
 RunType=cci
@@ -52,15 +52,15 @@ vuser_init=cci
 Action=cci
 vuser_end=cci
 [TransactionsOrder]
-Order="02_login__*delimiter*__01_get_start_url__*delimiter*__03_click_send_mail__*delimiter*__04_send_mail__*delimiter*__05_logout"
+Order="01_get_start_url__*delimiter*__02_login__*delimiter*__03_click_send_mail__*delimiter*__04_send_mail__*delimiter*__05_logout"
 [StateManagement]
 LastReplayStatus=1
 [ActiveReplay]
 LastReplayedRunName=result1
 ActiveRunName=result1
 [Transactions]
-02_login=
 01_get_start_url=
+02_login=
 03_click_send_mail=
 04_send_mail=
 05_logout=

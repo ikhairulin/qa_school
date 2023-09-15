@@ -1,23 +1,22 @@
 HTTP/2.0 200
 Status: 200
-server: nginx
-date: Thu, 14 Sep 2023 05:17:57 GMT
-content-type: text/html; charset=UTF-8
-x-host: fau45.m.smailru.net
-x-mru-request-id: e075309e167f2a80d1a3022e111cd544
+server: nginx/1.22.0
+date: Fri, 15 Sep 2023 08:51:14 GMT
+content-type: text/html; charset=utf-8
+set-cookie: act=b22e1ed0a8654829918dd0ea89970164; path=/; domain=.mail.ru; Secure; HttpOnly; SameSite=None
+set-cookie: o=:1797:EAA=.m; Path=/; Domain=mail.ru; Expires=Sun, 15 Sep 2024 08:51:13 GMT
+set-cookie: oid=7ZGR2WY4JvJhR6NBBWnVU; Path=/; Domain=mail.ru; Max-Age=315360000
+set-cookie: mrcu=A9A565041B01699AC0C188A9FC6D; expires=Mon, 12 Sep 2033 08:51:14 GMT; path=/; domain=.mail.ru; Secure; HttpOnly; SameSite=None
+x-mru-request-id: dace5c025d9733babe49a6e96f0e8b5a
 cache-control: no-cache,no-store,must-revalidate
 pragma: no-cache
-expires: Wed, 14 Sep 2022 05:17:57 GMT
-x-mru-sota-response: 1
-strict-transport-security: max-age=31536000; includeSubDomains; preload
-critical-ch: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
-accept-ch: Sec-CH-UA-Platform, Sec-CH-UA-Platform-Version, Sec-CH-UA-Full-Version, Sec-CH-UA-Model, Sec-CH-UA-Full-Version-List
+expires: Thu, 15 Sep 2022 08:51:14 GMT
+x-frame-options: SAMEORIGIN
 x-xss-protection: 1; mode=block; report=https://cspreport.mail.ru/xxssprotection
-content-security-policy: default-src 'none'; base-uri 'none'; script-src 'self' 'nonce-e075309e167f2a80d1a3022e111cd544' https://img.imgsmail.ru https://portal.mail.ru https://portal.test.mail.ru https://www.gstatic.com/recaptcha/ https://www.google.com/recaptcha/ https://top-fwz1.mail.ru 'report-sample' https://limg.imgsmail.ru; style-src 'self' https://img.imgsmail.ru 'unsafe-inline' https://limg.imgsmail.ru; font-src https://img.imgsmail.ru; img-src 'self' data: https://img.imgsmail.ru https://stat.radar.imgsmail.ru https://rs.mail.ru https://www.tns-counter.ru https://top-fwz1.mail.ru https://filin.mail.ru https://r3.mail.ru https://c.mail.ru https://c.my.com https://*.userapi.com https://*.vk.com https://*.vk.ru https://vk.com https://vk.ru https://limg.imgsmail.ru https://retina.news.mail.ru https://xray.mail.ru https://ad.mail.ru https://trk.mail.ru https://r.mradx.net; connect-src 'self' https://portal.mail.ru https://auth.mail.ru https://*.auth.mail.ru https://aj-https.my.com https://account.mail.ru https://*.test.mail.ru https://login.vk.com https://login.vk.ru wss://rebus.e.mail.ru https://ok.ru https://bar.love.mail.ru https://vk.com https://vk.ru https://xray.mail.ru https://ad.mail.ru; child-src https://account.mail.ru https://*.test.mail.ru https://www.google.com/recaptcha/ https://auth.mail.ru https://connect.vk.com https://connect.vk.ru https://id.vk.com https://id.vk.ru https://marusia-web.go.mail.ru https://limg.imgsmail.ru; report-uri https://cspreport.mail.ru/login;
-x-host: fau45.m.smailru.net
-strict-transport-security: max-age=15768000; includeSubDomains; preload
 x-content-type-options: nosniff
-vary: Referer
-set-cookie: mrhc=UntKEulp+PagwXV2NhxV40k5nGQLQ6hrcrvJfEbISEA=; Path=/; Domain=mail.ru; Max-Age=315360000; HttpOnly; Secure
+x-host: lf257.m.smailru.net
+x-etime: 0.348
+content-security-policy: default-src *.adlooxtracking.com *.adlooxtracking.ru *.adsafeprotected.com *.doubleverify.com *.imgsmail.ru *.mail.ru *.moatads.com *.mradx.net *.serving-sys.com *.serving-sys.ru *.weborama.fr *.weborama-tech.ru https://an.yandex.ru cdn.consentmanager.mgr.consensu.org consentmanager.mgr.consensu.org b.delivery.consentmanager.net cdn.consentmanager.net jstracer.yandex.ru mail.ru mc.yandex.by mc.yandex.com mc.yandex.fr mc.yandex.kz mc.yandex.md mc.yandex.ru mc.yandex.uz strm.yandex.ru yandex.ru yandex.st yastat.net yastatic.net; script-src *.adlooxtracking.com *.adlooxtracking.ru *.adsafeprotected.com *.doubleclick.net *.doubleverify.com *.dvtps.com *.googleadservices.com *.googlesyndication.com *.googletagservices.com *.imgsmail.ru *.mail.ru *.moatads.com *.mradx.net *.odnoklassniki.ru *.relap.io *.serving-sys.com *.serving-sys.ru *.vk.com *.weborama-tech.ru *.weborama.fr https://an.yandex.ru cdn.ampproject.org cdn.consentmanager.mgr.consensu.org cdn.consentmanager.net consentmanager.mgr.consensu.org b.delivery.consentmanager.net home.mrgcdn.ru iframe.s3.yandex.net mail.ru mc.yandex.by mc.yandex.com mc.yandex.fr mc.yandex.kz mc.yandex.md mc.yandex.ru mc.yandex.uz ok.ru relap.io static.dzeninfra.ru vk.com yandex.ru yandex.st yastat.net yastatic.net 'unsafe-eval' 'unsafe-inline' 'nonce-dace5c025d9733babe49a6e96f0e8b5a' 'strict-dynamic' 'report-sample'; connect-src *.adlooxtracking.com *.adlooxtracking.ru *.adsafeprotected.com *.doubleverify.com *.dzen.ru *.imgsmail.ru *.mail.ru *.moatads.com *.mradx.net *.relap.io *.serving-sys.com *.serving-sys.ru *.vk.com *.weborama-tech.ru *.weborama.fr avatars.dzeninfra.ru b.delivery.consentmanager.net cdn.consentmanager.mgr.consensu.org cdn.consentmanager.net consentmanager.mgr.consensu.org dzen.ru home.mrgcdn.ru https://an.yandex.ru https://log.strm.yandex.ru https://verify.yandex.ru jstracer.yandex.ru mail.ru mc.yandex.by mc.yandex.com mc.yandex.fr mc.yandex.kz mc.yandex.md mc.yandex.ru mc.yandex.uz ok.ru relap.io static.dzeninfra.ru strm.yandex.ru vk.com yandex.ru yandex.st yastat.net yastatic.net ymetrica1.com; img-src data: blob: *; media-src *.imgsmail.ru *.mail.ru *.mradx.net *.ok.ru *.strm.yandex.ru *.vk.com *.yandex.net blob: data: mail.ru ok.ru strm.yandex.ru vk.com yandex.ru yandex.st yastat.net yastatic.net; style-src *.imgsmail.ru *.mail.ru *.mradx.net blob: cdn.consentmanager.mgr.consensu.org consentmanager.mgr.consensu.org b.delivery.consentmanager.net cdn.consentmanager.net home.mrgcdn.ru static.dzeninfra.ru yandex.st yastat.net yastatic.net 'unsafe-eval' 'unsafe-inline'; font-src *.imgsmail.ru *.mail.ru *.mradx.net https://an.yandex.ru blob: data: https: yastat.net yastatic.net 'self'; frame-src *.doubleclick.net *.doubleverify.com *.imgsmail.ru *.mail.ru *.mradx.net *.ok.ru *.vk.com *.yandex.ru *.yandexadexchange.net awaps.yandex.net mail.ru mc.yandex.by mc.yandex.com mc.yandex.fr mc.yandex.kz mc.yandex.md mc.yandex.ru mc.yandex.uz ok.ru vk.com yandex.ru yandexadexchange.net yastat.net yastatic.net; report-uri https://cspreport.mail.ru/home?disposition=report&rev=05.09.23;
+set-cookie: mrhc=ArueWxItjr3uZVTozT/dig2IKnmGzVwKARMPYidI/yU=; Path=/; Domain=mail.ru; Max-Age=315360000; HttpOnly; Secure
 content-encoding: gzip
 
