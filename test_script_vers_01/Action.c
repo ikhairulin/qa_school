@@ -393,7 +393,7 @@ RuleName ='cancellation_token'*/
 		"Name=subject", "Value=TESTTESTTEST", ENDITEM,
 		"Name=priority", "Value=3", ENDITEM,
 		"Name=send_date", "Value=", ENDITEM,
-		"Name=body", "Value={\"html\":\"<div>TEST mail_01</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail_01\\n"
+		"Name=body", "Value={\"html\":\"<div>TEST mail_01 {time}</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail_01\\n"
 		"\\n"
 		"\\n"
 		"\\n"
@@ -454,51 +454,6 @@ RuleName ='cancellation_token'*/
 
 	lr_think_time(5);
 
-//	web_url("force",
-//		"URL=https://e.mail.ru/api/v1/messages/delivery/force?cancellation_token={cancellation_token}&email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token={token_1}&_=1694542976295",
-//		"TargetFrame=",
-//		"Resource=0",
-//		"RecContentType=application/json",
-//		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
-//		"Snapshot=t188.inf",
-//		"Mode=HTML",
-//		LAST);
-//
-//	web_submit_data("update_8",
-//		"Action=https://e.mail.ru/api/v1/helpers/update",
-//		"Method=POST",
-//		"EncodeAtSign=YES",
-//		"TargetFrame=",
-//		"RecContentType=application/json",
-//		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
-//		"Snapshot=t189.inf",
-//		"Mode=HTML",
-//		ITEMDATA,
-//		"Name=index", "Value=365", ENDITEM,
-//		"Name=update", "Value={\"count\":{\"show\":true},\"time\":true}", ENDITEM,
-//		"Name=email", "Value=petya.nikolayev.989@mail.ru", ENDITEM,
-//		"Name=htmlencoded", "Value=false", ENDITEM,
-//		"Name=token", "Value={token_1}", ENDITEM,
-//		LAST);
-//
-//	web_submit_data("update_9",
-//		"Action=https://e.mail.ru/api/v1/helpers/update",
-//		"Method=POST",
-//		"EncodeAtSign=YES",
-//		"TargetFrame=",
-//		"RecContentType=application/json",
-//		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
-//		"Snapshot=t190.inf",
-//		"Mode=HTML",
-//		ITEMDATA,
-//		"Name=index", "Value=365", ENDITEM,
-//		"Name=update", "Value={\"count\":{\"show\":true},\"time\":true}", ENDITEM,
-//		"Name=email", "Value=petya.nikolayev.989@mail.ru", ENDITEM,
-//		"Name=htmlencoded", "Value=false", ENDITEM,
-//		"Name=token", "Value={token_1}", ENDITEM,
-//		LAST);
-
-	
 	lr_start_transaction("05_logout");
 
 	web_url("smart_6",
@@ -536,8 +491,6 @@ RuleName ='cancellation_token'*/
 		"Referer=https://e.mail.ru/", 
 		"Snapshot=t199.inf", 
 		"Mode=HTML", 
-		EXTRARES, 
-		"Url=https://bar.love.mail.ru/jsonp/bar?&_=1695518328448", "Referer=https://mail.ru/", ENDITEM, 
 		LAST);
 
 	lr_end_transaction("05_logout",LR_AUTO);

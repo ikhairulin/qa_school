@@ -3010,7 +3010,7 @@ Action()
 		"Name=subject", "Value=TESTTESTTEST", "ENDITEM",
 		"Name=priority", "Value=3", "ENDITEM",
 		"Name=send_date", "Value=", "ENDITEM",
-		"Name=body", "Value={\"html\":\"<div>TEST mail_01</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail_01\\n"
+		"Name=body", "Value={\"html\":\"<div>TEST mail_01 {time}</div><div>&nbsp;</div><div data-signature-widget=\\\"container\\\"><div data-signature-widget=\\\"content\\\"><div>--<br>Петр Николаев<br>Отправлено из Почты <a href=\\\"https://trk.mail.ru/c/zzm979\\\">Mail.ru</a></div></div></div>\",\"text\":\"TEST mail_01\\n"
 		"\\n"
 		"\\n"
 		"\\n"
@@ -3071,51 +3071,6 @@ Action()
 
 	lr_think_time(5);
 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
- 
-
-	
 	lr_start_transaction("05_logout");
 
 	web_url("smart_6",
@@ -3153,8 +3108,6 @@ Action()
 		"Referer=https://e.mail.ru/", 
 		"Snapshot=t199.inf", 
 		"Mode=HTML", 
-		"EXTRARES", 
-		"Url=https://bar.love.mail.ru/jsonp/bar?&_=1695518328448", "Referer=https://mail.ru/", "ENDITEM", 
 		"LAST");
 
 	lr_end_transaction("05_logout",2);

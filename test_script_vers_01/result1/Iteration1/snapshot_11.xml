@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <HTTPSnapshot xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" id="11">
-  <HTTPTask id="50" url="https://r3.mail.ru/fp/?id=4890b7e46119182455d0e5342ecbc862" ip="95.163.52.89" port="443" client_ip="192.168.1.11" client_port="29040" connectionId="2704" origin="Primary" encodingType="UTF8" startDateTime="2023-09-15T11:51:16.269+03:00" startTime="2993" endTime="3011" blockedTime="0" dnsTime="0" connectTime="0" sendTime="0" waitTime="0" receiveTime="0" sslNegotiateTime="0" responseBodySize="0">
+  <HTTPTask id="50" url="https://r3.mail.ru/fp/?id=4890b7e46119182455d0e5342ecbc862" ip="95.163.52.89" port="443" client_ip="192.168.1.11" client_port="31971" connectionId="2596" origin="Primary" encodingType="UTF8" startDateTime="2023-09-15T12:11:46.589+03:00" startTime="3009" endTime="3028" blockedTime="0" dnsTime="0" connectTime="0" sendTime="0" waitTime="0" receiveTime="0" sslNegotiateTime="0" responseBodySize="0">
     <HTTPRequest method="POST">
       <HTTPBody>
         <HTTPDataSet>
@@ -25,7 +25,7 @@
         <HTTPHeaderEntity name="Date" index="1">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>RnJpLCAxNSBTZXAgMjAyMyAwODo1MToxNiBHTVQ=</ActualData>
+              <ActualData>RnJpLCAxNSBTZXAgMjAyMyAwOToxMTo0NiBHTVQ=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -57,7 +57,7 @@
         <HTTPHeaderEntity name="Expires" index="5">
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>RnJpLCAxNSBTZXAgMjAyMyAxMDo1MToxNiBHTVQ=</ActualData>
+              <ActualData>RnJpLCAxNSBTZXAgMjAyMyAxMToxMTo0NiBHTVQ=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>
@@ -97,7 +97,7 @@
         <HTTPAllHeaders>
           <HTTPDataSet>
             <HTTPData dataFilePath="" dfeDataType="Raw" sectionDataType="1">
-              <ActualData>SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IG5naW54DQpEYXRlOiBGcmksIDE1IFNlcCAyMDIzIDA4OjUxOjE2IEdNVA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0NClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkDQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlDQpFeHBpcmVzOiBGcmksIDE1IFNlcCAyMDIzIDEwOjUxOjE2IEdNVA0KQ2FjaGUtQ29udHJvbDogbWF4LWFnZT03MjAwDQpQM1A6IHBvbGljeXJlZj0iL3czYy9wM3AueG1sIiwgQ1A9Ik5PSSBEU1AgQ09SIE5JRCBQU0FvIFBTRG8gT1VSIEJVUyBVTkkgTkFWIFNUQSBJTlQiDQpBY2Nlc3MtQ29udHJvbC1BbGxvdy1DcmVkZW50aWFsczogdHJ1ZQ0KVGltaW5nLUFsbG93LU9yaWdpbjogKg0KDQo=</ActualData>
+              <ActualData>SFRUUC8xLjEgMjAwIE9LDQpTZXJ2ZXI6IG5naW54DQpEYXRlOiBGcmksIDE1IFNlcCAyMDIzIDA5OjExOjQ2IEdNVA0KQ29udGVudC1UeXBlOiBhcHBsaWNhdGlvbi9vY3RldC1zdHJlYW0NClRyYW5zZmVyLUVuY29kaW5nOiBjaHVua2VkDQpDb25uZWN0aW9uOiBrZWVwLWFsaXZlDQpFeHBpcmVzOiBGcmksIDE1IFNlcCAyMDIzIDExOjExOjQ2IEdNVA0KQ2FjaGUtQ29udHJvbDogbWF4LWFnZT03MjAwDQpQM1A6IHBvbGljeXJlZj0iL3czYy9wM3AueG1sIiwgQ1A9Ik5PSSBEU1AgQ09SIE5JRCBQU0FvIFBTRG8gT1VSIEJVUyBVTkkgTkFWIFNUQSBJTlQiDQpBY2Nlc3MtQ29udHJvbC1BbGxvdy1DcmVkZW50aWFsczogdHJ1ZQ0KVGltaW5nLUFsbG93LU9yaWdpbjogKg0KDQo=</ActualData>
             </HTTPData>
           </HTTPDataSet>
           <IsExternalData>false</IsExternalData>

@@ -1,0 +1,9 @@
+[parameter:time]
+Format="%d-%b-%Y %H:%M:%S.000"
+GenerateNewVal="EachOccurrence"
+Offset=""
+OffsetUI="0"
+OriginalValue=""
+ParamName="time"
+Type="Time"
+WorkingDaysOn="0"
