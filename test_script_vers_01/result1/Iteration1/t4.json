@@ -1,1 +1,1 @@
-{"status":200,"htmlencoded":false,"body":{"uri":"https://account.mail.ru/api/v1/auth/qr/polling?token=AG_1LRojfbrxn2sTzc7lQh9G&sign=gMBV3pBrHKShAgvJhwuvXhTvrMJna-3BGNuaJQHz2YkEylSawxIHDBScT5-anDFZTSloNjo1UjQMLYJdhdPxqeI=","expires":1800}}
+{"status":200,"email":"aglaya.semenova.93@mail.ru","htmlencoded":false,"body":{"exists":true,"twostep":false,"can_push":false,"alt_email":false,"phone":false,"trusted":false,"available":false,"has_vkc":false,"auth":"password","provider":"default","webauthn":[],"phones":[],"alt_emails":[]}}

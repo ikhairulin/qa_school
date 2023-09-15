@@ -1,0 +1,12 @@
+POST /cgi-bin/auth?from=navi HTTP/1.1
+Content-Type: application/x-www-form-urlencoded
+Referer: https://account.mail.ru/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Accept: */*
+Connection: Keep-Alive
+Host: auth.mail.ru
+Cookie: act=36ad53776701450d876fa52a0ab44b77; oid=7TjfmRnksucT224P1Uu31; mrcu=60C5650455E13943287588A9FC6D; mrhc=pV8qmccs2HRpM69it2VWz1yAwfF0VSGTzoFIbKb76pQ=; p=9wgAAFJtk0EA; i=AQDhVQRlAQBdBgUCAQA=; searchuid=7406853411694782945
+Content-Length: 444
+

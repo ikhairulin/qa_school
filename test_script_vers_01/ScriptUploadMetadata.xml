@@ -14,8 +14,11 @@
     <FileEntry Name="test_chrome_copy.prm" Filter="2" />
     <FileEntry Name="globals.h" Filter="2" />
     <FileEntry Name="login.dat" Filter="2" />
+    <FileEntry Name="mail_address.dat" Filter="2" />
     <FileEntry Name="combined_test_chrome_copy.c" Filter="2" />
     <FileEntry Name="pre_cci.c" Filter="2" />
+    <FileEntry Name="100678913441.idx" Filter="1" />
+    <FileEntry Name="155841250441.idx" Filter="1" />
     <FileEntry Name="Bookmarks.xml" Filter="1" />
     <FileEntry Name="Breakpoints.xml" Filter="1" />
     <FileEntry Name="CompilerLogMetadata.xml" Filter="1" />
