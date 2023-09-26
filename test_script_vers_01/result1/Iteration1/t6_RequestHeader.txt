@@ -1,0 +1,12 @@
+POST /api/v1/pushauth/info HTTP/1.1
+Content-Type: multipart/form-data; boundary=---------------------------7d025e2b16b064e
+Referer: https://account.mail.ru/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Accept: */*
+Connection: Keep-Alive
+Host: auth.mail.ru
+Cookie: act=ce52ccdc7b7d496099432d5f2e35d1f0; oid=4Qim8XEDK4XT5qqQQxaaL; mrcu=111865133F5D491EF92B88A9FC6D; mrhc=98//xOXYq3CmDkGzScdtbWe8rlXF87HIC9QUNP6r7UY=; p=P8oCADvtkVcA; i=AQBePxNlAQBdBgUCAQA=; searchuid=7253121861695760222; o=:2275:AgAAAAA=.s
+Content-Length: 382
+

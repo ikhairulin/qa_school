@@ -41,16 +41,20 @@ long_strings4 = [
 ]
 
 
+long_strings5=[
+'patron.updateToken("acffe23c82446afd200bf33eac347460:bOr3G7ETPT0YBzPSSYfaWcpJgtR3UsokifuH0cYKqzR7InRpbWUiOjE2OTUzOTM4OTQsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI5NzQ0Zjk3MzZjZDcwNzkyIn0");']
+
 pattern = r'"?(?:mytrackerid|appIdMytracker|app_id_mytracker)"?(?:[:=]|%3D)\s?"?(.*?)"?[,&%]'
 pattern2 = r'"?client[-_]id"?(?:[:=]|%3D)"?(.*?)"?[,&%]'
 pattern3 = r'"?(?:act|CSRF|csrf)(?:Token)?"?(?:=|:)\s?"?(.*?)"?[,;}]'
 pattern4 = r'"?[Ss]plit"?(?:[:=]|%3D)"?(.*?)"?[,&%]'
+pattern5 = r'updateToken\("(.{32}:.{123})'
 
 
-for i in long_strings4:
-    match = re.search(pattern4, i)
+for i in long_strings5:
+    match = re.search(pattern5, i)
     if match:
-        assert match.group(1) == 's10273.b1ss12743s', 'Ошибка, паттерн не отработал полностью'
+        assert match.group(1) == 'acffe23c82446afd200bf33eac347460:bOr3G7ETPT0YBzPSSYfaWcpJgtR3UsokifuH0cYKqzR7InRpbWUiOjE2OTUzOTM4OTQsInR5cGUiOiJjc3JmIiwibm9uY2UiOiI5NzQ0Zjk3MzZjZDcwNzkyIn0', 'Ошибка, паттерн не отработал полностью'
         print(f'True - {match.group(1)}')
     else:
         print("False")

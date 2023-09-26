@@ -1,3 +1,3 @@
-"email=petya.nikolayev.989%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590%3"
-"AjHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY"
-"2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0"
+"email=vgordein%40mail.ru&htmlencoded=false&token=f1849a19a070556d7ec0aafe9251e8e5%3Auk064lqfS0"
+"RC7bGNdM2U7VM-DFupN3tJpX2Ltsq9Y2N7InRpbWUiOjE2OTU3NjAyMjQsInR5cGUiOiJjc3JmIiwibm9uY2UiOiJlMGI5"
+"ZjYxM2FmNjg3NmMwIn0"

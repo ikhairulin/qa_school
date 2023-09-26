@@ -1,0 +1,10 @@
+GET /cgi-bin/logout?next=1&lang=ru_RU&page=https%3A%2F%2Fmail.ru%2F%3Ffrom%3Dlogout HTTP/1.1
+Referer: https://e.mail.ru/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/116.0.0.0 Safari/537.36 Edg/116.0.1938.76
+Accept-Encoding: gzip, deflate
+Accept-Language: ru
+Accept: */*
+Connection: Keep-Alive
+Host: auth.mail.ru
+Cookie: act=ce52ccdc7b7d496099432d5f2e35d1f0; oid=4Qim8XEDK4XT5qqQQxaaL; mrcu=111865133F5D491EF92B88A9FC6D; mrhc=/fxx4uXf6Imu0HizjU12OAtExHzHmWiE+LqFETPsnug=; p=P8oCADvtkVcA; i=AQBePxNlAQBdBgUCAQA=; searchuid=7253121861695760222; o=vgordein@mail.ru:2275:GlAAAgA=.s|:2275:AgAAAAA=.s; GarageID=c5876a9596ee424caf725e1800eee149; Mpop=1695760224:07036542435f7e5d1905000017031f051c054f6c5150445e05190401041d475e5f45555c5056105d505e59194744:vgordein@mail.ru:; ssdc=747a6ec2a07d4b219654859fac1e80a5; ssdc_info=747a:0:1695760224; t=obLD1AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAACAAAQJzwcA; s=; b=qUwBAAA83GgCAQAC; c=Yj8TZQEAAHsTAAAUAAAACQAQ
+

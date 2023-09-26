@@ -5,313 +5,307 @@
             {
                 "stepId": "STEP1",
                 "stepName": "Url: mail.ru",
-                "infFile": "t2.inf",
-                "time": 1694790307599
+                "infFile": "t3.inf",
+                "time": 1695760223278
             },
             {
                 "stepId": "STEP2",
                 "stepName": "Url: login",
-                "infFile": "t3.inf",
-                "time": 1694790307924
+                "infFile": "t5.inf",
+                "time": 1695760223891
             },
             {
                 "stepId": "STEP3",
                 "stepName": "Submit Data: info",
-                "infFile": "t4.inf",
-                "time": 1694790308008
+                "infFile": "t6.inf",
+                "time": 1695760224234
             },
             {
                 "stepId": "STEP4",
                 "stepName": "Submit Data: auth",
-                "infFile": "t5.inf",
-                "time": 1694790308331
+                "infFile": "t7.inf",
+                "time": 1695760224651
             },
             {
                 "stepId": "STEP5",
                 "stepName": "Url: inbox",
-                "infFile": "t6.inf",
-                "time": 1694790308642
+                "infFile": "t9.inf",
+                "time": 1695760226368
             },
             {
                 "stepId": "STEP6",
                 "stepName": "Url: smart",
-                "infFile": "t7.inf",
-                "time": 1694790308676
+                "infFile": "t10.inf",
+                "time": 1695760226490
             },
             {
                 "stepId": "STEP7",
                 "stepName": "Url: aliases",
-                "infFile": "t8.inf",
-                "time": 1694790308720
+                "infFile": "t11.inf",
+                "time": 1695760226549
             },
             {
                 "stepId": "STEP8",
                 "stepName": "Url: unread",
-                "infFile": "t9.inf",
-                "time": 1694790308772
+                "infFile": "t12.inf",
+                "time": 1695760226635
             },
             {
                 "stepId": "STEP9",
                 "stepName": "Url: smart_2",
-                "infFile": "t10.inf",
-                "time": 1694790308806
+                "infFile": "t13.inf",
+                "time": 1695760226747
             },
             {
                 "stepId": "STEP10",
                 "stepName": "Url: requests",
-                "infFile": "t11.inf",
-                "time": 1694790308840
+                "infFile": "t14.inf",
+                "time": 1695760226827
             },
             {
                 "stepId": "STEP11",
                 "stepName": "Submit Data: update_5",
-                "infFile": "t12.inf",
-                "time": 1694790308893
+                "infFile": "t15.inf",
+                "time": 1695760226922
             },
             {
                 "stepId": "STEP12",
-                "stepName": "Url: login_2",
-                "infFile": "t13.inf",
-                "time": 1694790309113
+                "stepName": "Submit Data: short",
+                "infFile": "t17.inf",
+                "time": 1695760227093
             },
             {
                 "stepId": "STEP13",
-                "stepName": "Submit Data: short",
-                "infFile": "t15.inf",
-                "time": 1694790309258
+                "stepName": "Submit Data: update_6",
+                "infFile": "t18.inf",
+                "time": 1695760227210
             },
             {
                 "stepId": "STEP14",
-                "stepName": "Submit Data: update_6",
-                "infFile": "t16.inf",
-                "time": 1694790309322
+                "stepName": "Url: security",
+                "infFile": "t19.inf",
+                "time": 1695760227290
             },
             {
                 "stepId": "STEP15",
-                "stepName": "Url: security",
-                "infFile": "t17.inf",
-                "time": 1694790309370
+                "stepName": "Url: short_2",
+                "infFile": "t20.inf",
+                "time": 1695760227354
             },
             {
                 "stepId": "STEP16",
-                "stepName": "Url: short_2",
-                "infFile": "t18.inf",
-                "time": 1694790309441
+                "stepName": "Url: list",
+                "infFile": "t21.inf",
+                "time": 1695760227433
             },
             {
                 "stepId": "STEP17",
-                "stepName": "Url: list",
-                "infFile": "t19.inf",
-                "time": 1694790309500
+                "stepName": "Url: unread_2",
+                "infFile": "t22.inf",
+                "time": 1695760227870
             },
             {
                 "stepId": "STEP18",
-                "stepName": "Url: unread_2",
-                "infFile": "t20.inf",
-                "time": 1694790309572
+                "stepName": "Submit Data: send",
+                "infFile": "t24.inf",
+                "time": 1695760228332
             },
             {
                 "stepId": "STEP19",
-                "stepName": "Submit Data: send",
-                "infFile": "t23.inf",
-                "time": 1694790310019
+                "stepName": "Url: thread",
+                "infFile": "t25.inf",
+                "time": 1695760228376
             },
             {
                 "stepId": "STEP20",
-                "stepName": "Url: thread",
-                "infFile": "t24.inf",
-                "time": 1694790310074
+                "stepName": "Submit Data: update_7",
+                "infFile": "t26.inf",
+                "time": 1695760228459
             },
             {
                 "stepId": "STEP21",
-                "stepName": "Submit Data: update_7",
-                "infFile": "t25.inf",
-                "time": 1694790310137
+                "stepName": "Submit Data: short",
+                "infFile": "t28.inf",
+                "time": 1695760228654
             },
             {
                 "stepId": "STEP22",
-                "stepName": "Submit Data: short",
-                "infFile": "t27.inf",
-                "time": 1694790310296
+                "stepName": "Submit Data: update_6",
+                "infFile": "t29.inf",
+                "time": 1695760228747
             },
             {
                 "stepId": "STEP23",
-                "stepName": "Submit Data: update_6",
-                "infFile": "t28.inf",
-                "time": 1694790310336
+                "stepName": "Url: security",
+                "infFile": "t30.inf",
+                "time": 1695760228827
             },
             {
                 "stepId": "STEP24",
-                "stepName": "Url: security",
-                "infFile": "t29.inf",
-                "time": 1694790310391
+                "stepName": "Url: short_2",
+                "infFile": "t31.inf",
+                "time": 1695760228890
             },
             {
                 "stepId": "STEP25",
-                "stepName": "Url: short_2",
-                "infFile": "t30.inf",
-                "time": 1694790310439
+                "stepName": "Url: list",
+                "infFile": "t32.inf",
+                "time": 1695760229002
             },
             {
                 "stepId": "STEP26",
-                "stepName": "Url: list",
-                "infFile": "t31.inf",
-                "time": 1694790310492
+                "stepName": "Url: unread_2",
+                "infFile": "t33.inf",
+                "time": 1695760229066
             },
             {
                 "stepId": "STEP27",
-                "stepName": "Url: unread_2",
-                "infFile": "t32.inf",
-                "time": 1694790310533
+                "stepName": "Submit Data: send",
+                "infFile": "t35.inf",
+                "time": 1695760229495
             },
             {
                 "stepId": "STEP28",
-                "stepName": "Submit Data: send",
-                "infFile": "t35.inf",
-                "time": 1694790311015
+                "stepName": "Url: thread",
+                "infFile": "t36.inf",
+                "time": 1695760229542
             },
             {
                 "stepId": "STEP29",
-                "stepName": "Url: thread",
-                "infFile": "t36.inf",
-                "time": 1694790311064
+                "stepName": "Submit Data: update_7",
+                "infFile": "t37.inf",
+                "time": 1695760229622
             },
             {
                 "stepId": "STEP30",
-                "stepName": "Submit Data: update_7",
-                "infFile": "t37.inf",
-                "time": 1694790311107
+                "stepName": "Submit Data: short",
+                "infFile": "t39.inf",
+                "time": 1695760229798
             },
             {
                 "stepId": "STEP31",
-                "stepName": "Submit Data: short",
-                "infFile": "t39.inf",
-                "time": 1694790311271
+                "stepName": "Submit Data: update_6",
+                "infFile": "t40.inf",
+                "time": 1695760229879
             },
             {
                 "stepId": "STEP32",
-                "stepName": "Submit Data: update_6",
-                "infFile": "t40.inf",
-                "time": 1694790311312
+                "stepName": "Url: security",
+                "infFile": "t41.inf",
+                "time": 1695760230002
             },
             {
                 "stepId": "STEP33",
-                "stepName": "Url: security",
-                "infFile": "t41.inf",
-                "time": 1694790311364
+                "stepName": "Url: short_2",
+                "infFile": "t42.inf",
+                "time": 1695760230053
             },
             {
                 "stepId": "STEP34",
-                "stepName": "Url: short_2",
-                "infFile": "t42.inf",
-                "time": 1694790311405
+                "stepName": "Url: list",
+                "infFile": "t43.inf",
+                "time": 1695760230095
             },
             {
                 "stepId": "STEP35",
-                "stepName": "Url: list",
-                "infFile": "t43.inf",
-                "time": 1694790311460
+                "stepName": "Url: unread_2",
+                "infFile": "t44.inf",
+                "time": 1695760230164
             },
             {
                 "stepId": "STEP36",
-                "stepName": "Url: unread_2",
-                "infFile": "t44.inf",
-                "time": 1694790311524
+                "stepName": "Submit Data: send",
+                "infFile": "t46.inf",
+                "time": 1695760230701
             },
             {
                 "stepId": "STEP37",
-                "stepName": "Submit Data: send",
+                "stepName": "Url: thread",
                 "infFile": "t47.inf",
-                "time": 1694790311985
+                "time": 1695760230789
             },
             {
                 "stepId": "STEP38",
-                "stepName": "Url: thread",
+                "stepName": "Submit Data: update_7",
                 "infFile": "t48.inf",
-                "time": 1694790312024
+                "time": 1695760230851
             },
             {
                 "stepId": "STEP39",
-                "stepName": "Submit Data: update_7",
+                "stepName": "Submit Data: update_10",
                 "infFile": "t49.inf",
-                "time": 1694790312065
+                "time": 1695760230996
             },
             {
                 "stepId": "STEP40",
-                "stepName": "Submit Data: update_10",
-                "infFile": "t50.inf",
-                "time": 1694790312211
-            },
-            {
-                "stepId": "STEP41",
                 "stepName": "Url: logout",
-                "infFile": "t51.inf",
-                "time": 1694790312721
+                "infFile": "t50.inf",
+                "time": 1695760232084
             }
         ],
         "transactions": [
             {
                 "transactionName": "01_get_start_url",
-                "rawStartTime": 1694790306745,
-                "rawEndTime": 1694790307623,
+                "rawStartTime": 1695760221349,
+                "rawEndTime": 1695760223304,
                 "thinkTime": 0.0,
-                "wastedTime": 0.12865829467773438
+                "wastedTime": 0.10652446746826172
             },
             {
                 "transactionName": "02_login",
-                "rawStartTime": 1694790307639,
-                "rawEndTime": 1694790309116,
+                "rawStartTime": 1695760223320,
+                "rawEndTime": 1695760226925,
                 "thinkTime": 0.0,
-                "wastedTime": 0.06307744979858399
+                "wastedTime": 0.0678253173828125
             },
             {
                 "transactionName": "03_click_send_mail",
-                "rawStartTime": 1694790309180,
-                "rawEndTime": 1694790309575,
+                "rawStartTime": 1695760226990,
+                "rawEndTime": 1695760227886,
                 "thinkTime": 0.0,
-                "wastedTime": 0.025305747985839845
+                "wastedTime": 0.026912450790405275
             },
             {
                 "transactionName": "04_send_mail",
-                "rawStartTime": 1694790309590,
-                "rawEndTime": 1694790310141,
+                "rawStartTime": 1695760227918,
+                "rawEndTime": 1695760228461,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01672077178955078
+                "wastedTime": 0.013537883758544922
             },
             {
                 "transactionName": "03_click_send_mail",
-                "rawStartTime": 1694790310205,
-                "rawEndTime": 1694790310535,
+                "rawStartTime": 1695760228526,
+                "rawEndTime": 1695760229068,
                 "thinkTime": 0.0,
-                "wastedTime": 0.025556564331054689
+                "wastedTime": 0.027320146560668947
             },
             {
                 "transactionName": "04_send_mail",
-                "rawStartTime": 1694790310550,
-                "rawEndTime": 1694790311117,
+                "rawStartTime": 1695760229101,
+                "rawEndTime": 1695760229624,
                 "thinkTime": 0.0,
-                "wastedTime": 0.01695728302001953
+                "wastedTime": 0.013844728469848633
             },
             {
                 "transactionName": "03_click_send_mail",
-                "rawStartTime": 1694790311180,
-                "rawEndTime": 1694790311526,
+                "rawStartTime": 1695760229688,
+                "rawEndTime": 1695760230167,
                 "thinkTime": 0.0,
-                "wastedTime": 0.02750563621520996
+                "wastedTime": 0.02602076530456543
             },
             {
                 "transactionName": "04_send_mail",
-                "rawStartTime": 1694790311543,
-                "rawEndTime": 1694790312073,
+                "rawStartTime": 1695760230199,
+                "rawEndTime": 1695760230855,
                 "thinkTime": 0.0,
-                "wastedTime": 0.016544818878173829
+                "wastedTime": 0.015087604522705078
             },
             {
                 "transactionName": "05_logout",
-                "rawStartTime": 1694790312121,
-                "rawEndTime": 1694790312731,
+                "rawStartTime": 1695760230903,
+                "rawEndTime": 1695760232094,
                 "thinkTime": 0.0,
-                "wastedTime": 0.017923355102539064
+                "wastedTime": 0.018642187118530275
             }
         ]
     }

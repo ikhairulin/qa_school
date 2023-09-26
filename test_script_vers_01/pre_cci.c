@@ -2616,7 +2616,7 @@ vuser_init()
 
 # 1 "Action.c" 1
 Action()
-	
+
 {
 
     char* x_num = lr_eval_string("{custom_iteration_num}");
@@ -2638,6 +2638,17 @@ Action()
 		"RegExp=\"?(?:act|CSRF|csrf)(?:Token)?\"?(?:=|:)\\s?\"?(.*?)\"?[,;}]",
 		"LAST");
 
+ 
+
+
+
+
+
+	web_reg_save_param_regexp(
+		"ParamName=app_id_mytracker",
+		"RegExp=\"?(?:mytrackerid|appIdMytracker|app_id_mytracker)\"?(?:[:=]|%3D)\\s?\"?(.*?)\"?[,&%]",
+		"LAST");
+
 	web_url("mail.ru",
 		"URL=https://mail.ru/",
 		"TargetFrame=",
@@ -2655,8 +2666,14 @@ Action()
 
 	lr_start_transaction("02_login");
 
+ 
+	web_reg_save_param_regexp(
+		"ParamName=dwhsplit",
+		"RegExp=\"?[Ss]plit\"?(?:[:=]|%3D)\"?(.*?)\"?[,&%]",
+		"LAST");
+
 	web_url("login",
-		"URL=https://account.mail.ru/login/?mode=simple&v=2.10.0&account_host=account.mail.ru&type=login&allow_external=1&app_id_mytracker=58519&success_redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fback%3D1&project=home&source=mailbox&from=navi&parent_url=https%3A%2F%2Fmail.ru%2F&responsive=compact",
+		"URL=https://account.mail.ru/login/?mode=simple&v=2.10.0&account_host=account.mail.ru&type=login&allow_external=1&app_id_mytracker={app_id_mytracker}&success_redirect=https%3A%2F%2Fe.mail.ru%2Fmessages%2Finbox%3Fback%3D1&project=home&source=mailbox&from=navi&parent_url=https%3A%2F%2Fmail.ru%2F&responsive=compact",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=text/html",
@@ -2666,6 +2683,7 @@ Action()
 		"LAST");
 
 	 
+
 
 	web_submit_data("info",
 		"Action=https://auth.mail.ru/api/v1/pushauth/info",
@@ -2680,6 +2698,10 @@ Action()
 		"Name=login", "Value={login}@mail.ru", "ENDITEM",
 		"Name=htmlencoded", "Value=false", "ENDITEM",
 		"Name=referrer", "Value=https://mail.ru/", "ENDITEM",
+		"LAST");
+
+	web_reg_find("Search=All",
+		"Text=Location: https://e.mail.ru/messages/inbox",
 		"LAST");
 
 	web_submit_data("auth",
@@ -2700,67 +2722,96 @@ Action()
 		"Name=new_auth_form", "Value=1", "ENDITEM",
 		"Name=FromAccount", "Value=opener=account&allow_external=1&twoSteps=1", "ENDITEM",
 		"Name=act_token", "Value={act_token}", "ENDITEM",
-		"Name=page", "Value=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1", "ENDITEM",
+		"Name=page", "Value=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1", "ENDITEM",
 		"Name=back", "Value=1", "ENDITEM",
 		"Name=lang", "Value=ru_RU", "ENDITEM",
 		"LAST");
+	
+     
 
+
+
+	web_reg_save_param_regexp(
+		"ParamName=Long_token_1",
+		"RegExp=updateToken.\"(.{32}:.{123})\"",
+		"LAST");
+	
 	web_url("inbox",
-		"URL=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
+		"URL=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=text/html",
-		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi",
+		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1&back=1&from=navi",
 		"Snapshot=t152.inf",
 		"Mode=HTML",
 		"LAST");
 
+	web_reg_find("Fail=Found",
+		"Search=All",
+		"Text=Bad Request",
+		"LAST");
+
+    lr_save_timestamp("CurTimestamp", "DIGITS=13", "LAST");
+    
 	web_url("smart",
-		"URL=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&pinned_limit=50&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542870475",
+		"URL=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&pinned_limit=50&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email={login}%40mail.ru&htmlencoded=false&token={Long_token_1}&_={CurTimestamp}",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
+		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
 		"Snapshot=t157.inf",
 		"Mode=HTML",
 		"LAST");
 
+   lr_save_timestamp("CurTimestamp", "DIGITS=13", "LAST");
+    
 	web_url("aliases",
-		"URL=https://e.mail.ru/api/v1/aliases?email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542870473",
+		"URL=https://e.mail.ru/api/v1/aliases?email={login}%40mail.ru&htmlencoded=false&token={Long_token_1}&_={CurTimestamp}",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
+		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
 		"Snapshot=t158.inf",
 		"Mode=HTML",
 		"LAST");
 
+   lr_save_timestamp("CurTimestamp", "DIGITS=13", "LAST");
+   
 	web_url("unread",
-		"URL=https://e.mail.ru/api/v1/golang/messages/services/cleanmaster/unread?email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542872822",
+		"URL=https://e.mail.ru/api/v1/golang/messages/services/cleanmaster/unread?email={login}%40mail.ru&htmlencoded=false&token={Long_token_1}&_={CurTimestamp}",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1&dwhsplit=s10273.b1ss12743s&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
+		"Referer=https://e.mail.ru/messages/inbox?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1&dwhsplit={dwhsplit}&from=login&x-login-auth=1&back=1&from=navi&afterReload=1",
 		"Snapshot=t159.inf",
 		"Mode=HTML",
 		"LAST");
 
+    lr_save_timestamp("CurTimestamp", "DIGITS=13", "LAST");
+ 
+	web_reg_find(
+		"Search=All",
+		"Text=\"name\":\"Входящие\"",
+		"LAST");
+    
 	web_url("smart_2",
-		"URL=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1694542045&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542872947",
+		"URL=https://e.mail.ru/api/v1/threads/status/smart?folder=0&limit=50&filters=%7B%7D&sort=%7B%22type%22:%22date%22,%22order%22:%22desc%22%7D&last_modified=1694542045&force_custom_thread=true&supported_custom_metathreads=[%22tomyself%22]&remove_emoji_opts=%7B%22remove_from_sender_name%22:false,%22remove_from_snippet%22:false,%22remove_from_subject%22:false%7D&offset=0&email={login}%40mail.ru&htmlencoded=false&token={Long_token_1}&_={CurTimestamp}",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t160.inf",
 		"Mode=HTML",
 		"LAST");
 
+    lr_save_timestamp("CurTimestamp", "DIGITS=13", "LAST");
+   
 	web_url("requests",
-		"URL=https://e.mail.ru/api/v1/messages/search/requests?query=&limit=5&email={login}%40mail.ru&htmlencoded=false&token=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0&_=1694542873454",
+		"URL=https://e.mail.ru/api/v1/messages/search/requests?query=&limit=5&email={login}%40mail.ru&htmlencoded=false&token={Long_token_1}&_={CurTimestamp}",
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t163.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2775,7 +2826,7 @@ Action()
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t166.inf",
 		"Mode=HTML",
 		"ITEMDATA",
@@ -2783,27 +2834,17 @@ Action()
 		"Name=update", "Value={\"count\":{\"show\":true},\"time\":true}", "ENDITEM",
 		"Name=email", "Value={login}@mail.ru", "ENDITEM",
 		"Name=htmlencoded", "Value=false", "ENDITEM",
-		"Name=token", "Value=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0", "ENDITEM",
+		"Name=token", "Value={Long_token_1}", "ENDITEM",
 		"LAST");
 
-		web_url("login_2",
-		"URL=https://o2.mail.ru/login?client_id=b4c073bb6c5a4b1b84d2c7d2a1bceb9b&redirect_uri=https://e.mail.ru&lang=ru&scope=calendar.calendars.read%20calendar.events.read&response_type=token&mode=hidden&state=cid%3D1%26e%3D__mailru_oauth_1694542874416_0.5112705781299065__",
-		"TargetFrame=",
-		"Resource=0",
-		"RecContentType=text/html",
-		"Referer=https://e.mail.ru/",
-		"Snapshot=t167.inf",
-		"Mode=HTML",
-		"LAST");
-
-	lr_end_transaction("02_login",2);
+    lr_end_transaction("02_login",2);
 
 
 
 for (i = 0; i<send_iter_num; i++){
-		
+
     char* mail_address = lr_eval_string("{mail_address}");
-		
+
 
 	lr_start_transaction("03_click_send_mail");
 
@@ -2818,8 +2859,8 @@ for (i = 0; i<send_iter_num; i++){
 		"QueryString=$.body.token",
 		"LAST");
 
-	web_reg_find("Search=All",
-		"Text=200",
+	web_reg_find("Search=Body",
+		"Text=\"account_type\":\"regular\"",
 		"LAST");
 
 	web_submit_data("short",
@@ -2828,13 +2869,13 @@ for (i = 0; i<send_iter_num; i++){
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t174.inf",
 		"Mode=HTML",
 		"ITEMDATA",
 		"Name=email", "Value={login}@mail.ru", "ENDITEM",
 		"Name=htmlencoded", "Value=false", "ENDITEM",
-		"Name=token", "Value=faa88786bd9cbe66dcada5bf987cb590:jHJurG2e2MjUtl3mXhK8bOvCP6NhvEDgLizSulHxarJ7InRpbWUiOjE2OTQ1NDI4NzAsInR5cGUiOiJjc3JmIiwibm9uY2UiOiIyNzAzNDFmOTVkZTFmZmQ3In0", "ENDITEM",
+		"Name=token", "Value={Long_token_1}", "ENDITEM",
 		"LAST");
 
 	web_submit_data("update_6",
@@ -2843,7 +2884,7 @@ for (i = 0; i<send_iter_num; i++){
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t175.inf",
 		"Mode=HTML",
 		"ITEMDATA",
@@ -2859,7 +2900,7 @@ for (i = 0; i<send_iter_num; i++){
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t178.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2869,7 +2910,7 @@ for (i = 0; i<send_iter_num; i++){
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t179.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2879,7 +2920,7 @@ for (i = 0; i<send_iter_num; i++){
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t180.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2889,25 +2930,16 @@ for (i = 0; i<send_iter_num; i++){
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t181.inf",
 		"Mode=HTML",
 		"LAST");
 
 	lr_end_transaction("03_click_send_mail",2);
 
+	lr_think_time(1000);
+
 	lr_start_transaction("04_send_mail");
-
- 
-
-
-
-
-
-	web_reg_save_param_json(
-		"ParamName=cancellation_token",
-		"QueryString=$.body.cancellation_token",
-		"LAST");
 
  
 	web_reg_save_param_json(
@@ -2916,11 +2948,7 @@ for (i = 0; i<send_iter_num; i++){
 		"LAST");
 
 	web_reg_find("Search=All",
-		"Text=200",
-		"LAST");
-
-	web_reg_find("Search=Body",
-		"Text=cancellation_button_lifetime\":\"20\"",
+		"Text=\"status\":200",
 		"LAST");
 
 	web_submit_data("send",
@@ -2929,13 +2957,13 @@ for (i = 0; i<send_iter_num; i++){
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t183.inf",
 		"Mode=HTML",
 		"ITEMDATA",
 		"Name=ATTACHMENTS_RESTORE", "Value=true", "ENDITEM",
 		"Name=ATTACHMENTS_EXPIRATION_TIME", "Value=14400000", "ENDITEM",
-		"Name=id", "Value=d98Aa2B79CfB89Bf59fF5Fa77793C463", "ENDITEM",
+		"Name=id", "Value={SEND_ID}", "ENDITEM",
 		"Name=source", "Value={\"draft\":\"\",\"reply\":\"\",\"forward\":\"\",\"schedule\":\"\"}", "ENDITEM",
 		"Name=headers", "Value={}", "ENDITEM",
 		"Name=template", "Value=0", "ENDITEM",
@@ -2970,7 +2998,7 @@ for (i = 0; i<send_iter_num; i++){
 		"TargetFrame=",
 		"Resource=0",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t184.inf",
 		"Mode=HTML",
 		"LAST");
@@ -2981,7 +3009,7 @@ for (i = 0; i<send_iter_num; i++){
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t185.inf",
 		"Mode=HTML",
 		"ITEMDATA",
@@ -2993,7 +3021,7 @@ for (i = 0; i<send_iter_num; i++){
 		"LAST");
 
 	lr_end_transaction("04_send_mail",2);
-	
+
 }
 
 	lr_start_transaction("05_logout");
@@ -3008,7 +3036,7 @@ for (i = 0; i<send_iter_num; i++){
 		"EncodeAtSign=YES",
 		"TargetFrame=",
 		"RecContentType=application/json",
-		"Referer=https://e.mail.ru/inbox/?app_id_mytracker=58519&authid=lmgn291q.7vi&back=1%2C1&dwhsplit=s10273.b1ss12743s&from=login%2Cnavi&x-login-auth=1&afterReload=1",
+		"Referer=https://e.mail.ru/inbox/?app_id_mytracker={app_id_mytracker}&authid={authid}&back=1%2C1&dwhsplit={dwhsplit}&from=login%2Cnavi&x-login-auth=1&afterReload=1",
 		"Snapshot=t197.inf",
 		"Mode=HTML",
 		"ITEMDATA",
@@ -3032,7 +3060,7 @@ for (i = 0; i<send_iter_num; i++){
 	lr_end_transaction("05_logout",2);
 
 	return 0;
-}
+} 
 # 5 "d:\\dev\\qa_school\\test_script_vers_01\\\\combined_test_chrome_copy.c" 2
 
 # 1 "vuser_end.c" 1
